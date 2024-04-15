@@ -1,6 +1,6 @@
 # SNAP - SN App Packages
 
-Welcome to SNAP, a set of packages I use in my iOS Apps. They contain common features, shared code and a template to kickstart a new project.
+Welcome to SNAP, a set of packages I use to build iOS Apps. They contain shared code, generic implementations of common features, and a template to kickstart a new project.
 
 Disclaimer: Main goal of most packages is to support my own needs. They are public for you to get inspired, learn and tell me what I am doing wrong (srsly, pls tell me!). 
 
@@ -47,15 +47,9 @@ Mermaid: [Docs](http://mermaid.js.org/intro/), [Editor](https://mermaid.live/)
 The [snap-core](https://github.com/simonnickel/snap-core) package contains helper and common extensions for Swift and SwiftUI.
 
 
-### snap-app-template + snap-template-shared
-
-[snap-app-template](https://github.com/simonnickel/snap-app-template) is an Xcode project with a base setup of the SNL package suite. The app comes with a basic structure, navigation and infrastructure. It is used as a template to quickly setup a new app.
-The [snap-template-shared](https://github.com/simonnickel/snap-template-shared) package contains shared code to use when following the snap-app-template.
-
-
 ### snap-theme
 
-The [snap-theme](https://github.com/simonnickel/snap-theme) package contains 
+The [snap-theme](https://github.com/simonnickel/snap-theme) package contains a Theme definition and tools to apply the Theme to a SwiftUI app.
 
 
 ### snap-settings-service
@@ -73,6 +67,7 @@ The [snap-matching-navigation](https://github.com/simonnickel/snap-matching-navi
 The [snap-swift-data](https://github.com/simonnickel/snap-swift-data) package contains 
 
 
-## snap-starter-kit
+### snap-app-template + snap-template-shared
 
-The [snap-starter-kit](https://github.com/simonnickel/snap-starter-kit) package contains 
+[snap-app-template](https://github.com/simonnickel/snap-app-template) is an Xcode project with a base setup of the SNL package suite. The app comes with a basic structure, navigation and infrastructure. It is used as a template to quickly setup a new app.
+The [snap-template-shared](https://github.com/simonnickel/snap-template-shared) package contains shared code to use when following the snap-app-template.
