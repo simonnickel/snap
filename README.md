@@ -44,12 +44,12 @@ Mermaid: [Docs](http://mermaid.js.org/intro/), [Editor](https://mermaid.live/)
 ## Packages
 
 ### snap-core
-The [snap-core](https://github.com/simonnickel/snap-core) package contains helper and common extensions for Swift and SwiftUI.
+The [snap-core](https://github.com/simonnickel/snap-core) package contains some helper implementations and common extensions for Swift and SwiftUI.
 
 
 ### snap-theme
 
-The [snap-theme](https://github.com/simonnickel/snap-theme) package contains a Theme definition and tools to apply the Theme to a SwiftUI app.
+The [snap-theme](https://github.com/simonnickel/snap-theme) package provides a toolset to abstract Colors, Fonts and Values into semantic definitions for a SwiftUI app. It contains a Theme definition to hold semantic values and a set of ViewModifier to apply them to SwiftUI views.
 
 
 ### snap-settings-service
