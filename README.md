@@ -70,4 +70,4 @@ The [snap-swift-data](https://github.com/simonnickel/snap-swift-data) package co
 ### snap-app-template + snap-template-shared
 
 [snap-app-template](https://github.com/simonnickel/snap-app-template) is a Xcode project with a base setup of the SNAP package suite. The app comes with a basic structure, navigation and infrastructure. It is used as a template to quickly setup a new app.
-The [snap-template-shared](https://github.com/simonnickel/snap-template-shared) package contains shared code to use for the snap-app-template.
+The [snap-template-shared](https://github.com/simonnickel/snap-template-shared) package contains shared code to use with the snap-app-template.
