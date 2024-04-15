@@ -2,8 +2,9 @@
 
 1. Create and clone repository named `snap-<package-name>`
 2. Add `.gitignore`
-3. Create Package named `snap-<package-name>`
-3.1. Move files from `snap-<package-name>` to root of repository
+3. Create Package (Multiplatform > Library) named `Snap<PackageName>`
+3.1. Move files from `Snap<PackageName>` to root of repository
+3.2. Change `Package > name:` in `Package.swift` to `snap-<package-name>`
 4. Configure `Package.swift` (see below)
 
 5. Add Readme
@@ -42,10 +43,13 @@ platforms: [
 xcuserdata/
 contents.xcworkspacedata
 /.build
+DerivedData/
 
 # PM
 /Packages
+.swiftpm/configuration/registries.json
 .swiftpm/config/registries.json
+.swiftpm/xcode/package.xcworkspace/contents.xcworkspacedata
 ```
 
 
