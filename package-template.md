@@ -13,8 +13,12 @@ Partly inspired by https://github.com/mattmassicotte/PackageTemplate
 2.2. Change `Package > name:` in `Package.swift` to `snap-<package-name>`
 3. Copy files from [template-package](./template-package/) folder
 4. Create a [demo project](#demo-project) if suitable
+5. Setup GitHub page
+5.1. Add Description, Topics, uncheck Packages and Deployments 
+6. Add to [Swift Package Index](https://swiftpackageindex.com)
 
-(7. Add Documentation with DocC.)
+TODO:
+(7. Add Documentation with DocC., add to SPI via .spi.yml )
 
 
 # Package Template Content
