@@ -1,5 +1,7 @@
 # Principles
 
+Making decisions is hard. Sometimes it helps to take a look at what you actually want to achieve. Some principles I try to follow:
+
  - Keep it simple: Least complex solution is preferred.
  - Choose vanilla: Stay close to the system, prevent pattern/architecture/framework.
  - Locality, Separation, Independence: Prevent dependencies between modules / features / sections.  
@@ -26,38 +28,39 @@
 
 ## Views
 
-<xyz>Scene -
+**<xyz>Scene** -
 A structural independent section of the app. 
 Usually the entry into a set of screens that can be displayed in a NavigationStack.
 e.g. ListLoopScene that will present ListScreen.
 
-<xyz>Screen -
+**<xyz>Screen** -
 A layout of Views to be displayed in a Scene.
 e.g. ListScreen that is presented in a ListLoopScene. 
 
-<xyz>View, Row, Section, ... -
+**<xyz>View, Row, Section, ...** -
 Building blocks to layout into a Screen.
 
-<xyz>Container -
+**<xyz>Container** -
 A generic View to place another View into.
 
 
-## Data, State, Model
+## View related structs
 
-<xyz>State -
-A struct that represents the changing state for a Scene or Screen.
+**<xyz>State** -
+A struct that represents a snapshot of changable state for a Scene or Screen.
 
-<xyz>Data -
-A struct with data that does not change. Usually injected into a Screen.
-(I prefer Data over Model.)
+**<xyz>Data** -
+A struct that represents some content to be displayed by a Screen or View. (I prefer Data over Model or ViewModel.)
 
 
-## Others
+## Service layer types
 
-<xyz>Manager -
+While most of them are basically the same, sometimes nuances make sense to better communicate expections.
 
-<xyz>Service -
+**<xyz>Service** - Provides a simple adhoc functionality to be accessed when needed.
 
-<xyz>Controller -
+**<xyz>Manager** - Takes care of a more complex topic, usually needs to be setup and kept alive.
 
-DataSource, Provider
+**<xyz>DataSource** - Source of information to read and write.
+
+**<xyz>Provider** - Read only source of information to be consumed.
