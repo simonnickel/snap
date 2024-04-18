@@ -9,6 +9,7 @@
 
 5. Add Readme
 6. Add Demo Project
+7. Add LICENSE file using MIT template
 (7. Add Documentation with DocC.)
 
 
