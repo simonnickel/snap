@@ -1,6 +1,8 @@
 # Package Template
 
-The peckage template is inspired by https://github.com/mattmassicotte/PackageTemplate
+Description of the Package Template contents and considerations
+
+Partly inspired by https://github.com/mattmassicotte/PackageTemplate
 
 
 ##  Create new Package

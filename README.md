@@ -7,7 +7,7 @@ Disclaimer: Most packages are focussed on my own needs. They are public for you 
 
 ## Package Template
 
-Packages are created as described in [template-package.md](./template-package.md).
+Packages are created as described in [package-template.md](./package-template.md).
 
 
 ## Package Dependencies
