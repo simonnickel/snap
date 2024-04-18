@@ -20,6 +20,7 @@ Partly inspired by https://github.com/mattmassicotte/PackageTemplate
 # Package Template Content
 
 ## Package.swift
+See [Package.swift](./package-template/Package.swift)
 
 ### Add platforms definition:
 
@@ -42,27 +43,14 @@ platforms: [
 
 ## .gitignore
 
-```
-# macOS
-.DS_Store
-.netrc
+See [.gitignore](./package-template/.gitignore)
 
-# Xcode
-xcuserdata/
-contents.xcworkspacedata
-/.build
-DerivedData/
-
-# PM
-/Packages
-.swiftpm/configuration/registries.json
-.swiftpm/config/registries.json
-.swiftpm/xcode/package.xcworkspace/contents.xcworkspacedata
-```
 
 ## LICENSE
 
 I chose to use the MIT License (created by Github template) because it is most commonly used in the community. 
+See [LICENSE](./package-template/LICENSE)
+
 
 
 # Demo Project
