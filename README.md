@@ -5,6 +5,11 @@ Welcome to SNAP, a set of packages I use to build iOS Apps. They contain shared 
 Disclaimer: Most packages are focussed on my own needs. They are public for you to get inspired, learn and tell me what I am doing wrong (srsly, pls tell me!).
 
 
+## Package Template
+
+Packages are created as described in [template-package.md](./template-package.md).
+
+
 ## Package Dependencies
 
 ```mermaid

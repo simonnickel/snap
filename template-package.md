@@ -1,17 +1,21 @@
-#  Create a Package
+# Package Template
+
+The peckage template is inspired by https://github.com/mattmassicotte/PackageTemplate
+
+
+##  Create new Package
 
 1. Create and clone repository named `snap-<package-name>`
-2. Add `.gitignore`
-3. Create Package (Multiplatform > Library) named `Snap<PackageName>`
-3.1. Move files from `Snap<PackageName>` to root of repository
-3.2. Change `Package > name:` in `Package.swift` to `snap-<package-name>`
-4. Configure `Package.swift` (see below)
+2. Create Package (Multiplatform > Library) named `Snap<PackageName>`
+2.1. Move files from `Snap<PackageName>` to root of repository
+2.2. Change `Package > name:` in `Package.swift` to `snap-<package-name>`
+3. Copy files from [template-package](./template-package/) folder
+4. Create a [demo project](#demo-project) if suitable
 
-5. Add Readme
-6. Add Demo Project
-7. Add LICENSE file using MIT template
 (7. Add Documentation with DocC.)
 
+
+# Package Template Content
 
 ## Package.swift
 
@@ -19,11 +23,12 @@
 
 ```
 platforms: [
-    .iOS(.v17), .macOS(.v14) //, .tvOS(.v16), .watchOS(.v9)
+    .iOS(.v17), .macOS(.v14)
 ],
 ```
 
 ### Enable strict concurrency checking:
+
 ```
 .target(
     name: ...,
@@ -53,8 +58,14 @@ DerivedData/
 .swiftpm/xcode/package.xcworkspace/contents.xcworkspacedata
 ```
 
+## LICENSE
 
-## Demo Project
+I chose to use the MIT License (created by Github template) because it is most commonly used in the community. 
+
+
+# Demo Project
+
+Create a demo project if suitable.
 
 1. Create Project in package root, name it <PackageName>Demo.
 2. Add Package to Project
