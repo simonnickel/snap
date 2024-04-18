@@ -18,7 +18,9 @@ Partly inspired by https://github.com/mattmassicotte/PackageTemplate
 6. Add to [Swift Package Index](https://swiftpackageindex.com)
 
 TODO:
-(7. Add Documentation with DocC., add to SPI via .spi.yml )
+Add Documentation with DocC., add to SPI via .spi.yml
+Add badges: Plattforms, Documentation, CI
+Add Code of Conduct: https://www.contributor-covenant.org
 
 
 # Package Template Content
