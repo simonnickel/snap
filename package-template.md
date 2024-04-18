@@ -64,9 +64,9 @@ Create a demo project if suitable.
 
 1. Create Project in package root, name it <PackageName>Demo.
 2. Add Package to Project
-2.1. Open Project > Package Dependencies
-2.2. Click +, Add local
-2.3. Package should automatically be added in Target > 'Frameworks, Libraries, and Embedded Content'. Package can be edited directly from Demo Project.
+    1. Open Project > Package Dependencies
+    2. Click +, Add local
+    3. Package should automatically be added in Target > 'Frameworks, Libraries, and Embedded Content'. Package can be edited directly from Demo Project.
 
 In case of error message about conflicts with other packages dependencies:
 2.2. Add github version, 2.3. Drag&Drop local package folder into Xcode. This will replace the remote package with local package that can be edited and previewed directly from Demo project.
