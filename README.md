@@ -2,7 +2,7 @@
 
 Welcome to SNAP, a set of packages I use to build iOS Apps. They contain shared code, generic implementations of common features, and a template to kickstart a new project.
 
-Disclaimer: Main goal of most packages is to support my own needs. They are public for you to get inspired, learn and tell me what I am doing wrong (srsly, pls tell me!). 
+Disclaimer: Most packages are focussed on my own needs. They are public for you to get inspired, learn and tell me what I am doing wrong (srsly, pls tell me!).
 
 
 ## Package Dependencies
@@ -44,17 +44,17 @@ Mermaid: [Docs](http://mermaid.js.org/intro/), [Editor](https://mermaid.live/)
 ## Packages
 
 ### snap-core
-The [snap-core](https://github.com/simonnickel/snap-core) package contains some helper implementations and common extensions for Swift and SwiftUI.
+The [snap-core](https://github.com/simonnickel/snap-core) package contains common extensions for Swift and SwiftUI types and helper implementations for convenience.
 
 
 ### snap-theme
 
-The [snap-theme](https://github.com/simonnickel/snap-theme) package provides a toolset to abstract Colors, Fonts and Values into semantic definitions for a SwiftUI app. It contains a Theme definition to hold semantic values and a set of ViewModifier to apply them to SwiftUI views.
+The [snap-theme](https://github.com/simonnickel/snap-theme) package provides a toolset to abstract Colors, Fonts, Icons and Values into semantic definitions for a SwiftUI app. It contains a Theme definition to hold semantic values and a set of ViewModifier to apply them to SwiftUI views.
 
 
 ### snap-settings-service
 
-The [snap-settings-service](https://github.com/simonnickel/snap-settings-service) package contains 
+The [snap-settings-service](https://github.com/simonnickel/snap-settings-service) is a simple wrapper to handle different types of settings. It stores a `Codable` type for a `String` key, either locally (UserDefaults), synced (NSUbiquitousKeyValueStore) or in a custom store.
 
 
 ### snap-matching-navigation
