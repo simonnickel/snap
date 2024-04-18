@@ -72,7 +72,7 @@ A:
 
 B:
 In case of error message about conflicts with other packages dependencies:
-2.2 Add github version.
-2.3 Drag&Drop local package folder into Xcode. This will replace the remote package with local package that can be edited and previewed directly from Demo project.
+2.2. Add github version.
+2.3. Drag&Drop local package folder into Xcode. This will replace the remote package with local package that can be edited and previewed directly from Demo project.
 
 3. Configure Supported Destinations (add macOS native)
