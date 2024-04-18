@@ -61,7 +61,7 @@ See [LICENSE](./package-template/LICENSE)
 
 Create a demo project if suitable.
 
-1. Create Project in package root, name it <PackageName>Demo
+1. Create Project in package root, name it `PackageNameDemo`
 2. Add Package to Project (GitHub Version)
     1. Open Project > Package Dependencies > Add package
     2. Run project
