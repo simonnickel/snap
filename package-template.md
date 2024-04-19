@@ -25,7 +25,7 @@ Add Code of Conduct: https://www.contributor-covenant.org
 # Package Template Content
 
 ## Package.swift
-See [Package.swift](./package-template/Package.swift)
+Some adjustments to the Package definition (see [Package.swift](./package-template/Package.swift).
 
 ### Add platforms definition:
 
@@ -48,13 +48,18 @@ platforms: [
 
 ## .gitignore
 
-See [.gitignore](./package-template/.gitignore)
+A default ignore list for packages (see [.gitignore](./package-template/.gitignore).
+
+
+## .spi.yml
+
+Configuration for the Swift Package Index to build DocC documentation.
 
 
 ## LICENSE
 
-I chose to use the MIT License (created by Github template) because it is most commonly used in the community. 
-See [LICENSE](./package-template/LICENSE)
+I chose to use the MIT License (created by Github template) because it is most commonly used in the community
+(see [LICENSE](./package-template/LICENSE).
 
 
 # Demo Project
