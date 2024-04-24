@@ -71,8 +71,14 @@ The [snap-matching-navigation](https://github.com/simonnickel/snap-matching-navi
 
 The [snap-swift-data](https://github.com/simonnickel/snap-swift-data) package extends SwiftData to better interoperate with CoreData and Persistent History Tracking.
 
+### snap-template-shared
 
-### snap-app-template + snap-template-shared
+The [snap-template-shared](https://github.com/simonnickel/snap-template-shared) package contains shared code to use with the snap-app-template.
+
+
+## Apps
+
+### snap-app-template
 
 [snap-app-template](https://github.com/simonnickel/snap-app-template) is an Xcode project with a base setup of the SNAP package suite. The app comes with a basic structure, navigation and infrastructure. It is used as a template to quickly setup a new app.
 The [snap-template-shared](https://github.com/simonnickel/snap-template-shared) package contains shared code to use with the snap-app-template.
