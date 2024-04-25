@@ -35,7 +35,7 @@ Usually the entry into a set of screens that can be displayed in a NavigationSta
 (E.g. ListLoopScene that will present ListScreen.)
 
 **<xyz>Screen** -
-An independent arrangement of Views that is presented in a `Scene`.
+An independent arrangement of Views that is displayed in a `Scene`.
 (E.g. ListScreen that is presented in a ListLoopScene.)
 
 **<xyz>View, Row, Section, ...** -
