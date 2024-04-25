@@ -32,11 +32,11 @@ Making decisions is hard. Sometimes it helps to take a look at what you actually
 **<xyz>Scene** -
 A structural independent section of the app. 
 Usually the entry into a set of screens that can be displayed in a NavigationStack.
-e.g. ListLoopScene that will present ListScreen.
+(E.g. ListLoopScene that will present ListScreen.)
 
 **<xyz>Screen** -
-A layout of Views to be displayed in a Scene.
-e.g. ListScreen that is presented in a ListLoopScene. 
+An independent arrangement of Views that is presented in a `Scene`.
+(E.g. ListScreen that is presented in a ListLoopScene.)
 
 **<xyz>View, Row, Section, ...** -
 Building blocks to layout into a Screen.
