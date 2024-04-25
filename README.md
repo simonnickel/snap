@@ -54,7 +54,9 @@ The [snap-core](https://github.com/simonnickel/snap-core) package contains commo
 
 ### snap-theme
 
-The [snap-theme](https://github.com/simonnickel/snap-theme) package provides a toolset to abstract Colors, Fonts, Icons and Values into semantic definitions for a SwiftUI app. It contains a Theme definition to hold semantic values and a set of ViewModifier to apply them to SwiftUI views. A Demo is available at: [snap-app-theme-demo](https://github.com/simonnickel/snap-app-theme-demo)
+The [snap-theme](https://github.com/simonnickel/snap-theme) package provides a toolset to abstract Colors, Fonts, Icons and Numbers of a multi-platform SwiftUI app. Define semantic attributes in a Theme and apply them to your views for a consistent UI with maintainability in mind.
+
+A reference and demo app is available at: [snap-app-theme-demo](https://github.com/simonnickel/snap-app-theme-demo)
 
 
 ### snap-settings-service
@@ -85,4 +87,4 @@ The [snap-template-shared](https://github.com/simonnickel/snap-template-shared) 
 
 
 ### snap-app-theme-demo
-[snap-app-theme-demo](https://github.com/simonnickel/snap-app-theme-demo) is an example app project to showcase the SNAP suite. It uses the SnapAppTemplate and allows to explore the SnapTheme.
+[snap-app-theme-demo](https://github.com/simonnickel/snap-app-theme-demo) is an example app project to showcase the SNAP suite. It uses the SnapAppTemplate and showcases features of the `SnapTheme` package. It contains a reference of attributes and defaults of the `Theme` and a catalog of adjustments to explore design changes.
