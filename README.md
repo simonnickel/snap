@@ -60,7 +60,7 @@ Mermaid: [Docs](http://mermaid.js.org/intro/), [Editor](https://mermaid.live/)
 ## Packages
 
 ### snap-core
-The [snap-core](https://github.com/simonnickel/snap-core) package contains common extensions for Swift and SwiftUI types and helper implementations for convenience.
+The [snap-core](https://github.com/simonnickel/snap-core) package contains common extensions for Swift and SwiftUI types, useful helper implementations, convenience definitions and workarounds.
 
 
 ### snap-theme
