@@ -1,6 +1,6 @@
 # Package Template
 
-Description of the Package Template contents and considerations
+Considerations and description of the content in [template-package](./template-package/).
 
 Partly inspired by https://github.com/mattmassicotte/PackageTemplate
 
@@ -9,16 +9,15 @@ Partly inspired by https://github.com/mattmassicotte/PackageTemplate
 
 1. Create and clone repository named `snap-<package-name>`
 2. Create Package (Multiplatform > Library) named `Snap<PackageName>`
-    1. Move files from `Snap<PackageName>` to root of repository
+    1. Move files from `Snap<PackageName>/` to root of repository
     2. Change `Package > name:` in `Package.swift` to `snap-<package-name>`
 3. Copy files from [template-package](./template-package/) folder
 4. Create a [demo project](#demo-project) if suitable
 5. Setup GitHub page: Add Description and Topics, uncheck Packages and Deployments 
 6. Add to [Swift Package Index](https://swiftpackageindex.com)
+    1. Update Badge and Documentation urls in README.md
 
 TODO:
-Add Documentation with DocC., add to SPI via .spi.yml
-Add badges: Plattforms, Documentation, CI
 Add Code of Conduct: https://www.contributor-covenant.org
 
 
