@@ -18,7 +18,7 @@ To explore SNAP, just check out the [example Apps](#apps) listed below.
 
 You need rules to break them, so I made up some of my own: [conventions](./conventions.md).
 
-Packages are created as described in [package-template.md](./package-template.md).
+Packages are setup as described in [package-template.md](./package-template.md).
 
 
 ## Package Dependencies
