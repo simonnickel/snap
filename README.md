@@ -14,8 +14,9 @@ The key package of the SNAP Template is [SnapTheme](https://github.com/simonnick
 To explore SNAP, just check out the [example Apps](#apps) listed below.
 
 
-## Package Template
+## Guides
 
+You need rules to break them, so I made up some of my own: [conventions](./conventions.md).
 Packages are created as described in [package-template.md](./package-template.md).
 
 
