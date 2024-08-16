@@ -8,13 +8,13 @@ Partly inspired by https://github.com/mattmassicotte/PackageTemplate
 ##  Create new Package
 
 1. Create and clone repository named `snap-<package-name>`
-2. Create Package (Multiplatform > Library) named `Snap<PackageName>`
+2. Create package (Multiplatform > Library) named `Snap<PackageName>`
     1. Move files from `Snap<PackageName>/` to root of repository
-    2. Change `Package > name:` in `Package.swift` to `snap-<package-name>`
-3. Copy files from [template-package](./template-package/) folder
-4. Create a [demo project](#demo-project) if suitable
-5. Setup GitHub page: Add Description and Topics, uncheck Packages and Deployments 
-6. Add to [Swift Package Index](https://swiftpackageindex.com)
+    2. Copy files from [template-package](./template-package/) folder (make sure to include .gitignore)
+    3. Fix names in `Package.swift`
+3. Create a [demo project](#demo-project) if suitable
+4. Setup GitHub page: Add Description and Topics, uncheck Packages and Deployments 
+5. Add to [Swift Package Index](https://swiftpackageindex.com)
     1. Update Badge and Documentation urls in README.md
 
 TODO:
@@ -63,11 +63,12 @@ I chose to use the MIT License (created by Github template) because it is most c
 
 # Demo Project
 
-Create a demo project if suitable.
+Create a demo project if suitable and configure project to edit the package directly from the demo project:
 
-1. Create Project in package root, name it `PackageNameDemo`
-2. Add Package to Project (GitHub Version)
-    1. Open Project > Package Dependencies > Add package
-    2. Run project
-    3. Drag&Drop local package folder into Xcode and commit project changes
-    4. Package can be edited directly from Demo Project
+1. Create a project in package root, name it `PackageNameDemo`
+2. Add local package as dependency to the project: 
+    1. Open Project > Package Dependencies > Add package > "Add local"
+3. Add reference to package:
+    1. Drag&Drop folder of target from the package into Xcode
+    2. Action: Reference files in place
+    3. De-select Demo target
