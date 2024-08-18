@@ -68,7 +68,3 @@ Create a demo project if suitable and configure project to edit the package dire
 1. Create a project in package root, name it `PackageNameDemo`
 2. Add local package as dependency to the project: 
     1. Open Project > Package Dependencies > Add package > "Add local"
-3. Add reference to package:
-    1. Drag&Drop folder of target from the package into Xcode
-    2. Action: Reference files in place
-    3. De-select Demo target
