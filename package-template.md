@@ -10,7 +10,7 @@ Partly inspired by https://github.com/mattmassicotte/PackageTemplate
 1. Create and clone repository named `snap-<package-name>`
 2. Create package (Multiplatform > Library) named `Snap<PackageName>`
     1. Move files from `Snap<PackageName>/` to root of repository
-    2. Copy files from [template-package](./template-package/) folder (make sure to include .gitignore)
+    2. Copy files from [template-package](./template-package/) folder (make sure to include .-files)
     3. Fix names in `Package.swift`
 3. Create a [demo project](#demo-project) if suitable
 4. Setup GitHub page: Add Description and Topics, uncheck Packages and Deployments 
@@ -68,3 +68,7 @@ Create a demo project if suitable and configure project to edit the package dire
 1. Create a project in package root, name it `PackageNameDemo`
 2. Add local package as dependency to the project: 
     1. Open Project > Package Dependencies > Add package > "Add local"
+3. Remove unnecessary files: Assets.xcassets, Preview Content (clear DEVELOPMENT_ASSET_PATHS)
+4. Copy IDETemplateMacros.plist to demo project:
+    1. From: /package-template/.swiftpm/xcode/xcshareddata/IDETemplateMacros.plist 
+    2. To: /SnapDemo/SnapDemo.xcodeproj/project.xcworkspace/xcshareddata/IDETemplateMacros.plist
