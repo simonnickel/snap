@@ -8,8 +8,18 @@ Making decisions is hard. Sometimes it helps to take a look at what you actually
  - Maintainability: Prevent future work.
  - Don't let it dry out: While DRY (don't repeat yourself) is great, it's often misunderstood as don't repeat code. It should be don't repeat logic instead.
 
+## Dependencies
+
+Trying to prevent using external dependencies. This is a guideline, not a rule. The closer to the core, the more significant it becomes.
+
+1. Try a simpler solution that works out of the box.
+2. If worth it, try to reimplement. Book the effort as learning.
+3. If using something external, try to wrap it for easy replacement.
+
 
 # Style Guide
+
+I like rules, but not to enforce them. So I am not using any formatter or linter. Just some conventions I got used to.
 
 ## Comments
 
@@ -23,6 +33,20 @@ Making decisions is hard. Sometimes it helps to take a look at what you actually
  - `FB#`: A workaround because something does not work as expected, reference related FB number. Fix when FB is resolved.
  - `finetuning`: A non critical improvement is possible.
  - `idea`: A new feature might evolve here.
+
+
+## Code Structure
+
+On file level, Code is structured to easily find stuff using the minimap. Useing `// MARK: - XYZ`.
+
+On block level, Code is structured like a text. Related lines of code are together and separated to other blocks by an empty line. 
+
+Use empty lines to structure the file visually.
+
+
+## Multi-line indentation
+
+Use Xcode default formatting with `control + m`.
 
 
 # Naming conventions
