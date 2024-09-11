@@ -7,6 +7,7 @@ Making decisions is hard. Sometimes it helps to take a look at what you actually
  - Locality, Separation, Independence: Prevent dependencies between modules / features / sections.  
  - Maintainability: Prevent future work.
  - Don't let it dry out: While DRY (don't repeat yourself) is great, it's often misunderstood as don't repeat code. It should be don't repeat logic instead.
+ - Explicit over implicit. Don't hide the details.
 
 ## Dependencies
 
