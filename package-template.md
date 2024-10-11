@@ -30,19 +30,16 @@ Some adjustments to the Package definition (see [Package.swift](./package-templa
 
 ```
 platforms: [
-    .iOS(.v17), .macOS(.v14)
+    .iOS(.v18), .macOS(.v15)
 ],
 ```
 
-### Enable strict concurrency checking:
+### Use Swift 6
 
 ```
-.target(
-    name: ...,
-    swiftSettings: [
-        .enableExperimentalFeature("StrictConcurrency")
-    ]
-)
+// swift-tools-version: 6.0
+...
+swiftLanguageModes: [.version("6")]
 ```
 
 ## .gitignore
