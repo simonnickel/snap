@@ -30,7 +30,7 @@ flowchart TD
     C1[core]
     M2(theme)
     M3(settings-service)
-    M4(matching-navigation)
+    M4(navigation)
     M5(swift-data)
     M1(template-shared)
     end
@@ -75,9 +75,9 @@ A reference and demo app is available at: [snap-app-theme-demo](https://github.c
 The [snap-settings-service](https://github.com/simonnickel/snap-settings-service) is a simple wrapper to handle different types of settings. It stores a `Codable` type for a `String` key, either locally (UserDefaults), synced (NSUbiquitousKeyValueStore) or in a custom store.
 
 
-### snap-matching-navigation
+### snap-navigation
 
-The [snap-matching-navigation](https://github.com/simonnickel/snap-matching-navigation) package provides a SwiftUI Container that displays a TabView or SplitScene, based on the device. 
+The [snap-navigation](https://github.com/simonnickel/snap-navigation) package defines the apps screens and navigation structure. The SnapNavigationView displays and manages the screens in a TabView. 
 
 
 ### snap-swift-data
