@@ -39,8 +39,8 @@ flowchart TD
     A1{Template}
 
     subgraph Apps
-    A2{Theme\nDemo}
-    A3{ - ???? - \nApp}
+    A2{Theme Demo}
+    A3{... App}
     end
 
     C1 --> M2
