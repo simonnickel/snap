@@ -31,7 +31,8 @@ flowchart TD
     M2(theme)
     M3(settings-service)
     M4(navigation)
-    M5(swift-data)
+    M5(dependencies)
+    M6(swift-data)
     M1(template-shared)
     end
     
@@ -48,11 +49,12 @@ flowchart TD
     M2 --> M1
     M3 --> M1
     M4 --> M1
+    M5 --> M1
 
     M1 --> A1
 
     A1 -.->|Copy| Apps
-    M5 --> Apps
+    M6 --> Apps
 ```
 Mermaid: [Docs](http://mermaid.js.org/intro/), [Editor](https://mermaid.live/)
 
