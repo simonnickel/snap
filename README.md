@@ -65,7 +65,7 @@ Mermaid: [Docs](http://mermaid.js.org/intro/), [Editor](https://mermaid.live/)
 ## Packages
 
 ### snap-foundation
-The [snap-foundation](https://github.com/simonnickel/snap-foundation) package contains basic extensions of Swift and Foundation.
+The [snap-foundation](https://github.com/simonnickel/snap-foundation) package contains basic general purpose extensions of Swift and Foundation.
 
 
 ### snap-core
