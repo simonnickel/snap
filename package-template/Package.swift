@@ -14,13 +14,18 @@ let package = Package(
             name: "SnapPackage",
             targets: ["SnapPackage"]),
     ],
+    // TODO: Remove if not required.
+	dependencies: [
+		// Dependencies declare other packages that this package depends on.
+		.package(url: "https://github.com/simonnickel/snap-foundation.git", branch: "main"),
+	],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
         // Targets can depend on other targets in this package and products from dependencies.
         .target(
             name: "SnapPackage",
             dependencies: [ // TODO: Remove if not required.
-				.product(name: "SnapCore", package: "snap-core"),
+				.product(name: "SnapFoundation", package: "snap-foundation"),
 			]
 		),
         .testTarget( // TODO: Remove if not used.

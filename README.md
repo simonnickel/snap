@@ -27,7 +27,8 @@ Packages are setup as described in [package-template.md](./package-template.md).
 flowchart TD
 
     subgraph Packages
-    C1[core]
+    C1[foundation]
+    C2[core]
     M2(theme)
     M3(settings-service)
     M4(navigation)
@@ -43,8 +44,10 @@ flowchart TD
     A3{... App}
     end
 
-    C1 --> M2
-    C1 --> M3
+    C1 --> C2
+
+    C2 --> M2
+    C2 --> M3
 
     M2 --> M1
     M3 --> M1
@@ -60,6 +63,10 @@ Mermaid: [Docs](http://mermaid.js.org/intro/), [Editor](https://mermaid.live/)
 
 
 ## Packages
+
+### snap-foundation
+The [snap-foundation](https://github.com/simonnickel/snap-foundation) package contains basic extensions of Swift and Foundation.
+
 
 ### snap-core
 The [snap-core](https://github.com/simonnickel/snap-core) package contains common extensions for Swift and SwiftUI types, useful helper implementations, convenience definitions and workarounds.
