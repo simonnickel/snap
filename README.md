@@ -34,7 +34,7 @@ flowchart TD
     M4(navigation)
     M5(dependencies)
     M6(swift-data)
-    M1(template-shared)
+    M1(template)
     end
     
     A1{Template}
@@ -94,9 +94,9 @@ The [snap-navigation](https://github.com/simonnickel/snap-navigation) package de
 
 The [snap-swift-data](https://github.com/simonnickel/snap-swift-data) package extends SwiftData to better interoperate with CoreData and Persistent History Tracking.
 
-### snap-template-shared
+### snap-template
 
-The [snap-template-shared](https://github.com/simonnickel/snap-template-shared) package contains shared code to use with the snap-app-template.
+The [snap-template](https://github.com/simonnickel/snap-template) package contains shared code to use with the snap-app-template.
 
 
 ## Apps
@@ -104,7 +104,7 @@ The [snap-template-shared](https://github.com/simonnickel/snap-template-shared) 
 ### snap-app-template
 
 [snap-app-template](https://github.com/simonnickel/snap-app-template) is an Xcode project with a base setup of the SNAP package suite. The app comes with structure, navigation and infrastructure prepared, to quickly setup a new app using the SNAP packages.
-The [snap-template-shared](https://github.com/simonnickel/snap-template-shared) package contains shared code to use with the snap-app-template.
+The [snap-template](https://github.com/simonnickel/snap-template) package contains shared code to use with the snap-app-template.
 
 
 ### snap-app-theme-demo
