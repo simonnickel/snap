@@ -104,3 +104,9 @@ The [snap-template](https://github.com/simonnickel/snap-template) package contai
 
 ### snap-app-theme-demo
 [snap-app-theme-demo](https://github.com/simonnickel/snap-app-theme-demo) is an example app project to showcase the SNAP suite. It uses the SnapAppTemplate and showcases features of the `SnapTheme` package. It contains a reference of attributes and defaults of the `Theme` and a catalog of adjustments to explore design changes.
+
+
+## History
+
+- The [snap-app-template](https://github.com/simonnickel/snap-app-template) was moved as Demo project into [snap-template](https://github.com/simonnickel/snap-template).
+- [snap-matching-navigation](https://github.com/simonnickel/snap-matching-navigation) was replaced by [snap-navigation](https://github.com/simonnickel/snap-navigation).
