@@ -7,9 +7,9 @@ Disclaimer: Most packages are focussed on my own needs. They are public for you 
 
 ## Highlights
 
-SNAP contains a few packages in varying sizes and complexities. Some depend on each other, while others are independent. In the end they are all pieces of the [snap-app-template](https://github.com/simonnickel/snap-app-template).
+SNAP contains a few packages in varying sizes and complexities. Some depend on each other, while others are independent. In the end they are all pieces of the [snap-template](https://github.com/simonnickel/snap-template).
 
-The key package of the SNAP Template is [SnapTheme](https://github.com/simonnickel/snap-theme), which provides an abstraction layer to UI configuration and styling.
+Another key package of the SNAP Template is [SnapTheme](https://github.com/simonnickel/snap-theme), which provides an abstraction layer to UI configuration and styling.
 
 To explore SNAP, just check out the [example Apps](#apps) listed below.
 
@@ -37,7 +37,7 @@ flowchart TD
     M1(template)
     end
     
-    A1{Template}
+    A1{TemplateDemo}
 
     subgraph Apps
     A2{Theme Demo}
@@ -96,16 +96,10 @@ The [snap-swift-data](https://github.com/simonnickel/snap-swift-data) package ex
 
 ### snap-template
 
-The [snap-template](https://github.com/simonnickel/snap-template) package contains shared code to use with the snap-app-template.
+The [snap-template](https://github.com/simonnickel/snap-template) package contains shared code and Demo Xcode project to setup and use SNAP in an App. The demo app comes with structure, navigation and infrastructure prepared, to quickly setup a new app using the SNAP packages.
 
 
 ## Apps
-
-### snap-app-template
-
-[snap-app-template](https://github.com/simonnickel/snap-app-template) is an Xcode project with a base setup of the SNAP package suite. The app comes with structure, navigation and infrastructure prepared, to quickly setup a new app using the SNAP packages.
-The [snap-template](https://github.com/simonnickel/snap-template) package contains shared code to use with the snap-app-template.
-
 
 ### snap-app-theme-demo
 [snap-app-theme-demo](https://github.com/simonnickel/snap-app-theme-demo) is an example app project to showcase the SNAP suite. It uses the SnapAppTemplate and showcases features of the `SnapTheme` package. It contains a reference of attributes and defaults of the `Theme` and a catalog of adjustments to explore design changes.
