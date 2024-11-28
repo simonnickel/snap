@@ -9,9 +9,9 @@ Disclaimer: Most packages are focussed on my own needs. They are public for you 
 
 SNAP contains a few packages in varying sizes and complexities. Some depend on each other, while others are independent. In the end they are all pieces of the [snap-template](https://github.com/simonnickel/snap-template).
 
-Another key package of the SNAP Template is [SnapTheme](https://github.com/simonnickel/snap-theme), which provides an abstraction layer to UI configuration and styling.
+Another key package is [SnapTheme](https://github.com/simonnickel/snap-theme), which provides an abstraction layer to UI configuration and styling.
 
-To explore SNAP, just check out the [example Apps](#apps) listed below.
+To explore SNAP, just check out the [example Apps](#apps) listed below or use it by copying the Demo project in [snap-template](https://github.com/simonnickel/snap-template).
 
 
 ## Guides
