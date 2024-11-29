@@ -114,7 +114,9 @@ The [snap-template](https://github.com/simonnickel/snap-template) package contai
 
 ## Package Collections
 
-Not working at the moment!
+Not working at the moment! The Generator does not build, will try again in the future.
+
+`packages.json` is prepared.
 
 [Swift Package Collection](https://www.swift.org/blog/package-collections/)
 [Generator](https://github.com/swiftlang/swift-package-collection-generator)
