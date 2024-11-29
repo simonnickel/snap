@@ -110,3 +110,11 @@ The [snap-template](https://github.com/simonnickel/snap-template) package contai
 
 - The [snap-app-template](https://github.com/simonnickel/snap-app-template) was moved as Demo project into [snap-template](https://github.com/simonnickel/snap-template).
 - [snap-matching-navigation](https://github.com/simonnickel/snap-matching-navigation) was replaced by [snap-navigation](https://github.com/simonnickel/snap-navigation).
+
+
+## Package Collections
+
+Not working at the moment!
+
+[Swift Package Collection](https://www.swift.org/blog/package-collections/)
+[Generator](https://github.com/swiftlang/swift-package-collection-generator)
