@@ -71,3 +71,4 @@ Create a demo project if suitable and configure project to edit the package dire
     2. To: /SnapDemo/SnapDemo.xcodeproj/project.xcworkspace/xcshareddata/IDETemplateMacros.plist
 5. Replace all file header with the one from the previous step.
 6. Convert root folder to Group and create folder `Views` in it, move `ContentView.swift` into it.
+7. Set Swift Language Version to 6.
