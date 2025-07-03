@@ -51,7 +51,7 @@ Use Xcode default formatting with `control + m`.
 # SwiftUI
 
 ## View Modifier
-Every ViewModifier should have an inert variant (a neutral value, that preserves the context instead of setting a new value). It should be possible to conditionally apply a value while keeping the identity, to allow animating the change.
+Every ViewModifier should have an inert variant (a neutral value, that preserves the context instead of setting a new value). It should be possible to conditionally apply a value while keeping the identity, to allow animations.
 The inert variant should be documented and as obvious as possible.
 
 
