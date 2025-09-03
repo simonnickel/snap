@@ -9,7 +9,7 @@ Disclaimer: Most packages are focussed on my own needs. They are public for you 
 
 SNAP contains a few packages in varying sizes and complexities. Some depend on each other, while others are independent. In the end they are all pieces of the [snap-template](https://github.com/simonnickel/snap-template).
 
-Another key package is [SnapTheme](https://github.com/simonnickel/snap-theme), which provides an abstraction layer to UI configuration and styling.
+Another key package is [SnapStyle](https://github.com/simonnickel/snap-style), which provides an abstraction layer to UI configuration and styling.
 
 To explore SNAP, just check out the [example Apps](#apps) listed below or use it by copying the Demo project in [snap-template](https://github.com/simonnickel/snap-template).
 
@@ -29,7 +29,7 @@ flowchart TD
     subgraph Packages
     C1[foundation]
     C2[core]
-    M2(theme)
+    M2(style)
     M3(settings-service)
     M4(navigation)
     M5(dependencies)
@@ -74,11 +74,9 @@ The [snap-foundation](https://github.com/simonnickel/snap-foundation) package co
 The [snap-core](https://github.com/simonnickel/snap-core) package contains common extensions for Swift and SwiftUI types, useful helper implementations, convenience definitions and workarounds.
 
 
-### snap-theme
+### snap-style
 
-The [snap-theme](https://github.com/simonnickel/snap-theme) package provides a toolset to abstract Colors, Fonts, Icons and Numbers of a multi-platform SwiftUI app. Define semantic attributes in a Theme and apply them to your views for a consistent UI with maintainability in mind.
-
-A reference and demo app is available at: [snap-app-theme-demo](https://github.com/simonnickel/snap-app-theme-demo)
+The [snap-style](https://github.com/simonnickel/snap-style) package provides a toolset to abstract Colors, Fonts, Icons and Numbers of a multi-platform SwiftUI app. Define semantic attributes in a Theme and apply them to your views for a consistent UI with maintainability in mind.
 
 
 ### snap-settings-service
@@ -100,16 +98,11 @@ The [snap-swift-data](https://github.com/simonnickel/snap-swift-data) package ex
 The [snap-template](https://github.com/simonnickel/snap-template) package contains shared code and Demo Xcode project to setup and use SNAP in an App. The demo app comes with structure, navigation and infrastructure prepared, to quickly setup a new app using the SNAP packages.
 
 
-## Apps
-
-### snap-app-theme-demo
-[snap-app-theme-demo](https://github.com/simonnickel/snap-app-theme-demo) is an example app project to showcase the SNAP suite. It uses the SnapAppTemplate and showcases features of the `SnapTheme` package. It contains a reference of attributes and defaults of the `Theme` and a catalog of adjustments to explore design changes.
-
-
 ## History
 
 - The [snap-app-template](https://github.com/simonnickel/snap-app-template) was moved as Demo project into [snap-template](https://github.com/simonnickel/snap-template).
 - [snap-matching-navigation](https://github.com/simonnickel/snap-matching-navigation) was replaced by [snap-navigation](https://github.com/simonnickel/snap-navigation).
+- [snap-theme](https://github.com/simonnickel/snap-theme) was replaced by [snap-style](https://github.com/simonnickel/snap-style).
 
 
 ## Package Collections
