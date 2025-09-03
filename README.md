@@ -89,6 +89,11 @@ The [snap-settings-service](https://github.com/simonnickel/snap-settings-service
 The [snap-navigation](https://github.com/simonnickel/snap-navigation) package defines the apps screens and navigation structure. The SnapNavigationView displays and manages the screens in a TabView. 
 
 
+### snap-dependencies
+
+The [snap-dependencies](https://github.com/simonnickel/snap-dependencies) package provides a simple dependency injection container.
+
+
 ### snap-swift-data
 
 The [snap-swift-data](https://github.com/simonnickel/snap-swift-data) package extends SwiftData to better interoperate with CoreData and Persistent History Tracking.
