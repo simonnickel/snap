@@ -40,7 +40,6 @@ flowchart TD
     A1{TemplateDemo}
 
     subgraph Apps
-    A2{Theme Demo}
     A3{... App}
     end
 
