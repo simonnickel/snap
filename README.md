@@ -26,7 +26,7 @@ Packages are setup as described in [package-template.md](./package-template.md).
 ```mermaid
 flowchart TD
 
-    subgraph Packages
+    subgraph Snap-Packages
     C1[foundation]
     C2[core]
     M2(style)
