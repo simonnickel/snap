@@ -16,6 +16,7 @@ Partly inspired by https://github.com/mattmassicotte/PackageTemplate
 4. Setup GitHub page: Add Description and Topics, uncheck Packages and Deployments 
 5. Add to [Swift Package Index](https://swiftpackageindex.com)
     1. Update Badge and Documentation urls in README.md
+    2. Update `.spi.yml` to contain target names
 
 TODO:
 Add Code of Conduct: https://www.contributor-covenant.org
