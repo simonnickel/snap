@@ -48,6 +48,7 @@ flowchart TD
     C1 --> M4
     C1 --> M5
 
+    C2 --> M2
     C2 --> M3
 
     M2 --> M1
