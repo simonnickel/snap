@@ -10,7 +10,7 @@ Partly inspired by https://github.com/mattmassicotte/PackageTemplate
 1. Create and clone repository named `snap-<package-name>`
 2. Create package (Multiplatform > Library) named `Snap<PackageName>`
     1. Move files from `Snap<PackageName>/` to root of repository
-    2. Copy files from [template-package](./template-package/) folder (make sure to include .-files)
+    2. Copy files from [package-template](./package-template/) folder (make sure to include .-files)
     3. Fix names in `Package.swift`
 3. Create a [demo project](#demo-project) if suitable
 4. Setup GitHub page: Add Description and Topics, uncheck Packages and Deployments 
