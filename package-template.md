@@ -31,16 +31,14 @@ Some adjustments to the Package definition (see [Package.swift](./package-templa
 
 ```
 platforms: [
-    .iOS(.v18), .macOS(.v15)
+    .iOS(.v17), .macOS(.v15)
 ],
 ```
 
 ### Use Swift 6
 
 ```
-// swift-tools-version: 6.0
-...
-swiftLanguageModes: [.version("6")]
+// swift-tools-version: 6.3
 ```
 
 ## .gitignore
