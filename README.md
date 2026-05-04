@@ -1,17 +1,17 @@
 # SNAP - SN App Packages
 
-Welcome to SNAP, a set of packages I use to build iOS Apps. They contain shared code, generic implementations of common features, and a template to kickstart a new project.
+SNAP is a set of packages I use to build iOS Apps. They contain shared code, generic implementations of common features, and a template to kickstart a new project.
 
 Disclaimer: Most packages are focussed on my own needs. They are public for you to get inspired, learn and tell me what I am doing wrong (srsly, pls tell me!).
 
 
 ## Highlights
 
-SNAP contains a few packages in varying sizes and complexities. Some depend on each other, while others are independent. In the end they are all pieces of the [snap-template](https://github.com/simonnickel/snap-template).
+SNAP contains a few packages in varying sizes and complexities. Some depend on each other, while others are independent. They are all pieces of the [snap-template](https://github.com/simonnickel/snap-template).
 
 Another key package is [SnapStyle](https://github.com/simonnickel/snap-style), which provides an abstraction layer to UI configuration and styling.
 
-To explore SNAP, just check out the [example Apps](#apps) listed below or use it by copying the Demo project in [snap-template](https://github.com/simonnickel/snap-template).
+To explore SNAP, use the Demo project in [snap-template](https://github.com/simonnickel/snap-template).
 
 
 ## Guides
