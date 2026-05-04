@@ -7,11 +7,9 @@ The packages contain shared code, reusable implementations of common app feature
 
 ## Highlights
 
-SNAP contains a few packages in varying sizes and complexities. Some depend on each other, while others are independent. They are all pieces of the [snap-template](https://github.com/simonnickel/snap-template).
-
-Another key package is [SnapStyle](https://github.com/simonnickel/snap-style), which provides an abstraction layer to UI configuration and styling.
-
-To explore SNAP, use the Demo project in [snap-template](https://github.com/simonnickel/snap-template).
+- [snap-template](https://github.com/simonnickel/snap-template) contains shared app code and the demo project that shows the suite in use.
+- [snap-style](https://github.com/simonnickel/snap-style) abstracts semantic colors, fonts, icons and numbers for SwiftUI apps.
+- Other packages cover foundation extensions, SwiftUI helpers, settings storage, navigation, dependency injection and SwiftData/CoreData interop.
 
 
 ## Guides
@@ -27,17 +25,17 @@ Packages are set up as described in [package-template.md](./package-template.md)
 flowchart TD
 
     subgraph Snap-Packages
-    C1[foundation]
-    C2[core]
-    M2(style)
-    M3(settings-service)
-    M4(navigation)
-    M5(dependencies)
-    M6(swift-data)
-    M1(template)
+    C1[snap-foundation]
+    C2[snap-core]
+    M2(snap-style)
+    M3(snap-settings-service)
+    M4(snap-navigation)
+    M5(snap-dependencies)
+    M6(snap-swift-data)
+    M1(snap-template)
     end
     
-    A1{TemplateDemo}
+    A1{SnapTemplateDemo}
 
     subgraph Apps
     A3{... App}
@@ -113,7 +111,7 @@ Mermaid: [Docs](http://mermaid.js.org/intro/), [Editor](https://mermaid.live/)
 
 ## Package Collections
 
-Not working at the moment! The Generator does not build, will try again in the future.
+Not working at the moment (2026-05)! The Generator does not build, will try again in the future.
 
 `packages.json` is prepared.
 
