@@ -1,8 +1,8 @@
 # SNAP - SN App Packages
 
-SNAP is a set of packages I use to build iOS Apps. They contain shared code, generic implementations of common features, and a template to kickstart a new project.
+SNAP is a set of Swift packages I use to build iOS apps. This repository is the overview for the suite; the packages live in their own repositories.
 
-Disclaimer: Most packages are focussed on my own needs. They are public for you to get inspired, learn and tell me what I am doing wrong (srsly, pls tell me!).
+The packages contain shared code, reusable implementations of common app features, and a template for starting a new app. They are public for reference and feedback, but they are mainly shaped around my own projects.
 
 
 ## Highlights
@@ -18,7 +18,7 @@ To explore SNAP, use the Demo project in [snap-template](https://github.com/simo
 
 You need rules to break them, so I made up some of my own: [conventions](./conventions.md).
 
-Packages are setup as described in [package-template.md](./package-template.md).
+Packages are set up as described in [package-template.md](./package-template.md).
 
 
 ## Package Dependencies
@@ -66,40 +66,42 @@ Mermaid: [Docs](http://mermaid.js.org/intro/), [Editor](https://mermaid.live/)
 ## Packages
 
 ### snap-foundation
-The [snap-foundation](https://github.com/simonnickel/snap-foundation) package contains basic general purpose extensions of Swift and Foundation.
+
+[snap-foundation](https://github.com/simonnickel/snap-foundation) contains basic extensions for Swift and Foundation.
 
 
 ### snap-core
-The [snap-core](https://github.com/simonnickel/snap-core) package contains common extensions for Swift and SwiftUI types, useful helper implementations, convenience definitions and workarounds.
+
+[snap-core](https://github.com/simonnickel/snap-core) contains Swift, SwiftUI and UIKit extensions, helper implementations, convenience definitions and workarounds.
 
 
 ### snap-style
 
-The [snap-style](https://github.com/simonnickel/snap-style) package provides a toolset to abstract Colors, Fonts, Icons and Numbers of a multi-platform SwiftUI app. Define semantic attributes in a Theme and apply them to your views for a consistent UI with maintainability in mind.
+[snap-style](https://github.com/simonnickel/snap-style) abstracts colors, fonts, icons and numbers for multi-platform SwiftUI apps. Define semantic attributes in a theme and apply them in views.
 
 
 ### snap-settings-service
 
-The [snap-settings-service](https://github.com/simonnickel/snap-settings-service) is a simple wrapper to handle different types of settings. It stores a `Codable` type for a `String` key, either locally (UserDefaults), synced (NSUbiquitousKeyValueStore) or in a custom store.
+[snap-settings-service](https://github.com/simonnickel/snap-settings-service) stores `Codable` values for `String` keys in `UserDefaults`, `NSUbiquitousKeyValueStore`, or a custom store.
 
 
 ### snap-navigation
 
-The [snap-navigation](https://github.com/simonnickel/snap-navigation) package defines the apps screens and navigation structure. The SnapNavigationView displays and manages the screens in a TabView. 
+[snap-navigation](https://github.com/simonnickel/snap-navigation) defines SwiftUI navigation structure separately from presentation. It supports selectable destinations, stack pushes, modal presentation, deeplinks and multiple presentation styles.
 
 
 ### snap-dependencies
 
-The [snap-dependencies](https://github.com/simonnickel/snap-dependencies) package provides a simple dependency injection container.
+[snap-dependencies](https://github.com/simonnickel/snap-dependencies) provides a dependency injection container based on `Dependencies` key paths and a `@Dependency` property wrapper.
 
 
 ### snap-swift-data
 
-The [snap-swift-data](https://github.com/simonnickel/snap-swift-data) package extends SwiftData to better interoperate with CoreData and Persistent History Tracking.
+[snap-swift-data](https://github.com/simonnickel/snap-swift-data) improves interoperability between SwiftData, CoreData objects, and Persistent History Tracking.
 
 ### snap-template
 
-The [snap-template](https://github.com/simonnickel/snap-template) package contains shared code and Demo Xcode project to setup and use SNAP in an App. The demo app comes with structure, navigation and infrastructure prepared, to quickly setup a new app using the SNAP packages.
+[snap-template](https://github.com/simonnickel/snap-template) contains shared code and a demo Xcode project for using SNAP in an iOS app. The demo includes prepared app structure, navigation and infrastructure.
 
 
 ## History
