@@ -38,6 +38,7 @@ Goal: a README that is **correct, precise, complete, and as short as possible** 
 - Every non-obvious limitation that would surprise a new user.
 - Every design choice that explains *why* a feature behaves the way it does (locking strategy, lifetime model, error policy, isolation guarantees, lifecycle/scoping rules, etc.).
 - The smallest example needed to use each feature.
+- Platform / OS / language version / package dependencies requirements stated in the README body (not only in badges).
 
 **Brevity** — as short as possible while keeping all of the above:
 - Prefer bullets over prose where it shortens without losing nuance.
