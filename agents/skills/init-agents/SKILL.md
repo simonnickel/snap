@@ -10,13 +10,13 @@ Goal: a file that gives an AI agent a complete, non-redundant picture of this sp
 ## Process
 
 1. **Find the shared AGENTS.md** — look for a shared agents file in parent directories (e.g. `../snap/agents/AGENTS.md` or similar). Read it and any files it imports (`@path` references) to understand what is already covered.
-2. **Read the existing local AGENTS.md** if present. Note its `@import` line if any.
+2. **Read the existing local AGENTS.md** if present. Note its `@import` line if any. If the file has real content beyond the `@import` line, treat it as the baseline — note what's already there so you don't propose removing valid content or re-adding what's already covered.
 3. **Analyse the codebase:**
    - `Package.swift` — targets, products, dependencies, platforms, Swift version
    - `Sources/` directory structure — how targets are organised, layering, naming patterns
    - Key source files to understand: main types, protocols, patterns, relationships between types
    - Any `README.md` for high-level intent
-4. **Propose** the new local `AGENTS.md` content. Do not write the file until confirmed.
+4. **Propose** the changes. Do not write the file until confirmed. If creating from scratch, show the full content. If updating an existing file, show only the changes (additions, removals, edits) with a brief reason for each.
 5. **Apply** after confirmation.
 
 ## Structure of the local AGENTS.md
@@ -39,7 +39,7 @@ The `@import` line must be the first line. Sections follow only for topics not c
 Include only information that:
 - Is specific to this package (not generic Swift/SPM/SwiftUI knowledge)
 - Is non-obvious and requires reading multiple files to understand
-- An agent would need to make correct decisions without re-exploring the codebase
+- An agent would make a concrete mistake without it — not just "saves re-reading", but actively leads to wrong decisions
 
 Typical useful sections:
 - **Target structure** — if there are multiple targets with a non-obvious layering or dependency order
@@ -55,6 +55,8 @@ Typical useful sections:
 - File listings or directory trees that can be trivially discovered
 - Obvious instructions ("write tests", "handle errors")
 - Trailing sentences that restate the obvious ("follow this pattern for new X")
+- SPM dependencies and platform versions (derivable from Package.swift)
+- For grab-bag utility packages with no shared architecture, skip individual type docs entirely — only flag things that look wrong but are intentional (e.g. bug workarounds)
 
 ## Constraints
 
