@@ -57,6 +57,7 @@ Typical useful sections:
 - Trailing sentences that restate the obvious ("follow this pattern for new X")
 - SPM dependencies and platform versions (derivable from Package.swift)
 - For grab-bag utility packages with no shared architecture, skip individual type docs entirely — only flag things that look wrong but are intentional (e.g. bug workarounds)
+- Architecture details already explained in source doc comments.
 
 ## Constraints
 
