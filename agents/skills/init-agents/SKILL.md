@@ -3,9 +3,7 @@ name: init-agents
 description: Create or update a local AGENTS.md for the current package. Imports a shared AGENTS.md and extends it with package-specific architecture and context. Use when setting up a new package or when the local AGENTS.md needs refreshing.
 ---
 
-Create or update the local `AGENTS.md` for this package.
-
-Goal: a file that gives an AI agent a complete, non-redundant picture of this specific package — as short as possible while covering everything non-obvious.
+Goal: a file that gives an AI agent a complete, non-redundant picture of this specific package — as short as possible. Include only content where an agent would make a concrete mistake without it, not just "saves re-reading."
 
 ## Process
 
@@ -32,36 +30,24 @@ One or two sentences: what this package does and its core mechanism.
 ...
 ```
 
-The `@import` line must be the first line. Sections follow only for topics not covered by the shared file.
+The `@import` line must be the first line.
 
-## What to include
-
-Include only information that:
-- Is specific to this package (not generic Swift/SPM/SwiftUI knowledge)
-- Is non-obvious and requires reading multiple files to understand
-- An agent would make a concrete mistake without it — not just "saves re-reading", but actively leads to wrong decisions
-
-Typical useful sections:
+Typical sections to consider:
 - **Target structure** — if there are multiple targets with a non-obvious layering or dependency order
-- **Core types** — the key types, what they own, how they relate; skip types whose purpose is obvious from their name
+- **Key types** — only types whose role requires reading multiple files to understand, or where two related types are easily confused
 - **Key patterns** — recurring design patterns specific to this codebase (e.g. value resolution strategy, modifier chains)
 - **Testing** — only if there are non-standard helpers or conventions beyond what the shared file covers
 
 ## What to exclude
 
 - Anything already covered by the shared AGENTS.md or its imports
-- Standard SPM commands (`swift build`, `swift test`) — obvious to any Swift developer
-- Generic SwiftUI or Swift patterns not specific to this package
-- File listings or directory trees that can be trivially discovered
-- Obvious instructions ("write tests", "handle errors")
-- Trailing sentences that restate the obvious ("follow this pattern for new X")
-- SPM dependencies and platform versions (derivable from Package.swift)
+- Anything discoverable by inspection: content in a single source file, file listings, directory trees, doc comments
+  - Exception: a one-liner distinguishing two easily-confused related types (e.g. a static descriptor vs its live runtime counterpart)
+- Generic Swift, SwiftUI or SPM knowledge — commands, patterns, dependencies, platform versions
+- Obvious instructions ("write tests", "handle errors") or trailing sentences that restate the obvious ("follow this pattern for new X")
 - For grab-bag utility packages with no shared architecture, skip individual type docs entirely — only flag things that look wrong but are intentional (e.g. bug workarounds)
-- Architecture details already explained in source doc comments.
-- Individual type descriptions where the type's role and behavior are fully visible in a single source file — the agent will read it. Exception: a one-liner distinguishing two easily-confused related types (e.g. a static descriptor vs its live runtime counterpart).
 
 ## Constraints
 
-- Propose before writing. Show the full proposed content as a code block.
 - If something belongs in the shared AGENTS.md rather than the local one, propose extending the shared file instead.
 - Keep it tight — one clear sentence beats a clear paragraph.
