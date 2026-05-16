@@ -21,9 +21,9 @@ Review this conversation for anything worth persisting — corrections, validate
    - Existing memory entries
 
 3. **Propose changes** — for each finding, identify where it belongs:
-   - **Memory** — user preferences or project context specific to this repo
+   - **Memory** — user preferences or project context specific to this machine; not shared across machines, so avoid it for suite-wide conventions
    - **Local AGENTS.md** — package-specific architecture or conventions
-   - **Shared AGENTS.md** — conventions that apply across all packages in the suite
+   - **Shared AGENTS.md** — conventions that apply across all packages in the suite and all machines
    - **A skill** — a reusable process that would benefit future sessions
 
 4. **Apply** after confirmation.
