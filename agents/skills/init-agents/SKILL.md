@@ -58,6 +58,7 @@ Typical useful sections:
 - SPM dependencies and platform versions (derivable from Package.swift)
 - For grab-bag utility packages with no shared architecture, skip individual type docs entirely — only flag things that look wrong but are intentional (e.g. bug workarounds)
 - Architecture details already explained in source doc comments.
+- Individual type descriptions where the type's role and behavior are fully visible in a single source file — the agent will read it. Exception: a one-liner distinguishing two easily-confused related types (e.g. a static descriptor vs its live runtime counterpart).
 
 ## Constraints
 
