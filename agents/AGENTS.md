@@ -50,3 +50,7 @@ Don't use the Oxford comma.
 - Swift 6 / strict concurrency. All changes must compile without warnings.
 - Prefer `actor`, `@MainActor` or `OSAllocatedUnfairLock` for concurrency. Avoid `@unchecked Sendable` unless internal synchronization is in place and documented on the type.
 - Tests use Swift Testing (`@Test`, `@Suite`), not XCTest.
+
+## Agent Setup
+
+Each package has a local `AGENTS.md` that imports this file via `@path` and extends it with package-specific context. Use the `init-agents` skill to create or update it.
