@@ -1,6 +1,6 @@
 ---
-name: init-agents
-description: Create or update a local AGENTS.md for the current package. Imports a shared AGENTS.md and extends it with package-specific architecture and context. Use when setting up a new package or when the local AGENTS.md needs refreshing.
+name: agents-md
+description: Create, update, or improve the local AGENTS.md for the current package. Use when setting up a new package, after significant code changes, or when new process knowledge should be captured. Imports a shared AGENTS.md and extends it with package-specific context.
 ---
 
 Goal: a file that gives an AI agent a complete, non-redundant picture of this specific package — as short as possible. Include only content where an agent would make a concrete mistake without it, not just "saves re-reading."
@@ -51,3 +51,4 @@ Typical sections to consider:
 
 - If something belongs in the shared AGENTS.md rather than the local one, propose extending the shared file instead.
 - Keep it tight — one clear sentence beats a clear paragraph.
+- When process knowledge is captured that should improve these guidelines, update this skill's source file and run the sync script.
