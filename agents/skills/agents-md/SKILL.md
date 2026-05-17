@@ -45,7 +45,7 @@ Typical sections to consider:
   - Exception: a one-liner distinguishing two easily-confused related types (e.g. a static descriptor vs its live runtime counterpart)
 - Generic Swift, SwiftUI or SPM knowledge — commands, patterns, dependencies, platform versions
 - Obvious instructions ("write tests", "handle errors") or trailing sentences that restate the obvious ("follow this pattern for new X")
-- For packages of independent utilities with no shared architecture, skip individual type docs entirely — only flag things that look wrong but are intentional (e.g. bug workarounds)
+- For packages of independent utilities with no shared architecture, skip individual type docs entirely. If something looks wrong but is intentional, document it in the source comment. Only add it here if the source comment alone isn't enough — e.g. the pattern spans multiple files and a reader of any single one wouldn't understand the constraint.
 - Non-obvious details that would benefit a *consumer* of the package belong in source doc comments, not here — AGENTS.md is for agents working within this repo
 
 ## Constraints
