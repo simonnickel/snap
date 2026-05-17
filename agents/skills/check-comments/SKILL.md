@@ -5,6 +5,8 @@ description: Check all source comments in the package for typos, correctness, cl
 
 Audit every source comment in the package and fix issues.
 
+Goal: source comments that are correct, clear, brief and compliant with the project's comment policy.
+
 **Typos and spelling:** fix all immediately without asking, then report the changes made.
 **All other issues:** collect every finding first, then present as a numbered list. The user decides per item before any edit is applied.
 
@@ -24,8 +26,6 @@ Skip:
 Fix all spelling errors across all files without asking. Report each change as: file path, line, old → new.
 
 ## Phase 3: Collect content issues
-
-**Complete this phase in full before presenting anything.**
 
 Check every comment against each category:
 
@@ -54,3 +54,9 @@ Show all issues as a numbered list. For each item include: file path + line, the
 Wait for the user to decide which items to accept. Apply only the accepted ones.
 
 When done, suggest running `/reflect` to capture any process improvements from the session.
+
+## Constraints
+
+- Complete Phase 3 in full before presenting anything.
+- Apply only the content changes the user accepts.
+- Do not modify source code for any reason other than comments.

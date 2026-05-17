@@ -1,5 +1,5 @@
 ---
-name: agents-md
+name: check-agents-md
 description: Create, update, or improve the local AGENTS.md for the current package. Use when setting up a new package, after significant code changes, or when new process knowledge should be captured. Imports a shared AGENTS.md and extends it with package-specific context.
 ---
 
@@ -53,3 +53,5 @@ Typical sections to consider:
 - If something belongs in the shared AGENTS.md rather than the local one, propose extending the shared file instead.
 - Keep it tight — one clear sentence beats a clear paragraph.
 - When process knowledge is captured that should improve these guidelines, update this skill's source file and run the sync script.
+
+When done, suggest running `/reflect` to capture any process improvements from the session.

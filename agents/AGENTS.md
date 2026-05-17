@@ -56,6 +56,6 @@ Don't use the Oxford comma.
 
 ## Agent Setup
 
-Each package has a local `AGENTS.md` that imports this file via `@path` and extends it with package-specific context. Use the `init-agents` skill to create or update it.
+Each package has a local `AGENTS.md` that imports this file via `@path` and extends it with package-specific context. Use the `check-agents-md` skill to create or update it.
 
 Skills live in `snap/agents/skills/` — that is the source of truth. After editing a skill, run `snap/agents/sync-skills.sh` to propagate changes to all destinations.

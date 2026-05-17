@@ -53,8 +53,4 @@ Goal: a README that is **correct, precise, complete, and as short as possible** 
 - Keep tone consistent with the existing README.
 - Do not introduce a "we" voice or first-person perspective unless already used.
 
-## Output
-
-1. A short, categorised summary of issues found.
-2. The edits applied to the README.
-3. A build confirmation, or — if the edit revealed real drift between README and code — a list of the drift for the user to decide on.
+When done, suggest running `/reflect` to capture any process improvements from the session.
