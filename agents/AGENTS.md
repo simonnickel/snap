@@ -36,6 +36,9 @@ Write a comment when it helps understand design, usage or intent. That can inclu
 Don't write comments that:
 - Describe what the code does (naming should do that)
 - Reference the task, fix or PR that introduced them
+- Make specific claims about the current structure of a type, such as the number of cases or variants — they become wrong as it evolves
+
+Don't remove existing TODO/FIXME comments unless explicitly asked to.
 
 Don't use the Oxford comma.
 

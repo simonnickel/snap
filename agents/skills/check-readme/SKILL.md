@@ -34,7 +34,7 @@ Goal: a README that is **correct, precise, complete, and as short as possible** 
 **Ambiguity** — any sentence with two reasonable readings is rewritten so only one is possible.
 
 **Completeness** — the README lists, at minimum:
-- Every public feature.
+- Every public feature. Exception: for packages of independent utilities with no shared architecture, prefer generic section summaries over listing every public type — feature discoverability is left to DocC.
 - Every non-obvious limitation that would surprise a new user.
 - Every design choice that explains *why* a feature behaves the way it does (locking strategy, lifetime model, error policy, isolation guarantees, lifecycle/scoping rules, etc.).
 - The smallest example needed to use each feature.
