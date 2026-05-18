@@ -7,7 +7,7 @@ description: Create, update, or improve the local AGENTS.md for the current pack
 
 ## Phase 1: Gather context
 
-- Locate the shared AGENTS.md. It should already be in context via the local file's import. If it isn't, tell the user before continuing.
+- Locate the shared AGENTS.md. It should already be in context via the local file's import. If it isn't, tell the user before continuing. The shared AGENTS.md is used as a deduplication reference only — it is not audited as part of this check. To audit it, run this skill from its home package.
 - Read the existing local AGENTS.md if present. Note its `@import` line if any. If the file has real content beyond the `@import` line, treat it as the baseline. Note what's already there so you don't propose removing valid content or re-adding what's already covered.
 
 ## Phase 2: Analyse the codebase
@@ -47,10 +47,10 @@ Typical sections to consider:
 - Anything already covered by the shared AGENTS.md or its imports
 - Anything discoverable by inspection: content in a single source file, file listings, directory trees, doc comments
   - Exception: a one-liner distinguishing two easily-confused related types (e.g. a static descriptor vs its live runtime counterpart)
-- Generic Swift, SwiftUI or SPM knowledge — commands, patterns, dependencies, platform versions
+- Generic Swift, SwiftUI or SPM knowledge (e.g. commands, patterns, dependencies, platform versions)
 - Obvious instructions ("write tests", "handle errors") or trailing sentences that restate the obvious ("follow this pattern for new X")
 - For packages of independent utilities with no shared architecture, skip individual type docs entirely. If something looks wrong but is intentional, document it in the source comment. Only add it here if the source comment alone isn't enough, e.g. the pattern spans multiple files and a reader of any single one wouldn't understand the constraint.
-- Non-obvious details that would benefit a *consumer* of the package belong in source doc comments, not here — AGENTS.md is for agents working within this repo
+- **This file is for agents working on the package internals, not its consumers.** If a detail only matters to someone integrating the package, put it in doc comments instead.
 
 ## Phase 4: Apply
 

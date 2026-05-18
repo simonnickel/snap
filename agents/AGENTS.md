@@ -10,7 +10,7 @@
 
 ## Scope
 
-These are Swift library packages intended for arbitrary consumption — any app or package, unknown at the time of writing. Design decisions must hold up across a wide range of usage contexts.
+These are Swift library packages intended for arbitrary consumption (any app or package, unknown at the time of writing). Design decisions must hold up across a wide range of usage contexts.
 
 - Unreleased. Changing public API is fine.
 - The demo exists to verify integration, not to drive design. Never constrain or shape the API around how the demo uses it.
@@ -43,8 +43,9 @@ Don't remove existing TODO/FIXME comments unless explicitly asked to.
 ## Writing style
 
 These rules apply to all text written into project files: comments, AGENTS.md entries, README edits, doc comment proposals.
+- Avoid semicolons and dashes mid-sentence. Use a new sentence, conjunction, colon, comma, parentheses or rewording instead.
+- In a list, prefer splitting into two bullets over joining two items with punctuation.
 - No Oxford comma.
-- Avoid semicolons and dashes mid-sentence. Use a new sentence, conjunction, colon, comma or parentheses instead.
 
 ## Communication
 

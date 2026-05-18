@@ -15,4 +15,4 @@ Complete each skill fully before starting the next.
 
 ## Constraints
 
-- When running sub-skills, skip their suggestions to run `/reflect` — it runs as the final step.
+- When running sub-skills, skip their suggestions to run `/reflect` because it runs as the final step.

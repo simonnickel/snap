@@ -1,13 +1,13 @@
 ---
 name: check-readme
-description: Review and improve the README of the current project. Use when the user asks to check, audit, verify, or update a README — especially when correctness against the public API matters.
+description: Review and improve the README of the current project. Use when the user asks to check, audit, verify or update a README, especially when correctness against the public API matters.
 ---
 
 Review and improve the README of the current project.
 
 **Goal:** a README that is **correct, precise, complete and brief** (in that order).
 
-## Process
+## Phase 1: Gather context
 
 1. **Read the README** end to end.
 2. **Read the public API** to ground every claim against real code:
@@ -17,17 +17,18 @@ Review and improve the README of the current project.
    - Do type and method names match the current code?
    - Do the samples follow the patterns recommended in doc comments?
 4. **Verify all internal links and paths** resolve (demo folders, screenshots, anchor links).
-5. **Summarise issues found** before editing, grouped by category (correctness / spelling / ambiguity / completeness / brevity). Do not start editing until the summary is shown.
-6. **Apply edits** to the README only. Do not modify source code unless the user explicitly asks.
-7. **Build the project** after edits to confirm any in-README code that mirrors real types still compiles, if a build tool is available.
 
-## Categories to check
+## Phase 2: Analyse
+
+Check every claim against each category:
 
 **Correctness** — every claim matches the code:
 - Public API names, signatures and observable behavior.
-- Error handling: which paths trap, which recover; isolation and concurrency guarantees.
+- Error handling: which paths trap, which recover.
+- Isolation and concurrency guarantees.
 - Platform / OS / language version requirements.
-- Test and preview affordances; when overrides or resets are allowed.
+- Test and preview affordances.
+- When overrides or resets are allowed.
 
 **Spelling and grammar** — prefer US spelling.
 
@@ -46,12 +47,20 @@ Review and improve the README of the current project.
 - Combine examples that demonstrate the same idea.
 - No marketing voice; no emojis unless already used.
 
+## Phase 3: Present
+
+Summarise issues found before editing, grouped by category (correctness / spelling / ambiguity / completeness / brevity). Do not start editing until the summary is shown.
+
+## Phase 4: Apply
+
+Apply edits to the README only. Do not modify source code unless the user explicitly asks.
+
 ## Constraints
 
 - Do not invent features. If a behavior is unclear from code, ask before documenting.
 - Do not remove badges, links, or licensing references unless they're broken or outdated.
 - Keep tone consistent with the existing README.
 - Do not introduce a "we" voice or first-person perspective unless already used.
-- Do not remove TODO/FIXME items — preserve them as in source code unless explicitly asked to remove.
+- Do not remove TODO/FIXME items. Preserve them as in source code unless explicitly asked to remove.
 
 When done, suggest running `/reflect` to capture any process improvements from the session.

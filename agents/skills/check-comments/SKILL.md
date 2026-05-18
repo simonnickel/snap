@@ -45,7 +45,7 @@ Check every comment against each category:
 - Flag violations of the project's comment policy
 
 **Missing doc comments**
-- Public declarations with no doc comment whose purpose is not obvious from the name alone — draft the proposed doc comment text as the proposal
+- Flag public declarations whose purpose isn't obvious from the name and propose a doc comment.
 
 ## Phase 4: Present and apply
 
