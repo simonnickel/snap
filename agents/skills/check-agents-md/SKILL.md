@@ -7,7 +7,7 @@ Goal: a file that gives an AI agent a complete, non-redundant picture of this sp
 
 ## Process
 
-1. **Find the shared AGENTS.md** — look for a shared agents file in parent directories (e.g. `../snap/agents/AGENTS.md` or similar). Read it and any files it imports (`@path` references) to understand what is already covered.
+1. **Locate the shared AGENTS.md** — it should already be in context via the local file's import. If it isn't, tell the user before continuing.
 2. **Read the existing local AGENTS.md** if present. Note its `@import` line if any. If the file has real content beyond the `@import` line, treat it as the baseline — note what's already there so you don't propose removing valid content or re-adding what's already covered.
 3. **Analyse the codebase:**
    - `Package.swift` — targets, products, dependencies, platforms, Swift version
