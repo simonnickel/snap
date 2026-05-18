@@ -1,5 +1,5 @@
 ---
-name: check-skills
+name: snap-check-skills
 description: Audit all skill files for quality and consistency. Checks each skill against project conventions and checks across all skills for gaps, redundancies, conflicts, ambiguities, scope issues, stale references and naming discrepancies.
 ---
 
