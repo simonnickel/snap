@@ -40,7 +40,7 @@ Don't write comments that:
 
 Don't remove existing TODO/FIXME comments unless explicitly asked to.
 
-Don't use the Oxford comma.
+Don't use the Oxford comma. Prefer a new sentence over a semicolon or dash mid-sentence.
 
 ## Communication
 
