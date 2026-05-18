@@ -38,7 +38,7 @@ Check every comment against each category:
 - Phrasing that has two reasonable readings
 
 **Brevity**
-- Comment restates what the declaration name already conveys
+- Comment adds nothing beyond what the declaration name and surrounding call site already communicate
 - Explanation longer than necessary for the idea it carries
 
 **Policy compliance**
