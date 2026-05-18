@@ -58,4 +58,6 @@ Don't use the Oxford comma. Prefer a new sentence over a semicolon or dash mid-s
 
 Each package has a local `AGENTS.md` that imports this file via `@path` and extends it with package-specific context. Use the `check-agents-md` skill to create or update it.
 
+If files or context you expect to be auto-imported are missing, tell the user before proceeding.
+
 Skills live in `snap/agents/skills/` — that is the source of truth. After editing a skill, run `snap/agents/sync-skills.sh` to propagate changes to all destinations.
