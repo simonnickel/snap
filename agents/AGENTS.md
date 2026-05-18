@@ -40,7 +40,11 @@ Don't write comments that:
 
 Don't remove existing TODO/FIXME comments unless explicitly asked to.
 
-Don't use the Oxford comma. Prefer a new sentence over a semicolon or dash mid-sentence.
+## Writing style
+
+These rules apply to all text written into project files: comments, AGENTS.md entries, README edits, doc comment proposals.
+- No Oxford comma.
+- Prefer a new sentence over a semicolon or dash mid-sentence.
 
 ## Communication
 
