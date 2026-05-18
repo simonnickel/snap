@@ -52,5 +52,6 @@ Goal: a README that is **correct, precise, complete, and as short as possible** 
 - Do not remove badges, links, or licensing references unless they're broken or outdated.
 - Keep tone consistent with the existing README.
 - Do not introduce a "we" voice or first-person perspective unless already used.
+- Do not remove TODO/FIXME items — preserve them as in source code unless explicitly asked to remove.
 
 When done, suggest running `/reflect` to capture any process improvements from the session.
