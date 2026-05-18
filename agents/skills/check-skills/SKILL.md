@@ -45,7 +45,7 @@ Apply each category both within individual skills and across all skills as a set
 
 **Scope issues** — a skill doing too much, or doing things that belong to another skill
 
-**Stale references** — references to skills, paths or files that don't exist or have been renamed
+**Stale references** — references to skills, paths or files that don't exist or have been renamed. Verify a path or skill actually exists before flagging it.
 
 **Naming discrepancies** — the same concept referred to by different terms, or inconsistent section names, phase structures or tone
 
@@ -67,3 +67,5 @@ Apply only the items the user accepts. After applying, remind the user to run `s
 
 - Do not change the intent or scope of a skill without explicit instruction.
 - When a cross-skill finding could be fixed in multiple ways, propose the simplest one.
+
+When done, suggest running `/reflect` to capture any process improvements from the session.

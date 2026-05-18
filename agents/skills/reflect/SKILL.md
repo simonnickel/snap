@@ -3,7 +3,7 @@ name: reflect
 description: Review the current conversation for learnings that should improve existing skills, AGENTS.md files, or memory. Use at the end of a session to capture non-obvious findings before they're lost.
 ---
 
-Review this conversation for anything worth persisting — corrections, validated approaches, new conventions, or structural gaps in the agent setup.
+**Goal:** review this conversation for anything worth persisting — corrections, validated approaches, new conventions, or structural gaps in the agent setup.
 
 ## Process
 

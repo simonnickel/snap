@@ -5,7 +5,7 @@ description: Check all source comments in the package for typos, correctness, cl
 
 Audit every source comment in the package and fix issues.
 
-Goal: source comments that are correct, clear, brief and compliant with the project's comment policy.
+**Goal:** source comments that are correct, clear, brief and compliant with the project's comment policy.
 
 **Typos and spelling:** fix all immediately without asking, then report the changes made.
 **All other issues:** collect every finding first, then present as a numbered list. The user decides per item before any edit is applied.
@@ -15,7 +15,7 @@ Goal: source comments that are correct, clear, brief and compliant with the proj
 Collect every comment from `Sources/`:
 - Doc comments (`///`) on any declaration
 - Inline comments (`//`) in function bodies
-- `// MARK:` and other structural markers — check for typos only, not content
+- `// MARK:` and other structural markers: check for typos only, not content
 
 Skip:
 - File header boilerplate (the standard project/author block at the top of each file)
@@ -32,7 +32,7 @@ Check every comment against each category:
 **Correctness**
 - Parameter names or labels in a doc comment don't match the actual signature
 - Return description doesn't match the actual return type or behaviour
-- Vague or unsupported claims ("for some reason", "somehow", "always") — propose a precise replacement or flag for removal
+- Vague or unsupported claims ("for some reason", "somehow", "always"): propose a precise replacement or flag for removal.
 
 **Clarity**
 - Phrasing that has two reasonable readings

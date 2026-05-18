@@ -5,7 +5,7 @@ description: Review and improve the README of the current project. Use when the 
 
 Review and improve the README of the current project.
 
-Goal: a README that is **correct, precise, complete, and as short as possible** — in that order. Cut words, not information.
+**Goal:** a README that is **correct, precise, complete and brief** (in that order).
 
 ## Process
 
@@ -24,17 +24,17 @@ Goal: a README that is **correct, precise, complete, and as short as possible** 
 ## Categories to check
 
 **Correctness** — every claim matches the code:
-- Public API names, signatures, and observable behavior.
+- Public API names, signatures and observable behavior.
 - Error handling: which paths trap, which recover; isolation and concurrency guarantees.
 - Platform / OS / language version requirements.
 - Test and preview affordances; when overrides or resets are allowed.
 
-**Spelling and grammar** — preserve the existing dialect (UK / US) if consistent; flag inconsistencies.
+**Spelling and grammar** — prefer US spelling.
 
 **Ambiguity** — any sentence with two reasonable readings is rewritten so only one is possible.
 
 **Completeness** — the README lists, at minimum:
-- Every public feature. Exception: for packages of independent utilities with no shared architecture, prefer generic section summaries over listing every public type — feature discoverability is left to DocC.
+- Every public feature. Exception: for packages of independent utilities with no shared architecture, prefer generic section summaries over listing every public type. Feature discoverability is left to the API documentation.
 - Every non-obvious limitation that would surprise a new user.
 - Every design choice that explains *why* a feature behaves the way it does (locking strategy, lifetime model, error policy, isolation guarantees, lifecycle/scoping rules, etc.).
 - The smallest example needed to use each feature.

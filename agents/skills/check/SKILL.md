@@ -1,6 +1,6 @@
 ---
 name: check
-description: Full audit of the current package — comments, README, AGENTS.md and skills. Runs check-comments, check-readme, check-agents-md, check-skills and reflect in sequence.
+description: Full audit of the current package: comments, README, AGENTS.md and skills. Runs check-comments, check-readme, check-agents-md, check-skills and reflect in sequence.
 ---
 
 Run the following skills in order:
@@ -12,3 +12,7 @@ Run the following skills in order:
 5. `/reflect` — capture any process improvements from the session
 
 Complete each skill fully before starting the next.
+
+## Constraints
+
+- When running sub-skills, skip their suggestions to run `/reflect` — it runs as the final step.

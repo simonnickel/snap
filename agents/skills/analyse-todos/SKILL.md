@@ -67,3 +67,5 @@ Apply only the items the user accepts. For source TODOs, insert the comment imme
 ## Constraints
 
 - Do not fix anything. Only record findings as TODOs.
+
+When done, suggest running `/reflect` to capture any process improvements from the session.
