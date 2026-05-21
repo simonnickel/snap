@@ -6,12 +6,12 @@ Every ViewModifier should have an inert variant — a neutral value that preserv
 
 ## View Naming
 
-**<xyz>Scene** —
+**<xyz>Flow** —
 A structurally independent section of the app.
 Usually owns a NavigationStack to show a series of Screens.
 
 **<xyz>Screen** —
-An arrangement of views filling the screen, displayed within a `Scene`. Owns the overall layout, manages data flow to its elements and coordinates interactions between them.
+An arrangement of views filling the screen, displayed within a `Flow`. Owns the overall layout, manages data flow to its elements and coordinates interactions between them.
 
 **<xyz>Component** —
 A reusable view that presents or interacts with business logic: calling services, handling actions or managing state.
@@ -29,7 +29,7 @@ A generic view wrapping another view, typically via a ViewBuilder parameter.
 ## View Data
 
 **<xyz>State** —
-A struct that represents a snapshot of changeable state for a Scene or Screen.
+A struct that represents a snapshot of changeable state for a Flow or Screen.
 
 **<xyz>Data** —
 A struct that represents some content to be displayed by a Screen or View. (I prefer Data over Model or ViewModel.)
