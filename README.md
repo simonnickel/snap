@@ -14,7 +14,7 @@ The packages contain shared code, reusable implementations of common app feature
 
 ## Guides
 
-You need rules to break them, so I made up some of my own: [conventions](./conventions.md).
+You need rules to break them, so I made up some of my own: [conventions](./conventions/conventions.md).
 
 Packages are set up as described in [package-template.md](./package-template.md).
 

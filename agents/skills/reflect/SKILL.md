@@ -15,7 +15,7 @@ description: Review the current conversation for learnings that should improve e
 
 2. **Check existing files** to avoid redundancy:
    - Shared AGENTS.md and its imports
-   - `../snap/conventions.md`
+   - `../snap/conventions/conventions.md`
    - Local AGENTS.md
    - Relevant skills in `../snap/agents/skills/`
    - Existing memory entries
