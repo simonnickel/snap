@@ -20,7 +20,7 @@ These are Swift library packages intended for arbitrary consumption (any app or 
 ## Code Changes
 
 - Match the scope of changes to what was asked. A bug fix doesn't need surrounding cleanup.
-- Don't speculate beyond the task — the API should be general (see Scope) but implementations should be minimal.
+- Don't speculate beyond the task. The API should be general (see Scope) but implementations should be minimal.
 - Don't add error handling or fallbacks beyond what the task requires.
 - Default to writing no comments. See the Comments section for when and how.
 

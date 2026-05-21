@@ -49,12 +49,16 @@ Use Xcode default formatting with `control + m`.
 
 
 ## Service layer types
-While most of them are basically the same, sometimes nuances make sense to better communicate expections.
+While most of them are basically the same, sometimes nuances make sense to better communicate expectations.
 
-**<xyz>Service** - Provides _stateless_ functionality to be accessed when needed.
+**<xyz>Service**
+Provides _stateless_ functionality to be accessed when needed.
 
-**<xyz>Manager** - Takes care of a more complex and _statefull_ topic, needs to be setup and kept alive.
+**<xyz>Manager**
+Takes care of a more complex and _stateful_ topic, needs to be setup and kept alive.
 
-**<xyz>DataSource** - Source of information to read and write.
+**<xyz>DataSource**
+Source of information to read and write.
 
-**<xyz>Provider** - Read only source of information to be consumed.
+**<xyz>Provider**
+Read only source of information to be consumed.
