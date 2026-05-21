@@ -65,4 +65,4 @@ Each package has a local `AGENTS.md` that imports this file via `@path` and exte
 
 If files or context you expect to be auto-imported are missing, tell the user before proceeding.
 
-Skills live in `snap/agents/skills/`. After editing a skill, run `snap/agents/sync-skills.sh` to propagate changes to all destinations.
+Skills live in `snap/agents/skills/`. After editing a skill, run `snap/agents/sync-skills.sh` to propagate changes to all destinations. When renaming a skill, manually remove the old folder from each destination — the sync script copies but does not clean up stale entries.
