@@ -48,14 +48,6 @@ Use Xcode default formatting with `control + m`.
  - `idea`: A new feature might evolve here.
 
 
-## View related structs
-**<xyz>State** -
-A struct that represents a snapshot of changable state for a Scene or Screen.
-
-**<xyz>Data** -
-A struct that represents some content to be displayed by a Screen or View. (I prefer Data over Model or ViewModel.)
-
-
 ## Service layer types
 While most of them are basically the same, sometimes nuances make sense to better communicate expections.
 
