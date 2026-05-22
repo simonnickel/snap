@@ -22,7 +22,7 @@ Avoid redundancy by reading:
 - Skills in `../snap/agents/skills/` that overlap in scope with the proposed addition
 - Existing memory entries
 
-## Phase 3: Propose changes
+## Phase 3: Present findings
 
 For each finding, identify where it belongs:
 - **Memory** — user preferences or project context specific to this machine; not shared across machines, so avoid it for suite-wide conventions

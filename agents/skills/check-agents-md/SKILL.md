@@ -11,14 +11,14 @@ description: Create, update or improve the local AGENTS.md for the current packa
 - Read the existing local AGENTS.md if present. Note its `@import` line if any. If the file has real content beyond the `@import` line, treat it as the baseline. Note what's already there so you don't propose removing valid content or re-adding what's already covered.
 - Check if `CLAUDE.md` exists in the package root. It should contain `@AGENTS.md` as its only line. If it's missing or incorrect, include creating or fixing it in the proposal.
 
-## Phase 2: Analyse the codebase
+## Phase 2: Analyse
 
 - `Package.swift` — targets, products, dependencies, platforms, Swift version
 - `Sources/` directory structure — how targets are organised, layering, naming patterns
 - Key source files to understand: main types, protocols, patterns, relationships between types
 - Any `README.md` for high-level intent
 
-## Phase 3: Propose
+## Phase 3: Present proposal
 
 Do not write the file until confirmed. If creating from scratch, show the full content. If updating an existing file, show only the changes (additions, removals, edits) with a brief reason for each. Suggest going through them one by one.
 
