@@ -12,6 +12,15 @@ Run the following skills in order:
 
 Complete each skill fully before starting the next.
 
+## Synthesis
+
+After all sub-skills complete, before running reflect, cross-check the audited content for mutual consistency:
+- Descriptions of types, behavior or constraints that differ between source comments and the README
+- Conventions defined in AGENTS.md that source comments or the README violate or contradict
+- Claims in the README that contradict what source comments document
+
+Present any findings using the standard format defined in AGENTS.md.
+
 ## Constraints
 
 - When running sub-skills, skip their suggestions to run `/reflect` because it runs as the final step.
