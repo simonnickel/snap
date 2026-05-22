@@ -16,6 +16,7 @@ These are Swift library packages intended for arbitrary consumption (any app or 
 - The demo exists to verify integration, not to drive design. Never constrain or shape the API around how the demo uses it.
 - Public API should be intuitive and hard to misuse. Prefer designs that make wrong usage a compile error over ones that fail at runtime.
 - Avoid internal assumptions about the consumer's architecture, threading model or lifecycle.
+- Prefer designing for how an API could be used over how it currently is used.
 
 ## Code Changes
 
@@ -40,9 +41,9 @@ Don't write comments that:
 
 Don't remove existing TODO/FIXME comments unless explicitly asked to.
 
-## Writing style
+## Writing Style
 
-These rules apply to all text written into project files: comments, AGENTS.md entries, README edits, doc comment proposals.
+These rules apply to all written text: code comments, documentation, AGENTS.md, README, skills, ...
 - Avoid semicolons and dashes mid-sentence. Use a new sentence, conjunction, colon, comma, parentheses or rewording instead.
 - In a list, prefer splitting into two bullets over joining two items with punctuation.
 - No Oxford comma.
