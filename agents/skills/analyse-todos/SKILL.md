@@ -51,14 +51,7 @@ Complete the full analysis before presenting anything.
 
 ## Phase 3: Present findings
 
-Show all findings as a numbered list, sorted by priority (correctness and broken behaviour first, then architecture, API design, clarity, guideline compliance, existing TODO quality last). For each item:
-- **Category** — one of the categories above
-- **Location** — file path + line, or "README"
-- **Finding** — description of the problem
-- **Proposed text** — the exact `// TODO:` comment or README bullet to add, or the rewritten text for an existing TODO
-- **Placement** — Source, README, Both, or Rewrite (for existing TODOs)
-
-Do not apply any changes until the user has reviewed the list. Suggest going through them one by one.
+Present findings using the standard format defined in AGENTS.md.
 
 ## Phase 4: Apply
 

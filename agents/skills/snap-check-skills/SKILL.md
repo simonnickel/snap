@@ -29,7 +29,7 @@ Apply each category both within individual skills and across all skills as a set
 - Constraints section covers the non-obvious limits of the skill's scope
 - Skills that collect findings instruct the agent to complete the full analysis before presenting
 - Skills that modify files have an explicit "do not apply until confirmed" gate
-- Skills that present multiple findings suggest going through them one by one
+- Skills that present multiple findings reference the standard format defined in AGENTS.md
 
 **Clarity**
 - Goal is stated clearly
@@ -56,13 +56,7 @@ Apply each category both within individual skills and across all skills as a set
 
 ## Phase 3: Present findings
 
-Collect all findings before presenting anything. Show as a numbered list, grouped by skill for individual findings and as a separate group for cross-skill findings. For each item:
-- **Skill** — the skill file(s) affected
-- **Category** — one of the categories above
-- **Finding** — description of the issue
-- **Proposed change** — the exact edit to make
-
-Do not apply any changes until the user has reviewed the list. Suggest going through them one by one.
+Present findings using the standard format defined in AGENTS.md.
 
 ## Phase 4: Apply
 

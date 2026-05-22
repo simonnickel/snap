@@ -67,3 +67,11 @@ Each package has a local `AGENTS.md` that imports this file via `@path` and exte
 If files or context you expect to be auto-imported are missing, tell the user before proceeding.
 
 Skills live in `snap/agents/skills/`. After editing a skill, run `snap/agents/sync-skills.sh` to propagate changes to all destinations. When renaming a skill, manually remove the old folder from each destination — the sync script copies but does not clean up stale entries.
+
+## Skill Conventions
+
+Skills that present findings to the user follow this standard format:
+- Show findings as a numbered list. For each item include the file name and line, the finding and a proposed change shown as a diff.
+- Group and prioritise findings.
+- Do not apply any changes until the user has reviewed the list.
+- Suggest going through them one by one.

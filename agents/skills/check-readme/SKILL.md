@@ -47,9 +47,9 @@ Check every claim against each category:
 - Combine examples that demonstrate the same idea.
 - No marketing voice and no emojis unless already used.
 
-## Phase 3: Present
+## Phase 3: Present findings
 
-Summarise issues found before editing, grouped by category (correctness / spelling / ambiguity / completeness / brevity). Do not start editing until the summary is shown. Suggest going through them one by one.
+Present findings using the standard format defined in AGENTS.md.
 
 ## Phase 4: Apply
 

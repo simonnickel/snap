@@ -47,11 +47,9 @@ Check every comment against each category:
 **Missing doc comments**
 - Flag public declarations whose purpose isn't obvious from the name and propose a doc comment.
 
-## Phase 4: Present and apply
+## Phase 4: Present findings
 
-Show all issues as a numbered list. For each item include: file path + line, the current comment (or "missing" for absent doc comments), the category, and the proposed change.
-
-Suggest going through them one by one. Apply only the items the user accepts.
+Present findings using the standard format defined in AGENTS.md.
 
 When done, suggest running `/reflect` to capture any process improvements from the session.
 

@@ -49,13 +49,7 @@ Apply each category to the file and its imports. Complete the full analysis befo
 
 ## Phase 3: Present findings
 
-Show as a numbered list. For each item:
-- **File** — which file is affected
-- **Category** — one of the categories above
-- **Finding** — description of the issue
-- **Proposed change** — the exact edit to make
-
-Do not apply any changes until the user has reviewed the list. Suggest going through them one by one.
+Present findings using the standard format defined in AGENTS.md.
 
 ## Phase 4: Apply
 
