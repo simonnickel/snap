@@ -21,7 +21,8 @@ Apply each category both within individual skills and across all skills as a set
 - Claims about other skills are accurate and references use correct names (e.g. `/check-comments`)
 - AGENTS.md conventions are followed
 - Frontmatter `name` matches the folder name and `description` accurately reflects the skill's scope
-- Standalone skills end with the `/reflect` suggestion (composite skills that run reflect as a step omit it)
+- Standalone skills include a suggest-reflect line after the phases (composite skills that run reflect as a step omit it)
+- `## Constraints` is the last section
 - For composite skills, the frontmatter `description` lists the same sub-skills as the body's step list
 
 **Completeness**
@@ -58,14 +59,10 @@ Apply each category both within individual skills and across all skills as a set
 
 Present findings using the standard format defined in AGENTS.md.
 
-## Phase 4: Apply
-
-Apply only the items the user accepts. After applying, remind the user to run `sync-skills.sh` to propagate changes.
+When done, suggest running `/reflect` to capture any process improvements from the session.
 
 ## Constraints
 
 - Do not change the intent or scope of a skill without explicit instruction.
 - When a cross-skill finding could be fixed in multiple ways, propose the simplest one.
 - Do not propose adding check bullets that restate rules already in AGENTS.md.
-
-When done, suggest running `/reflect` to capture any process improvements from the session.

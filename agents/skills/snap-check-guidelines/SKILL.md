@@ -51,13 +51,9 @@ Apply each category to the file and its imports. Complete the full analysis befo
 
 Present findings using the standard format defined in AGENTS.md.
 
-## Phase 4: Apply
-
-Apply only the items the user accepts.
+When done, suggest running `/reflect` to capture any process improvements from the session.
 
 ## Constraints
 
 - Do not change the intent or scope of a rule without explicit instruction.
 - Changes to the shared AGENTS.md affect all packages in the suite — be conservative.
-
-When done, suggest running `/reflect` to capture any process improvements from the session.

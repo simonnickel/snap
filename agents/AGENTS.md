@@ -53,7 +53,7 @@ These rules apply to all written text: code comments, documentation, AGENTS.md, 
 - Keep responses concise.
 - For exploratory questions, give a recommendation and the main tradeoff in 2–3 sentences. Don't implement until confirmed.
 - Don't summarize what you just did at the end of a response.
-- When proposing a change, show it as a diff.
+- When proposing a change, show the file path, line number and a diff.
 
 ## Swift & SPM
 

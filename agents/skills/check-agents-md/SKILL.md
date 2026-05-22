@@ -53,14 +53,10 @@ Typical sections to consider:
 - For packages of independent utilities with no shared architecture, skip individual type docs entirely. If something looks wrong but is intentional, document it in the source comment. Only add it here if the source comment alone isn't enough, e.g. the pattern spans multiple files and a reader of any single one wouldn't understand the constraint.
 - **This file is for agents working on the package internals, not its consumers.** If a detail only matters to someone integrating the package, put it in doc comments instead.
 
-## Phase 4: Apply
-
-Apply after confirmation.
+When done, suggest running `/reflect` to capture any process improvements from the session.
 
 ## Constraints
 
 - If something belongs in the shared AGENTS.md rather than the local one, propose extending the shared file instead.
 - Keep entries concise and focused.
 - When process knowledge is captured that should improve these guidelines, update this skill's source file and run the sync script.
-
-When done, suggest running `/reflect` to capture any process improvements from the session.

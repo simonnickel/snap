@@ -1,6 +1,6 @@
 ---
 name: snap-check
-description: Suite-level audit of skill files and guidelines. Runs snap-check-skills and snap-check-guidelines in sequence.
+description: Suite-level audit of skill files and guidelines. Runs snap-check-skills, snap-check-guidelines and reflect in sequence.
 ---
 
 Run the following skills in order:

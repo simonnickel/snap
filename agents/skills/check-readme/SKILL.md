@@ -20,7 +20,7 @@ Review and improve the README of the current project.
 
 ## Phase 2: Analyse
 
-Check every claim against each category:
+Complete the full analysis before presenting anything. Check every claim against each category:
 
 **Correctness** — every claim matches the code:
 - Public API names, signatures and observable behavior.
@@ -51,9 +51,7 @@ Check every claim against each category:
 
 Present findings using the standard format defined in AGENTS.md.
 
-## Phase 4: Apply
-
-Apply edits to the README only. Do not modify source code unless the user explicitly asks.
+When done, suggest running `/reflect` to capture any process improvements from the session.
 
 ## Constraints
 
@@ -62,5 +60,3 @@ Apply edits to the README only. Do not modify source code unless the user explic
 - Keep tone consistent with the existing README.
 - Do not introduce a "we" voice or first-person perspective unless already used.
 - Do not remove TODO/FIXME items. Preserve them as in source code unless explicitly asked to remove.
-
-When done, suggest running `/reflect` to capture any process improvements from the session.

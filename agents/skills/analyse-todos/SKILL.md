@@ -55,10 +55,10 @@ Present findings using the standard format defined in AGENTS.md.
 
 ## Phase 4: Apply
 
-Apply only the items the user accepts. For source TODOs, insert the comment immediately above the relevant declaration or block. For README bullets, append to the `## TODO` section, creating it if absent.
+For source TODOs, insert the comment above the relevant declaration or block. For README entries, append to the `## TODO` section, creating it if absent.
+
+When done, suggest running `/reflect` to capture any process improvements from the session.
 
 ## Constraints
 
 - Do not fix anything. Only record findings as TODOs.
-
-When done, suggest running `/reflect` to capture any process improvements from the session.
