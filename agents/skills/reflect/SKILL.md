@@ -26,7 +26,7 @@ description: Review the current conversation for learnings that should improve e
    - **Shared AGENTS.md** — conventions that apply across all packages in the suite and all machines
    - **A skill** — a reusable multi-step workflow that would benefit future sessions
 
-4. **Apply** the changes. Present all findings first, then apply each to its target file once the user confirms.
+4. **Apply** the changes. Present all findings first, then apply each to its target file once the user confirms. Suggest going through them one by one.
 
 ## Constraints
 

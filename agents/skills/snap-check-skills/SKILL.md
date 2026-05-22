@@ -29,6 +29,7 @@ Apply each category both within individual skills and across all skills as a set
 - Constraints section covers the non-obvious limits of the skill's scope
 - Skills that collect findings instruct the agent to complete the full analysis before presenting
 - Skills that modify files have an explicit "do not apply until confirmed" gate
+- Skills that present multiple findings suggest going through them one by one
 
 **Clarity**
 - Goal is stated clearly
@@ -61,7 +62,7 @@ Collect all findings before presenting anything. Show as a numbered list, groupe
 - **Finding** — description of the issue
 - **Proposed change** — the exact edit to make
 
-Do not apply any changes until the user has reviewed the list.
+Do not apply any changes until the user has reviewed the list. Suggest going through them one by one.
 
 ## Phase 4: Apply
 

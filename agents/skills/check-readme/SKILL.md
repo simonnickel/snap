@@ -49,7 +49,7 @@ Check every claim against each category:
 
 ## Phase 3: Present
 
-Summarise issues found before editing, grouped by category (correctness / spelling / ambiguity / completeness / brevity). Do not start editing until the summary is shown.
+Summarise issues found before editing, grouped by category (correctness / spelling / ambiguity / completeness / brevity). Do not start editing until the summary is shown. Suggest going through them one by one.
 
 ## Phase 4: Apply
 

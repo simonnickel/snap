@@ -19,7 +19,7 @@ description: Create, update, or improve the local AGENTS.md for the current pack
 
 ## Phase 3: Propose
 
-Do not write the file until confirmed. If creating from scratch, show the full content. If updating an existing file, show only the changes (additions, removals, edits) with a brief reason for each.
+Do not write the file until confirmed. If creating from scratch, show the full content. If updating an existing file, show only the changes (additions, removals, edits) with a brief reason for each. Suggest going through them one by one.
 
 ### Structure
 

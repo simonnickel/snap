@@ -51,7 +51,7 @@ Check every comment against each category:
 
 Show all issues as a numbered list. For each item include: file path + line, the current comment (or "missing" for absent doc comments), the category, and the proposed change.
 
-Wait for the user to decide which items to accept. Apply only the accepted ones.
+Suggest going through them one by one. Apply only the items the user accepts.
 
 When done, suggest running `/reflect` to capture any process improvements from the session.
 

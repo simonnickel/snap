@@ -55,7 +55,7 @@ Show as a numbered list. For each item:
 - **Finding** — description of the issue
 - **Proposed change** — the exact edit to make
 
-Do not apply any changes until the user has reviewed the list.
+Do not apply any changes until the user has reviewed the list. Suggest going through them one by one.
 
 ## Phase 4: Apply
 
