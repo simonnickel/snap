@@ -1,6 +1,6 @@
 ---
 name: reflect
-description: Review the current conversation for learnings that should improve existing skills, AGENTS.md files, or memory. Use at the end of a session to capture non-obvious findings before they're lost.
+description: Review the current conversation for learnings that should improve existing skills, AGENTS.md files or memory. Use at the end of a session to capture non-obvious findings before they're lost.
 ---
 
 **Goal:** review this conversation for anything worth persisting: corrections, validated approaches, new conventions or structural gaps in the agent setup.
@@ -26,11 +26,10 @@ description: Review the current conversation for learnings that should improve e
    - **Shared AGENTS.md** — conventions that apply across all packages in the suite and all machines
    - **A skill** — a reusable process that would benefit future sessions
 
-4. **Apply** after confirmation.
+4. **Apply** the changes. Present all findings first, then apply each to its target file once the user confirms.
 
 ## Constraints
 
-- Propose all changes together before applying any.
-- If nothing meaningful was learned, say so — don't invent improvements.
+- If nothing meaningful was learned, say so. Don't invent improvements.
 - Don't add things already covered. Read the target file before proposing an addition.
 - Prefer updating an existing entry over adding a new one.
