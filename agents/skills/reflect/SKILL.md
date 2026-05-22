@@ -9,7 +9,7 @@ description: Review the current conversation for learnings that should improve e
 
 1. **Identify candidates** — scan the conversation for:
    - Corrections to your approach ("no, don't do X")
-   - Confirmed non-obvious choices ("yes, exactly")
+   - Confirmed non-obvious choices (explicit confirmation or absence of pushback on an unusual approach)
    - Patterns or constraints established during the session
    - Gaps: something you had to discover that agent setup files should have covered
 
@@ -17,14 +17,14 @@ description: Review the current conversation for learnings that should improve e
    - Shared AGENTS.md and its imports
    - `../snap/conventions/` (all files)
    - Local AGENTS.md
-   - Relevant skills in `../snap/agents/skills/`
+   - Skills in `../snap/agents/skills/` that overlap in scope with the proposed addition
    - Existing memory entries
 
 3. **Propose changes** — for each finding, identify where it belongs:
    - **Memory** — user preferences or project context specific to this machine; not shared across machines, so avoid it for suite-wide conventions
    - **Local AGENTS.md** — package-specific architecture or conventions
    - **Shared AGENTS.md** — conventions that apply across all packages in the suite and all machines
-   - **A skill** — a reusable process that would benefit future sessions
+   - **A skill** — a reusable multi-step workflow that would benefit future sessions
 
 4. **Apply** the changes. Present all findings first, then apply each to its target file once the user confirms.
 

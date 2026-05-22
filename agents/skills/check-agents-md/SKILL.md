@@ -7,7 +7,7 @@ description: Create, update, or improve the local AGENTS.md for the current pack
 
 ## Phase 1: Gather context
 
-- Locate the shared AGENTS.md. It should already be in context via the local file's import. If it isn't, tell the user before continuing. The shared AGENTS.md is used as a deduplication reference only — it is not audited as part of this check. To audit it, run this skill from its home package.
+- Locate the shared AGENTS.md. It should already be in context via the local file's import. If it isn't, tell the user before continuing. The shared AGENTS.md is used as a deduplication reference only. It is not audited as part of this check. To audit it, run this skill from its home package.
 - Read the existing local AGENTS.md if present. Note its `@import` line if any. If the file has real content beyond the `@import` line, treat it as the baseline. Note what's already there so you don't propose removing valid content or re-adding what's already covered.
 
 ## Phase 2: Analyse the codebase

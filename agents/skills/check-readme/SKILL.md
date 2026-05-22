@@ -45,7 +45,7 @@ Check every claim against each category:
 - Prefer bullets over prose where it shortens without losing nuance.
 - Drop filler ("simple", "easy", "powerful") unless backed by a concrete claim.
 - Combine examples that demonstrate the same idea.
-- No marketing voice; no emojis unless already used.
+- No marketing voice and no emojis unless already used.
 
 ## Phase 3: Present
 

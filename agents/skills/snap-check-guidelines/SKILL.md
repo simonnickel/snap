@@ -59,7 +59,7 @@ Do not apply any changes until the user has reviewed the list.
 
 ## Phase 4: Apply
 
-Apply only the items the user accepts. After applying, run `snap/agents/sync-skills.sh` if any skill files were changed.
+Apply only the items the user accepts.
 
 ## Constraints
 

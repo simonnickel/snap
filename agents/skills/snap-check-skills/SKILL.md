@@ -18,9 +18,17 @@ Read in full:
 Apply each category both within individual skills and across all skills as a set. Complete the full analysis before presenting anything.
 
 **Correctness**
-- Claims about what other skills do are accurate
+- Claims about other skills are accurate and references use correct names (e.g. `/check-comments`)
 - AGENTS.md conventions are followed
-- References to other skills use correct names (e.g. `/check-comments`)
+- Frontmatter `name` matches the folder name and `description` accurately reflects the skill's scope
+- Standalone skills end with the `/reflect` suggestion (composite skills that run reflect as a step omit it)
+- For composite skills, the frontmatter `description` lists the same sub-skills as the body's step list
+
+**Completeness**
+- The skill's scope and goal are explicit and consistent with the frontmatter `description`
+- Constraints section covers the non-obvious limits of the skill's scope
+- Skills that collect findings instruct the agent to complete the full analysis before presenting
+- Skills that modify files have an explicit "do not apply until confirmed" gate
 
 **Clarity**
 - Goal is stated clearly
@@ -30,10 +38,6 @@ Apply each category both within individual skills and across all skills as a set
 **Brevity**
 - No redundant content
 - No instructions that restate the obvious
-
-**Completeness**
-- The skill's scope and goal are explicit
-- Constraints section covers the non-obvious limits of the skill's scope
 
 **Gaps** — tasks or scenarios not covered, including missing cross-references between skills that overlap in scope
 
@@ -67,5 +71,6 @@ Apply only the items the user accepts. After applying, remind the user to run `s
 
 - Do not change the intent or scope of a skill without explicit instruction.
 - When a cross-skill finding could be fixed in multiple ways, propose the simplest one.
+- Do not propose adding check bullets that restate rules already in AGENTS.md.
 
 When done, suggest running `/reflect` to capture any process improvements from the session.
