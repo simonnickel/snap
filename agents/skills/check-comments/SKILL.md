@@ -31,7 +31,7 @@ Check every comment against each category:
 
 **Correctness**
 - Parameter names or labels in a doc comment don't match the actual signature
-- Return description doesn't match the actual return type or behaviour
+- Return description doesn't match the actual return type or behavior
 - Vague or unsupported claims ("for some reason", "somehow", "always"): propose a precise replacement or flag for removal.
 
 **Clarity**

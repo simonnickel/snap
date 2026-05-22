@@ -30,9 +30,9 @@ Complete the full analysis before presenting anything. Check every claim against
 - Test and preview affordances.
 - When overrides or resets are allowed.
 
-**Spelling and grammar** — prefer US spelling.
+**Spelling and grammar**
 
-**Ambiguity** — any sentence with two reasonable readings is rewritten so only one is possible.
+**Ambiguity** — flag anything open to misinterpretation.
 
 **Completeness** — the README lists, at minimum:
 - Every public feature. Exception: for packages of independent utilities with no shared architecture, prefer generic section summaries over listing every public type. Feature discoverability is left to the API documentation.

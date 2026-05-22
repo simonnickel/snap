@@ -44,8 +44,10 @@ Don't remove existing TODO/FIXME comments unless explicitly asked to.
 ## Writing Style
 
 These rules apply to all written text: code comments, documentation, AGENTS.md, README, skills, ...
+- Prefer US spelling.
+- Avoid writing open to misinterpretation.
 - Avoid semicolons and dashes mid-sentence. Use a new sentence, conjunction, colon, comma, parentheses or rewording instead.
-- In a list, prefer splitting into two bullets over joining two items with punctuation.
+- When presenting multiple points, use a list rather than prose.
 - No Oxford comma.
 
 ## Communication
@@ -69,7 +71,7 @@ Each package needs these files. Use the `check-agents-md` skill to create or upd
 
 Run `/context` to verify the agent setup is loaded correctly. If files you expect to be auto-imported are missing, tell the user before proceeding.
 
-Skills live in `snap/agents/skills/`. After editing a skill, run `snap/agents/sync-skills.sh` to propagate changes to all destinations. When renaming a skill, manually remove the old folder from each destination — the sync script copies but does not clean up stale entries.
+Skills live in `snap/agents/skills/`. After editing a skill, run `snap/agents/sync-skills.sh` to propagate changes to all destinations. When renaming a skill, manually remove the old folder from each destination (the sync script copies but does not clean up stale entries).
 
 ## Skill Conventions
 

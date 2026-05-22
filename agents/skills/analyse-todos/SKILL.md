@@ -20,7 +20,7 @@ Read in full:
 Complete the full analysis before presenting anything.
 
 **Implementation**
-- Incorrect or incomplete behaviour
+- Incorrect or incomplete behavior
 - Missing edge-case handling at system boundaries (user input, external APIs)
 - Inefficient patterns with a clear better alternative
 
