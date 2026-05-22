@@ -55,7 +55,7 @@ These rules apply to all written text: code comments, documentation, AGENTS.md, 
 - Keep responses concise.
 - For exploratory questions, give a recommendation and the main tradeoff in 2–3 sentences. Don't implement until confirmed.
 - Don't summarize what you just did at the end of a response.
-- When proposing a change, show the file path, line number and a diff.
+- When proposing any change, always include the file path, line number and a diff.
 
 ## Swift & SPM
 
@@ -80,3 +80,8 @@ Skills that present findings to the user follow this standard format:
 - Group and prioritise findings.
 - Do not apply any changes until the user has reviewed the list.
 - Suggest going through them one by one.
+
+Skills typically use this phase structure. Diverge when a phase does something meaningfully different:
+- **Gather context** — read files and collect inputs before analysis
+- **Analyse** — evaluate the gathered context against defined criteria
+- **Present findings** — present using the standard format above

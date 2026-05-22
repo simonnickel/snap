@@ -24,6 +24,7 @@ Apply each category both within individual skills and across all skills as a set
 - Standalone skills include a suggest-reflect line after the phases (composite skills that run reflect as a step omit it)
 - `## Constraints` is the last section
 - For composite skills, the frontmatter `description` lists the same sub-skills as the body's step list
+- Skills do not repeat instructions already covered by the standard format in AGENTS.md
 
 **Completeness**
 - The skill's scope and goal are explicit and consistent with the frontmatter `description`
