@@ -53,6 +53,7 @@ These rules apply to all written text: code comments, documentation, AGENTS.md, 
 - Keep responses concise.
 - For exploratory questions, give a recommendation and the main tradeoff in 2–3 sentences. Don't implement until confirmed.
 - Don't summarize what you just did at the end of a response.
+- When proposing a change, show it as a diff.
 
 ## Swift & SPM
 
@@ -62,16 +63,18 @@ These rules apply to all written text: code comments, documentation, AGENTS.md, 
 
 ## Agent Setup
 
-Each package has a local `AGENTS.md` that imports this file via `@path` and extends it with package-specific context. Use the `check-agents-md` skill to create or update it.
+Each package needs these files. Use the `check-agents-md` skill to create or update them:
+- `CLAUDE.md` in the root containing only `@AGENTS.md` (what Claude Code auto-imports)
+- `AGENTS.md` importing this file and extending it with package-specific context
 
-If files or context you expect to be auto-imported are missing, tell the user before proceeding.
+Run `/context` to verify the agent setup is loaded correctly. If files you expect to be auto-imported are missing, tell the user before proceeding.
 
 Skills live in `snap/agents/skills/`. After editing a skill, run `snap/agents/sync-skills.sh` to propagate changes to all destinations. When renaming a skill, manually remove the old folder from each destination — the sync script copies but does not clean up stale entries.
 
 ## Skill Conventions
 
 Skills that present findings to the user follow this standard format:
-- Show findings as a numbered list. For each item include the file name and line, the finding and a proposed change shown as a diff.
+- Show findings as a numbered list. For each item include the file name and line, the finding and a proposed change.
 - Group and prioritise findings.
 - Do not apply any changes until the user has reviewed the list.
 - Suggest going through them one by one.
