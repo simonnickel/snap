@@ -9,7 +9,8 @@ description: Create, update or improve the local AGENTS.md for the current packa
 
 - Locate the shared AGENTS.md. It should already be in context via the local file's import. If it isn't, tell the user before continuing. The shared AGENTS.md is used as a deduplication reference only. It is not audited as part of this check. To audit it, run this skill from its home package.
 - Read the existing local AGENTS.md if present. Note its `@import` line if any. If the file has real content beyond the `@import` line, treat it as the baseline. Note what's already there so you don't propose removing valid content or re-adding what's already covered.
-- Check if `CLAUDE.md` exists in the package root. It should contain `@AGENTS.md` as its only line. If it's missing or incorrect, include creating or fixing it in the proposal.
+- Check that `CLAUDE.md` and `AGENTS.md` match the setup described in the Agent Setup section of the shared AGENTS.md. If either is missing or incorrect, include creating or fixing it in the proposal.
+- Run `/context` to verify the agent setup is loaded correctly. If files you expect to be auto-imported are missing, tell the user before proceeding.
 
 ## Phase 2: Analyse
 

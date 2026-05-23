@@ -1,5 +1,22 @@
 @../conventions/index.md
 
+# The SNAP Suite
+
+SNAP (SN App Packages) is a set of Swift libraries for building iOS apps. `snap/` is the coordinating repository; the packages live alongside it as individual git repositories.
+
+## Packages
+
+| Package | Purpose | Depends on |
+|---|---|---|
+| `snap-foundation` | Extensions for Swift, Foundation and OSLog | — |
+| `snap-core` | SwiftUI/UIKit extensions, helpers and workarounds | snap-foundation |
+| `snap-style` | Semantic styling system (colors, fonts, spacing) for SwiftUI | snap-core |
+| `snap-settings-service` | Settings storage: Codable values in UserDefaults, iCloud KV or custom store | snap-core |
+| `snap-navigation` | SwiftUI navigation structure decoupled from presentation | snap-foundation |
+| `snap-dependencies` | Dependency injection container | snap-foundation |
+| `snap-swift-data` | SwiftData/CoreData interoperability and Persistent History Tracking | — |
+| `snap-template` | Shared app code and demo project | snap-style, snap-settings-service, snap-navigation, snap-dependencies |
+
 # Agent Instructions
 
 ## Collaboration
@@ -18,12 +35,13 @@ These are Swift library packages intended for arbitrary consumption (any app or 
 - Avoid internal assumptions about the consumer's architecture, threading model or lifecycle.
 - Prefer designing for how an API could be used over how it currently is used.
 
-## Code Changes
+## Changes
 
 - Match the scope of changes to what was asked. A bug fix doesn't need surrounding cleanup.
 - Don't speculate beyond the task. The API should be general (see Scope) but implementations should be minimal.
 - Don't add error handling or fallbacks beyond what the task requires.
 - Default to writing no comments. See the Comments section for when and how.
+- When adding to AGENTS.md or convention files, check all existing sections for duplicate intent first.
 
 ## Comments
 
@@ -53,9 +71,13 @@ These rules apply to all written text: code comments, documentation, AGENTS.md, 
 ## Communication
 
 - Keep responses concise.
-- For exploratory questions, give a recommendation and the main tradeoff in 2–3 sentences. Don't implement until confirmed.
+- For exploratory questions, give a recommendation and the main tradeoff in 2–3 sentences.
 - Don't summarize what you just did at the end of a response.
 - When proposing any change, always include the file path, line number and a diff.
+- When surfacing multiple findings:
+  - Show a numbered list.
+  - Group and prioritize.
+  - Suggest going through them one by one.
 
 ## Swift & SPM
 
@@ -69,19 +91,13 @@ Each package needs these files. Use the `check-agents-md` skill to create or upd
 - `CLAUDE.md` in the root containing only `@AGENTS.md` (what Claude Code auto-imports)
 - `AGENTS.md` importing this file and extending it with package-specific context
 
-Run `/context` to verify the agent setup is loaded correctly. If files you expect to be auto-imported are missing, tell the user before proceeding.
+The packages share a workspace folder where each lives as an individual git repository alongside `snap/`. The workspace folder follows the same pattern, with its `AGENTS.md` importing `@snap/AGENTS.md` → `@agents/AGENTS.md` (this file).
 
-Skills live in `snap/agents/skills/`. After editing a skill, run `snap/agents/sync-skills.sh` to propagate changes to all destinations. When renaming a skill, manually remove the old folder from each destination (the sync script copies but does not clean up stale entries).
+Skills live in `snap/agents/skills/`. After editing a skill, run `snap/agents/sync-skills.sh` to propagate changes to all destinations. When renaming a skill, manually remove the old folder from each destination (the sync script copies but does not clean up stale entries). `AGENTS.md` and convention files do not need syncing — they are imported directly by each package.
 
 ## Skill Conventions
-
-Skills that present findings to the user follow this standard format:
-- Show findings as a numbered list. For each item include the file name and line, the finding and a proposed change.
-- Group and prioritise findings.
-- Do not apply any changes until the user has reviewed the list.
-- Suggest going through them one by one.
 
 Skills typically use this phase structure. Diverge when a phase does something meaningfully different:
 - **Gather context** — read files and collect inputs before analysis
 - **Analyse** — evaluate the gathered context against defined criteria
-- **Present findings** — present using the standard format above
+- **Present findings** — present using the Communication conventions above
