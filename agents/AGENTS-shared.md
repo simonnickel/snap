@@ -24,6 +24,7 @@ SNAP (SN App Packages) is a set of Swift libraries for building iOS apps. `snap/
 - You are working with an experienced developer. Skip explanations of common patterns and concepts. Be direct.
 - Ask before changing code. Propose first, implement after confirmation.
 - Use Xcode MCP when relevant (building, running tests, checking errors).
+- When a tool fails because of a one-time environment fix (e.g. `xcode-select` points to CLT, missing simulator platform), surface it instead of silently working around it.
 
 ## Scope
 
