@@ -91,7 +91,7 @@ Each package needs these files. Use the `check-agents-md` skill to create or upd
 - `CLAUDE.md` in the root containing only `@AGENTS.md` (what Claude Code auto-imports)
 - `AGENTS.md` importing this file and extending it with package-specific context
 
-The packages share a workspace folder where each lives as an individual git repository alongside `snap/`. The workspace folder follows the same pattern, with its `AGENTS.md` importing `@snap/AGENTS.md` → `@agents/AGENTS.md` (this file).
+The packages share a workspace folder where each lives as an individual git repository alongside `snap/`. The workspace folder follows the same pattern, with its `AGENTS.md` importing `@snap/AGENTS.md` → `@agents/AGENTS-shared.md` (this file).
 
 Skills live in `snap/agents/skills/`. After editing a skill, run `snap/agents/sync-skills.sh` to propagate changes to all destinations. When renaming a skill, manually remove the old folder from each destination (the sync script copies but does not clean up stale entries). `AGENTS.md` and convention files do not need syncing — they are imported directly by each package.
 

@@ -6,7 +6,7 @@ description: Suite-level audit of skill files and guidelines. Runs snap-check-sk
 Run the following skills in order:
 
 1. `/snap-check-skills` — audit all skill files for quality and cross-skill consistency
-2. `/snap-check-guidelines` — audit the shared AGENTS.md and conventions for quality and correctness
+2. `/snap-check-guidelines` — audit `AGENTS-shared.md` and conventions for quality and correctness
 3. `/reflect` — capture any process improvements from the session
 
 Complete each skill fully before starting the next.
@@ -18,7 +18,7 @@ After all sub-skills complete, before running reflect, cross-check skill files a
 - Conventions not reflected in any skill's checks or scope
 - Guidelines that conflict with what skills actually audit
 
-Present any findings using the standard format defined in AGENTS.md.
+Present any findings using the standard format defined in `AGENTS-shared.md`.
 
 ## Constraints
 

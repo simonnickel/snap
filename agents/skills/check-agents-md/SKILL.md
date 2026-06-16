@@ -1,15 +1,15 @@
 ---
 name: check-agents-md
-description: Create, update or improve the local AGENTS.md for the current package. Use when setting up a new package, after significant code changes, or when new process knowledge should be captured. Imports a shared AGENTS.md and extends it with package-specific context.
+description: Create, update or improve the local AGENTS.md for the current package. Use when setting up a new package, after significant code changes, or when new process knowledge should be captured. Imports `AGENTS-shared.md` and extends it with package-specific context.
 ---
 
 **Goal:** a file that gives an AI agent a complete, non-redundant picture of this specific package. Keep it concise and focused. Include only content where an agent would make a concrete mistake without it, not just "saves re-reading."
 
 ## Phase 1: Gather context
 
-- Locate the shared AGENTS.md. It should already be in context via the local file's import. If it isn't, tell the user before continuing. The shared AGENTS.md is used as a deduplication reference only. It is not audited as part of this check. To audit it, run this skill from its home package.
+- Locate `AGENTS-shared.md`. It should already be in context via the local file's import. If it isn't, tell the user before continuing. `AGENTS-shared.md` is used as a deduplication reference only. It is not audited as part of this check. To audit it, run this skill from its home package.
 - Read the existing local AGENTS.md if present. Note its `@import` line if any. If the file has real content beyond the `@import` line, treat it as the baseline. Note what's already there so you don't propose removing valid content or re-adding what's already covered.
-- Check that `CLAUDE.md` and `AGENTS.md` match the setup described in the Agent Setup section of the shared AGENTS.md. If either is missing or incorrect, include creating or fixing it in the proposal.
+- Check that `CLAUDE.md` and `AGENTS.md` match the setup described in the Agent Setup section of `AGENTS-shared.md`. If either is missing or incorrect, include creating or fixing it in the proposal.
 - Run `/context` to verify the agent setup is loaded correctly. If files you expect to be auto-imported are missing, tell the user before proceeding.
 
 ## Phase 2: Analyse
@@ -26,7 +26,7 @@ Do not write the file until confirmed. If creating from scratch, show the full c
 ### Structure
 
 ```
-@path/to/shared/AGENTS.md
+@path/to/AGENTS-shared.md
 
 # <PackageName>
 
@@ -46,7 +46,7 @@ Typical sections to consider:
 
 ### What to exclude
 
-- Anything already covered by the shared AGENTS.md or its imports
+- Anything already covered by `AGENTS-shared.md` or its imports
 - Anything discoverable by inspection: content in a single source file, file listings, directory trees, doc comments
   - Exception: a one-liner distinguishing two easily-confused related types (e.g. a static descriptor vs its live runtime counterpart)
 - Generic Swift, SwiftUI or SPM knowledge (e.g. commands, patterns, dependencies, platform versions)
@@ -58,6 +58,6 @@ When done, suggest running `/reflect` to capture any process improvements from t
 
 ## Constraints
 
-- If something belongs in the shared AGENTS.md rather than the local one, propose extending the shared file instead.
+- If something belongs in `AGENTS-shared.md` rather than the local one, propose extending the shared file instead.
 - Keep entries concise and focused.
 - When process knowledge is captured that should improve these guidelines, update this skill's source file and run the sync script.
