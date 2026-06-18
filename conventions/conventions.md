@@ -35,6 +35,10 @@ Use empty lines to structure the file visually.
 Use Xcode default formatting with `control + m`.
 
 
+## Trailing commas
+Multi-line parameter and argument lists keep a trailing comma on the last entry. Applies to function signatures and call sites. Single-line lists have no trailing comma.
+
+
 ## Comments
 `// TODO:` indicates where something has to be done next. 
 
