@@ -3,7 +3,7 @@
 Making decisions is hard. Sometimes it helps to take a look at what you actually want to achieve. Some principles I try to follow:
 
  - Keep it simple: Least complex solution is preferred.
- - Choose vanilla: Stay close to the system, prevent pattern/architecture/framework.
+ - Stay close to the system: Avoid custom patterns or frameworks.
  - Locality, Separation, Independence, Black Box: Prevent dependencies between modules / features / sections.  
  - Maintainability: Prevent future work.
  - Don't let it dry out: While DRY (don't repeat yourself) is great, it's often misunderstood as don't repeat code. It should be don't repeat logic instead.
@@ -19,9 +19,6 @@ Trying to prevent using external dependencies. This is a guideline, not a rule. 
 
 
 # Style Guide
-
-I like rules, but not to enforce them. So I am not using any formatter or linter. Just some conventions I got used to.
-
 
 ## Code Structure
 On file level, Code is structured to easily find stuff using the minimap. Using `// MARK: - XYZ`.

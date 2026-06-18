@@ -43,11 +43,11 @@ These are Swift library packages intended for arbitrary consumption (any app or 
 - Don't speculate beyond the task. The API should be general (see Scope) but implementations should be minimal.
 - Don't add error handling or fallbacks beyond what the task requires.
 - Default to writing no comments. See the Comments section for when and how.
-- When adding to AGENTS.md or convention files, check all existing sections for duplicate intent first.
+- When adding to AGENTS.md, convention or docs files, check all existing sections for duplicate intent first.
 
 ## Comments
 
-Comments are for developers exploring the package — not a changelog.
+Comments are for developers exploring the package, not a changelog.
 
 Write a comment when it helps understand design, usage or intent. That can include:
 - Why a design was chosen over alternatives
