@@ -1,4 +1,5 @@
 @../conventions/index.md
+@../docs/documentation.md
 
 # The SNAP Suite
 
