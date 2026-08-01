@@ -17,7 +17,7 @@ Scan the conversation for:
 
 Avoid redundancy by reading:
 - Shared AGENTS.md and its imports
-- `../snap/conventions/` (all files)
+- `../snap/docs/conventions/` (all files)
 - Local AGENTS.md
 - Skills in `../snap/agents/skills/` that overlap in scope with the proposed addition
 - Existing memory entries

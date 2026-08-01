@@ -4,10 +4,10 @@ Where each kind of knowledge, decision or convention lives.
 
 ## Suite-wide, checked in
 
-- **`snap/conventions/`** — Coding style, naming and structural rules.
 - **`snap/agents/AGENTS-shared.md`** — Agent behavior and collaboration norms.
 - **`snap/agents/skills/`** — Recurring multi-step workflows.
 - **`snap/docs/`** — Suite-wide topics and cross-package constraints.
+  - **`snap/docs/conventions/`** — Coding style, naming and structural rules.
 
 ## Package, checked in
 
