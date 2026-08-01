@@ -1,13 +1,15 @@
-# Documentation
+# Documentation Overview
 
-Where each kind of knowledge, decision or convention lives.
+A map of where each kind of knowledge, decision or convention lives. Use it to decide where to write or find something, depending on its kind and scope.
 
 ## Suite-wide, checked in
 
-- **`snap/agents/AGENTS-shared.md`** — Agent behavior and collaboration norms.
+- **`snap/README.md`** — Suite overview, install, headline highlights.
+- **`snap/agents/AGENTS-global.md`** — Agent behavior and collaboration norms that apply to any project, not just this suite.
+- **`snap/agents/AGENTS-shared.md`** — Agent behavior and collaboration norms specific to the snap suite.
 - **`snap/agents/skills/`** — Recurring multi-step workflows.
-- **`snap/docs/`** — Suite-wide topics and cross-package constraints.
-  - **`snap/docs/conventions/`** — Coding style, naming and structural rules.
+- **`snap/docs/`** — Suite-wide knowledge, e.g. architecture decisions and cross-package constraints.
+  - **`snap/docs/conventions/`** — Design principles, code style and naming conventions applied across all packages.
 
 ## Package, checked in
 
