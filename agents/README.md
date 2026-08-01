@@ -1,8 +1,28 @@
 # Snap agent configs
 
-This folder contains configurations for Claude and Codex: skills, commands, and more.
+This folder contains configurations for AI agents: skills, commands, and more.
+
+## AGENTS.md
+
+`AGENTS-shared.md` holds instructions shared across the suite. Each package needs a `CLAUDE.md` (importing `AGENTS.md`) and an `AGENTS.md` (importing `AGENTS-shared.md` and extending it with package-specific context). The workspace folder follows the same pattern.
+
+Use the `check-agents-md` skill to create or update them.
+
+## AGENTS-global.md
+
+Holds instructions that apply to every Claude Code session, regardless of project (e.g. how to present review findings). Claude Code reads global instructions from `~/.claude/CLAUDE.md`, so symlink it there (remove any existing file at that path first):
+
+```sh
+$ ln -s /absolute/path/to/snap/agents/AGENTS-global.md ~/.claude/CLAUDE.md
+```
 
 ## Skills
+
+Skill names are prefixed to indicate their scope:
+
+- No prefix — operates on the current package
+- `snap-` — operates across the whole suite
+- `sn-` — generic, unrelated to the snap suite
 
 ### Setup with sync-skills.sh
 
