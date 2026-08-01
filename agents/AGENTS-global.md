@@ -2,7 +2,13 @@
 
 ## Proposing changes
 
-When proposing a change, use the AskUserQuestion tool with whatever concrete choices fit the decision: a single proposal, or several named alternatives. Always include an option to skip (leave unchanged).
+When proposing a change, use the AskUserQuestion tool with whatever concrete choices fit the decision: a single proposal or several named alternatives. Always include an option to skip (leave unchanged).
+
+## Diff previews
+
+When presenting a current vs. proposed text or code change, use a fenced ```diff block (`-`/`+` lines) so it renders as a colored diff.
+
+AskUserQuestion text does not render markdown. Show diffs in the response text first, then use AskUserQuestion only to ask how to proceed.
 
 ## Presenting findings
 
