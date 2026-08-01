@@ -2,10 +2,7 @@
 
 ## Proposing changes
 
-When proposing a change, use the AskUserQuestion tool with whatever concrete choice(s) fit the decision — a single proposal, or several named alternatives. Always include:
-
-- An option to discuss (refine before applying)
-- An option to skip (leave unchanged)
+When proposing a change, use the AskUserQuestion tool with whatever concrete choices fit the decision: a single proposal, or several named alternatives. Always include an option to skip (leave unchanged).
 
 ## Presenting findings
 
