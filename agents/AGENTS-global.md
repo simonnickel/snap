@@ -12,12 +12,10 @@ AskUserQuestion text does not render markdown. Show diffs in the response text f
 
 ## Presenting findings
 
-When presenting a list of findings (proofreading, code review, audits, or any other multi-item review), use the AskUserQuestion tool to ask how to proceed. A typical shape:
+When presenting a list of findings (proofreading, code review, audits, or any other multi-item task), use the AskUserQuestion tool to ask how to proceed. A typical shape is shown below, adjust it to fit the task:
 
-- **One by one** — review and decide on each finding individually
+- **One by one**: review and decide on each finding individually
   - Restate the proposal for that finding
-  - Ask before moving to the next one
-- **Apply all** — apply all suggested fixes at once
-- **Skip all** — leave the content unchanged
-
-Adjust to fit the review.
+  - If resolving it took discussion, ask before moving to the next one once that concludes
+- **Apply all**: apply all suggested fixes at once
+- **Skip all**: leave the content unchanged
