@@ -1,19 +1,20 @@
 # Agent Instructions
 
-## Asking questions
+## Proposing changes
 
-Use the AskUserQuestion tool when it fits — e.g. offering a proposal with Apply/Adjust/Skip, or presenting concrete options for the user to choose from:
+When proposing a change, use the AskUserQuestion tool with whatever concrete choice(s) fit the decision — a single proposal, or several named alternatives. Always include:
 
-- **Apply** — use the proposal as-is
-- **Adjust** — discuss and refine the proposal before applying
-- **Skip** — leave this unchanged
+- An option to discuss (refine before applying)
+- An option to skip (leave unchanged)
 
 ## Presenting findings
 
-Whenever presenting a list of findings (proofreading, code review, audits, or any other multi-item review), use the AskUserQuestion tool — not a plain-text question — to ask how to proceed:
+When presenting a list of findings (proofreading, code review, audits, or any other multi-item review), use the AskUserQuestion tool to ask how to proceed. A typical shape:
 
 - **One by one** — review and decide on each finding individually
+  - Restate the proposal for that finding
+  - Ask before moving to the next one
 - **Apply all** — apply all suggested fixes at once
 - **Skip all** — leave the content unchanged
 
-If the user selects **One by one**, always use AskUserQuestion per finding, as described above.
+Adjust to fit the review.
