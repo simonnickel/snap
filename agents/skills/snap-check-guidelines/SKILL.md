@@ -3,7 +3,7 @@ name: snap-check-guidelines
 description: Audit `AGENTS-shared.md` and all convention files for quality and correctness. Checks for internal consistency, gaps, redundancies and alignment between conventions and agent instructions.
 ---
 
-Audit `snap/agents/AGENTS-shared.md` and all files in `snap/docs/conventions/` as one logical unit.
+Audit `snap/agents/AGENTS-shared.md` and all files in `snap/conventions/` as one logical unit.
 
 **Goal:** agent instructions and conventions that are correct, clear, concise, internally consistent and free of gaps or redundancies.
 
@@ -11,7 +11,7 @@ Audit `snap/agents/AGENTS-shared.md` and all files in `snap/docs/conventions/` a
 
 Read in full:
 - `snap/agents/AGENTS-shared.md` and any files it imports
-- All files in `snap/docs/conventions/`
+- All files in `snap/conventions/`
 - The `check-agents-md` skill for quality criteria
 
 ## Phase 2: Analyse

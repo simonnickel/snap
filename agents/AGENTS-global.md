@@ -1,4 +1,4 @@
-@../docs/index.md
+@../conventions/index.md
 
 # Agent Instructions
 

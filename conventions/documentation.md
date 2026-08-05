@@ -7,21 +7,15 @@ A map of where each kind of knowledge, decision or convention lives. Use it to d
 Imported into every project on this machine, via the `~/.claude/CLAUDE.md` symlink to `AGENTS-global.md`.
 
 - **`snap/agents/AGENTS-global.md`** — Agent behavior and collaboration norms that apply to any project.
+- **`snap/conventions/`** — Design principles, code style and naming conventions.
+  - **`snap/conventions/index.md`** — Imports every convention file. A new file only loads once listed here.
 - **`snap/agents/skills/`** — Recurring multi-step workflows, synced to the agent tools.
-- **`snap/docs/`** — Knowledge that applies to any project.
-  - **`snap/docs/index.md`** — Imports every file in the folder.
-  - **`snap/docs/conventions/`** — Design principles, code style and naming conventions.
-
-## Suite-wide, checked in
-
-- **`snap/README.md`** — Suite overview, install, headline highlights.
-- **`snap/agents/AGENTS-shared.md`** — Agent behavior and collaboration norms specific to the snap suite.
 
 ## Module, checked in
 
 - **`<module>/AGENTS.md`** — Agent behavior and collaboration norms specific to the module.
 - **`<module>/README.md`** — Consumer overview, install, headline features.
-- **`<module>/docs/`** — Module architecture, conventions, long-form guides, migration notes, internal design.
+- **`<module>/docs/`** — Any documentation about the module, e.g. architecture, conventions, guides.
 - **Doc comments on public symbols** — How to use the API.
 
 ## Per-machine, not synced
@@ -31,4 +25,4 @@ Imported into every project on this machine, via the `~/.claude/CLAUDE.md` symli
 ## Ephemeral
 
 - **Commit messages and PR descriptions** — Why this change.
-- **`// TODO:` in source** — Outstanding work.
+- **`// TODO:` in source** — Outstanding work in one place in the code.

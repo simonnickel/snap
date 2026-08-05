@@ -15,6 +15,10 @@ SNAP (SN App Packages) is a set of Swift libraries for building iOS apps. `snap/
 | `snap-swift-data` | SwiftData/CoreData interoperability and Persistent History Tracking | — |
 | `snap-template` | Shared app code and demo project | snap-style, snap-settings-service, snap-navigation, snap-dependencies |
 
+## Documentation
+
+Any documentation about the suite lives in `snap/docs/`.
+
 # Agent Instructions
 
 ## Collaboration
