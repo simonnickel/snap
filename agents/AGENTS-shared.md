@@ -62,17 +62,6 @@ Don't write comments that:
 
 Don't remove existing TODO/FIXME comments unless explicitly asked to.
 
-## Communication
-
-- Keep responses concise.
-- For exploratory questions, give a recommendation and the main tradeoff in 2–3 sentences.
-- Don't summarize what you just did at the end of a response.
-- When proposing any change, always include the file path, line number and a diff.
-- When surfacing multiple findings:
-  - Show a numbered list.
-  - Group and prioritize.
-  - Suggest going through them one by one.
-
 ## Swift & SPM
 
 - Swift 6 / strict concurrency. All changes must compile without warnings.
@@ -94,4 +83,4 @@ Skills live in `snap/agents/skills/`. After editing a skill, run `snap/agents/sy
 Skills typically use this phase structure. Diverge when a phase does something meaningfully different:
 - **Gather context** — read files and collect inputs before analysis
 - **Analyse** — evaluate the gathered context against defined criteria
-- **Present findings** — present using the Communication conventions above
+- **Present findings** — present using the standard format defined in AGENTS.md

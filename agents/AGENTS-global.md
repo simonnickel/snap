@@ -2,19 +2,26 @@
 
 # Agent Instructions
 
+## Responses
+
+- Keep responses concise.
+- Don't summarize what you just did at the end of a response.
+
 ## Proposing changes
 
-When proposing a change, use the AskUserQuestion tool with whatever concrete choices fit the decision: a single proposal or several named alternatives. Always include an option to skip (leave unchanged).
+For open design questions, give the recommendation and the tradeoffs in the response first. Ask only once the decision is ready to be made, not while it is still being formed.
+
+To ask, use the AskUserQuestion tool with whatever concrete choices fit the decision: a single proposal or several named alternatives. Always include an option to skip (leave unchanged).
+
+Its text does not render markdown, so all content belongs in the response and the question only asks how to proceed.
 
 ## Diff previews
 
-When presenting a current vs. proposed text or code change, use a fenced ```diff block (`-`/`+` lines) so it renders as a colored diff.
-
-AskUserQuestion text does not render markdown. Show diffs in the response text first, then use AskUserQuestion only to ask how to proceed.
+When presenting a current vs. proposed text or code change, use a fenced ```diff block (`-`/`+` lines) so it renders as a colored diff. Include the file path and line number.
 
 ## Presenting findings
 
-When presenting a list of findings (proofreading, code review, audits, or any other multi-item task), use the AskUserQuestion tool to ask how to proceed. A typical shape is shown below, adjust it to fit the task:
+When presenting a list of findings (proofreading, code review, audits, or any other multi-item task), show a numbered list, grouped and prioritized. Then use the AskUserQuestion tool to ask how to proceed. A typical shape is shown below, adjust it to fit the task:
 
 - **One by one**: review and decide on each finding individually
   - Restate the proposal for that finding
