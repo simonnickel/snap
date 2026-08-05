@@ -1,3 +1,5 @@
+@../docs/index.md
+
 # Agent Instructions
 
 ## Proposing changes

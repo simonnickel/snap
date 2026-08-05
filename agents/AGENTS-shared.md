@@ -1,6 +1,3 @@
-@../docs/conventions/index.md
-@../docs/overview.md
-
 # The SNAP Suite
 
 SNAP (SN App Packages) is a set of Swift libraries for building iOS apps. `snap/` is the coordinating repository; the packages live alongside it as individual git repositories.
