@@ -22,7 +22,7 @@ Fix all spelling errors without asking. Report each change as: file path, line, 
 
 ## Phase 3: Collect wording and structure issues
 
-Check the remaining text for:
+Check the remaining text against the writing style conventions in AGENTS.md and the categories below:
 
 **Grammar**
 - Missing/incorrect articles, subject-verb agreement, tense mix-ups
@@ -34,8 +34,8 @@ Check the remaining text for:
 - Inconsistent heading case, proper nouns not capitalized, mid-sentence capitalization that doesn't belong
 
 **Clarity**
-- Phrasing with two reasonable readings — flag and ask what was meant rather than guessing
-- Vague or unsupported claims
+- For phrasing with two reasonable readings, ask what was meant rather than guessing
+- Unsupported claims
 
 **Wording**
 - Wordy or awkward phrasing that could be tightened without changing meaning
@@ -45,7 +45,7 @@ Check the remaining text for:
 
 ## Phase 4: Present findings
 
-Present numbered findings with the current text, the issue, and a suggested fix. Then present them using the standard format defined in AGENTS.md.
+Present findings using the standard format defined in AGENTS.md. For each, include the current text, the issue and a suggested fix.
 
 ## Constraints
 
