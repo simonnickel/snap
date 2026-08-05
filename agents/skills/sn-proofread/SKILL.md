@@ -41,12 +41,11 @@ Check the remaining text for:
 - Wordy or awkward phrasing that could be tightened without changing meaning
 
 **Consistency**
-- Mixed styles within the same list or section (e.g. some bullets as full sentences, others as fragments)
 - Inconsistent terminology for the same concept
 
 ## Phase 4: Present findings
 
-Present numbered findings with the current text, the issue, and a suggested fix. Then follow the standard findings-review flow (see CLAUDE.md).
+Present numbered findings with the current text, the issue, and a suggested fix. Then present them using the standard format defined in AGENTS.md.
 
 ## Constraints
 

@@ -61,15 +61,6 @@ Don't write comments that:
 
 Don't remove existing TODO/FIXME comments unless explicitly asked to.
 
-## Writing Style
-
-These rules apply to all written text: code comments, documentation, AGENTS.md, README, skills, ...
-- Prefer US spelling.
-- Avoid writing open to misinterpretation.
-- Avoid semicolons and dashes mid-sentence. Use a new sentence, conjunction, colon, comma, parentheses or rewording instead.
-- When presenting multiple points, use a list rather than prose.
-- No Oxford comma.
-
 ## Communication
 
 - Keep responses concise.
