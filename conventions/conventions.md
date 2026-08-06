@@ -36,19 +36,6 @@ Use Xcode default formatting with `control + m`.
 Multi-line parameter and argument lists keep a trailing comma on the last entry. Applies to function signatures and call sites. Single-line lists have no trailing comma.
 
 
-## Comments
-`// TODO:` indicates where something has to be done next. 
-
- - Use on a branch to indicate ongoing development.
- - Never merge to main.
-
-`// TODO <xyz>:` indicates an optional improvement for the future. Common tags:
-
- - `FB#`: A workaround because something does not work as expected, reference related FB number. Fix when FB is resolved.
- - `finetuning`: A non critical improvement is possible.
- - `idea`: A new feature might evolve here.
-
-
 ## Service layer types
 While most of them are basically the same, sometimes nuances make sense to better communicate expectations.
 
