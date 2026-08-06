@@ -18,6 +18,17 @@ Imported into every project on this machine, via the `~/.claude/CLAUDE.md` symli
 - **`<module>/docs/`** — Any documentation about the module, e.g. architecture rationale, guides, design decisions.
 - **Doc comments on public symbols** — How to use the API.
 
+### Common files in `docs/`
+
+Add one when there is content for it, not upfront.
+
+- **`mission-statement.md`** — Why the project exists and what it optimizes for.
+- **`architecture.md`** — How the project is structured and why.
+- **`decisions.md`** — A decision, the alternatives considered and the reason for the choice.
+- **`todo.md`** — Outstanding work that is not tied to one place in the code.
+  - Each item has a stable id (`TODO-1`). Resolved items are removed and the remaining ones keep their id.
+- **`<topic>.md`** — A guide for a single topic, e.g. usage, setup or migration.
+
 ## Per-machine, not synced
 
 - **`~/.claude/projects/<project>/memory/`** — Only for things tied to one machine, or as temporary notes before a finding settles into a checked-in location.
