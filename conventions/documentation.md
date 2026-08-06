@@ -13,9 +13,9 @@ Imported into every project on this machine, via the `~/.claude/CLAUDE.md` symli
 
 ## Module, checked in
 
-- **`<module>/AGENTS.md`** — Agent behavior and collaboration norms specific to the module.
+- **`<module>/AGENTS.md`** — Agent orientation for working on the module itself: what it does, how it is structured and what is easy to get wrong.
 - **`<module>/README.md`** — Consumer overview, install, headline features.
-- **`<module>/docs/`** — Any documentation about the module, e.g. architecture, conventions, guides.
+- **`<module>/docs/`** — Any documentation about the module, e.g. architecture rationale, guides, design decisions.
 - **Doc comments on public symbols** — How to use the API.
 
 ## Per-machine, not synced
