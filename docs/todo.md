@@ -2,10 +2,6 @@
 
 Outstanding work on the agent setup, conventions and documentation structure.
 
-## TODO-3: Give snap/docs/ its architecture content
-
-`conventions/documentation.md` and `AGENTS-shared.md` both point at `snap/docs/`. The suite description and package table at the top of `AGENTS-shared.md` are architecture living in an agent file and belong here instead.
-
 ## TODO-4: Small leftovers
 
 - `agents/README.md` does not mention that `AGENTS-global.md` imports `conventions/index.md`.
