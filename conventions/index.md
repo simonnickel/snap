@@ -1,8 +1,10 @@
 @documentation.md
-@conventions.md
+@principles.md
 @api-design.md
 @naming.md
+@formatting.md
 @swift.md
 @swiftui.md
 @code-comments.md
 @writing-style.md
+@skills.md
