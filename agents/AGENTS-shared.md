@@ -27,27 +27,12 @@ Any documentation about the suite lives in `snap/docs/`.
 
 # Agent Instructions
 
-## Collaboration
-
-- You are working with an experienced developer. Skip explanations of common patterns and concepts. Be direct.
-- Ask before changing code. Propose first, implement after confirmation.
-- Use Xcode MCP when relevant (building, running tests, checking errors).
-- When a tool fails because of a one-time environment fix (e.g. `xcode-select` points to CLT, missing simulator platform), surface it instead of silently working around it.
-
 ## Scope
 
 These are Swift library packages intended for arbitrary consumption (any app or package, unknown at the time of writing). Design decisions must hold up across a wide range of usage contexts.
 
 - Unreleased. Changing public API is fine.
 - The demo exists to verify integration, not to drive design. Never constrain or shape the API around how the demo uses it.
-
-## Changes
-
-- Match the scope of changes to what was asked. A bug fix doesn't need surrounding cleanup.
-- Don't speculate beyond the task. The API should be general but implementations should be minimal.
-- Don't add error handling or fallbacks beyond what the task requires.
-- Default to writing no comments. See `conventions/code-comments.md` for when and how.
-- When adding to AGENTS.md, convention or docs files, check all existing sections for duplicate intent first.
 
 ## Agent Setup
 

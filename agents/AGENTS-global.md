@@ -6,8 +6,11 @@
 
 - Keep responses concise.
 - Don't summarize what you just did at the end of a response.
+- Don't explain common patterns, language features or tooling.
 
 ## Proposing changes
+
+Propose changes first, implement after confirmation.
 
 For open design questions, give the recommendation and the tradeoffs in the response first. Ask only once the decision is ready to be made, not while it is still being formed.
 
@@ -28,3 +31,8 @@ When presenting a list of findings (proofreading, code review, audits, or any ot
   - If resolving it took discussion, ask before moving to the next one once that concludes
 - **Apply all**: apply all suggested fixes at once
 - **Skip all**: leave the content unchanged
+
+## Tools
+
+- Use Xcode MCP when working on an Xcode project (building, running tests, checking errors).
+- When a tool fails because of a one-time environment fix (e.g. `xcode-select` points to CLT, missing simulator platform), surface it instead of silently working around it.

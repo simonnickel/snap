@@ -2,6 +2,8 @@
 
 A map of where each kind of knowledge, decision or convention lives. Use it to decide where to write or find something, depending on its kind and scope.
 
+Before adding to any of these files, check all existing sections for duplicate intent. Prefer updating an existing entry over adding a new one.
+
 ## Global, checked in
 
 Imported into every project on this machine, via the `~/.claude/CLAUDE.md` symlink to `AGENTS-global.md`.
