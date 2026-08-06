@@ -2,7 +2,9 @@
 
 A map of where each kind of knowledge, decision or convention lives. Use it to decide where to write or find something, depending on its kind and scope.
 
-Before adding to any of these files, check all existing sections for duplicate intent. Prefer updating an existing entry over adding a new one.
+- Before adding to any of these files, check all of them for duplication or contradictions.
+- Prefer updating an existing entry over adding a new one.
+- Delete an entry that is redundant or no longer holds.
 
 ## Global, checked in
 
