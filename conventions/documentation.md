@@ -30,7 +30,9 @@ Add one when there is content for it, not upfront.
 - **`architecture.md`** — How the project is structured and why.
 - **`decisions.md`** — A decision, the alternatives considered and the reason for the choice.
 - **`todo.md`** — Outstanding work that is not tied to one place in the code.
-  - Each item has a stable id (`TODO-1`). Resolved items are removed and the remaining ones keep their id.
+  - Each item has a fixed id (`TODO-1`) that is never reassigned.
+  - Items are ordered by execution, not by id.
+  - Resolved items are removed and their id is retired.
 - **`<topic>.md`** — A guide for a single topic, e.g. usage, setup or migration.
 
 ## Per-machine, not synced

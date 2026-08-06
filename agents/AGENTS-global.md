@@ -28,7 +28,7 @@ When presenting a list of findings (proofreading, code review, audits, or any ot
 
 - **One by one**: review and decide on each finding individually
   - Restate the proposal for that finding
-  - If resolving it took discussion, ask before moving to the next one once that concludes
+  - Ask explicitly before moving to the next finding
 - **Apply all**: apply all suggested fixes at once
 - **Skip all**: leave the content unchanged
 
