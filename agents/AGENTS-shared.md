@@ -58,10 +58,3 @@ Each package needs these files. Use the `check-agents-md` skill to create or upd
 The packages share a workspace folder where each lives as an individual git repository alongside `snap/`. The workspace folder follows the same pattern, with its `AGENTS.md` importing `@snap/AGENTS.md` → `@agents/AGENTS-shared.md` (this file).
 
 Skills live in `snap/agents/skills/`. After editing a skill, run `snap/agents/sync-skills.sh` to propagate changes to all destinations. When renaming a skill, manually remove the old folder from each destination (the sync script copies but does not clean up stale entries). `AGENTS.md` and convention files do not need syncing — they are imported directly by each package.
-
-## Skill Conventions
-
-Skills typically use this phase structure. Diverge when a phase does something meaningfully different:
-- **Gather context** — read files and collect inputs before analysis
-- **Analyse** — evaluate the gathered context against defined criteria
-- **Present findings** — present using the standard format defined in AGENTS.md

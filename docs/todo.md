@@ -26,6 +26,13 @@ The skills still describe the layout from before the conventions moved out of `A
 - `snap-check-guidelines` audits both locations but has no criterion for deciding which one a rule belongs in. Write down the criterion the moves settled on. A section mixing suite-specific and generic content should be split, not left whole.
 - `check-agents-md` needs checking against the `AGENTS.md` description in `conventions/documentation.md`.
 
-## TODO-7: Audit
+## TODO-7: Rewrite the skill conventions
+
+`conventions/skills.md` holds the phase structure copied from the old `Skill Conventions` section in `AGENTS-shared.md`. It was derived from how the skills were written, so it has to follow the rework rather than lead it.
+
+- Check whether the phases still describe what the reworked skills do.
+- Decide whether the file should also cover the naming prefixes currently in `agents/README.md`.
+
+## TODO-8: Audit
 
 Run `/snap-check-guidelines`. The guidelines and conventions changed substantially, so the audit likely surfaces more than this list.
