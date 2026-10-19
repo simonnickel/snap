@@ -9,7 +9,7 @@ description: Create, update or improve the local AGENTS.md for the current packa
 
 - Locate `AGENTS-shared.md`. It should already be in context via the local file's import. If it isn't, tell the user before continuing. `AGENTS-shared.md` is used as a deduplication reference only. It is not audited as part of this check. To audit it, run this skill from its home package.
 - Read the existing local AGENTS.md if present. Note its `@import` line if any. If the file has real content beyond the `@import` line, treat it as the baseline. Note what's already there so you don't propose removing valid content or re-adding what's already covered.
-- Check that `AGENTS.md` matches the setup described in the Agent Setup section of `AGENTS-shared.md`. If it is missing or incorrect, include creating or fixing it in the proposal.
+- Run `snap/agents/setup.sh --check`. If it reports problems, include fixing them in the proposal.
 - Run `/context` to verify the agent setup is loaded correctly. If files you expect to be auto-imported are missing, tell the user before proceeding.
 
 ## Phase 2: Analyse
@@ -60,4 +60,4 @@ When done, suggest running `/reflect` to capture any process improvements from t
 
 - If something belongs in `AGENTS-shared.md` rather than the local one, propose extending the shared file instead.
 - Keep entries concise and focused.
-- When process knowledge is captured that should improve these guidelines, update this skill's source file and run the sync script.
+- When process knowledge is captured that should improve these guidelines, update this skill's source file and run `snap/agents/setup.sh`.

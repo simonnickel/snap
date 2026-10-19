@@ -2,19 +2,9 @@
 
 This folder contains configurations for AI agents: skills, commands, and more.
 
-## AGENTS.md
+`AGENTS-shared.md` holds what is specific to the SNAP suite. Anything that applies regardless of project belongs in `AGENTS-global.md` or `conventions/`.
 
-`AGENTS-shared.md` holds what is specific to the SNAP suite. Anything that applies regardless of project belongs in `AGENTS-global.md` or `conventions/`. Each package needs an `AGENTS.md` (importing `AGENTS-shared.md` and extending it with package-specific context). The workspace folder's `AGENTS.md` only imports `AGENTS-workspace.md`, which holds the workspace context and imports `AGENTS-shared.md` directly.
-
-Use the `check-agents-md` skill to create or update it.
-
-## AGENTS-global.md
-
-Holds instructions that apply to every Claude Code session, regardless of project (e.g. how to present review findings). It imports `conventions/index.md`, which loads every convention file. Claude Code reads global instructions from `~/.claude/CLAUDE.md`, so symlink it there (remove any existing file at that path first):
-
-```sh
-$ ln -s /absolute/path/to/snap/agents/AGENTS-global.md ~/.claude/CLAUDE.md
-```
+How these files reach each session and how to set them up is described in [`docs/agent-setup.md`](../docs/agent-setup.md).
 
 ## Skills
 
@@ -23,27 +13,3 @@ Skill names are prefixed to indicate their scope:
 - No prefix — operates on the current package
 - `snap-` — operates across the whole suite
 - `sn-` — generic, unrelated to the snap suite
-
-### Setup with sync-skills.sh
-
-Run the script from anywhere to copy all skills into the standard locations for Claude CLI, Claude in Xcode, Codex CLI, and Codex in Xcode:
-
-```sh
-$ ./agents/sync-skills.sh
-```
-
-Re-run whenever skills are added or updated. The script replaces only the skills it manages and leaves any other skills in the destination untouched.
-
-### Setup with symlinks (alternative)
-
-Instead of copying, you can symlink the skills folder so changes are reflected immediately without re-running a script. This requires an absolute path and breaks if the repo is moved.
-
-**Claude:**
-```sh
-$ ln -s /absolute/path/to/snap/agents/skills ~/.claude/skills
-```
-
-**Claude in Xcode:**
-```sh
-$ ln -s /absolute/path/to/snap/agents/skills ~/Library/Developer/Xcode/CodingAssistant/ClaudeAgentConfig/skills
-```
