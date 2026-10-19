@@ -26,7 +26,7 @@ Do not write the file until confirmed. If creating from scratch, show the full c
 ### Structure
 
 ```
-@path/to/AGENTS-shared.md
+@../snap/agents/AGENTS-shared.md
 
 # <PackageName>
 

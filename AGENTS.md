@@ -1,1 +1,1 @@
-@agents/AGENTS-shared.md
+@../snap/agents/AGENTS-shared.md
