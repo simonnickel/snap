@@ -32,13 +32,6 @@ Replace the `.snap-skills` tracking in `setup.sh`. Once every skill is named `sn
 - The prefixes in `docs/agent-setup.md` currently express scope (package, suite, generic). Decide how scope is shown instead, which also settles the prefix question in TODO-7.
 - Remove the manifest handling from `setup.sh` and the `.snap-skills` files from each skill folder, and update `docs/agent-setup.md`.
 
-## TODO-10: Move the scope section to the mission statement
-
-Move `Scope` from `agents/AGENTS-shared.md` to `docs/mission-statement.md`.
-
-- Reconcile it with `Purpose` there: `Scope` says the packages are for arbitrary consumption across a wide range of contexts, `Purpose` says the suite is shaped around my own projects and does not aim to serve every use case.
-- The mission statement is not loaded into sessions. Decide whether `AGENTS-shared.md` imports it or keeps a pointer, so agents still apply the rules on API changes and the demo.
-
 ## TODO-8: Audit
 
 Run `/snap-check-guidelines`. The guidelines and conventions changed substantially, so the audit likely surfaces more than this list.
