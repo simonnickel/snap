@@ -2,6 +2,9 @@
 
 This folder is a convenience workspace containing all SNAP packages.
 
-Scope tool calls (search, edits) to the package the session was started in. Starting a session at the workspace root puts cross-package operations in scope.
+- Keep work within the package the session was started in.
+- A session started at the workspace root covers all packages.
+- Commit in each package's own repository.
+- Dependencies resolve from GitHub. Local changes reach dependents only once pushed.
 
 @AGENTS-shared.md
