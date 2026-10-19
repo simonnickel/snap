@@ -14,6 +14,8 @@ The skills still describe the layout from before the conventions moved out of `A
 
 - `snap-check-guidelines` audits both locations but has no criterion for deciding which one a rule belongs in. Write down the criterion the moves settled on. A section mixing suite-specific and generic content should be split, not left whole.
 - `check-agents-md` needs checking against the `AGENTS.md` description in `conventions/documentation.md`.
+- `check-agents-md` Phase 1: drop the `setup.sh --check` step (setup belongs to the script) and merge the `AGENTS-shared.md` and `/context` steps into one check that the setup is loaded.
+- `check-agents-md` checks the package import itself, the script no longer does. Allow the import at the end of the file instead of requiring it as the first line, and decide on one position for the template.
 
 ## TODO-7: Rewrite the skill conventions
 
@@ -21,6 +23,21 @@ The skills still describe the layout from before the conventions moved out of `A
 
 - Check whether the phases still describe what the reworked skills do.
 - Decide whether the file should also cover the naming prefixes currently in `agents/README.md`.
+
+## TODO-9: Prefix every skill with `snap-`
+
+Replace the `.snap-skills` tracking in `setup.sh`. Once every skill is named `snap-*`, the script owns everything with that prefix in each skill folder, so it can remove all `snap-*` folders and copy the source skills fresh without tracking anything.
+
+- Rename all skills, including the unprefixed ones and `sn-proofread`, and update references to them.
+- The prefixes in `agents/README.md` currently express scope (package, suite, generic). Decide how scope is shown instead, which also settles the prefix question in TODO-7.
+- Remove the manifest handling from `setup.sh` and the `.snap-skills` files from each skill folder, and update `docs/agent-setup.md`.
+
+## TODO-10: Move the scope section to the mission statement
+
+Move `Scope` from `agents/AGENTS-shared.md` to `docs/mission-statement.md`.
+
+- Reconcile it with `Purpose` there: `Scope` says the packages are for arbitrary consumption across a wide range of contexts, `Purpose` says the suite is shaped around my own projects and does not aim to serve every use case.
+- The mission statement is not loaded into sessions. Decide whether `AGENTS-shared.md` imports it or keeps a pointer, so agents still apply the rules on API changes and the demo.
 
 ## TODO-8: Audit
 
