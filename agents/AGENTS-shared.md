@@ -36,9 +36,7 @@ These are Swift library packages intended for arbitrary consumption (any app or 
 
 ## Agent Setup
 
-Each package needs these files. Use the `check-agents-md` skill to create or update them:
-- `CLAUDE.md` in the root containing only `@AGENTS.md` (what Claude Code auto-imports)
-- `AGENTS.md` importing this file and extending it with package-specific context
+Each package needs an `AGENTS.md` in the root importing this file and extending it with package-specific context. Use the `check-agents-md` skill to create or update it.
 
 The workspace folder containing all packages needs:
 - `AGENTS.md` containing only `@snap/agents/AGENTS-workspace.md`
