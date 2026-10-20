@@ -5,7 +5,7 @@ Outstanding work on the agent setup, conventions and documentation structure.
 ## TODO-5: Settle the open documentation rules
 
 - Decide whether one topic per file gets stated as a rule in `docs/documentation.md`.
-- Consider renaming `Module, checked in` in `docs/documentation.md`. For a single-package repository the `<module>/` placeholder resolves to the root.
+- Consider renaming `Module` in `docs/documentation.md`. For a single-package repository the `<module>/` placeholder resolves to the root.
 - Decide on a rule under `Structure` in `docs/conventions/writing-style.md`: "Don't list a file in its own index or map."
 - `Common files in docs/` in `docs/documentation.md` places `mission-statement.md` and `todo.md` directly in `docs/`, while `snap` uses `suite/` and `plans/`. Decide whether packages follow the subfolder layout.
 

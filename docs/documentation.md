@@ -6,26 +6,25 @@ A map of where each kind of knowledge, decision or convention lives. Use it to d
 - Prefer updating an existing entry over adding a new one.
 - Delete an entry that is redundant or no longer holds.
 
-## Global, checked in
+## Global
 
 Loaded in every project on this machine, as described in `snap/docs/suite/agent-setup.md`.
 
 - **`snap/agents/AGENTS-global.md`** — Agent behavior and collaboration norms that apply to any project.
-- **`snap/docs/conventions/`** — Design principles, code style, naming and writing conventions.
+- **`snap/docs/conventions/`** — Conventions that apply to any project.
   - **`snap/docs/conventions/index.md`** — Imports every convention file. A new file only loads once listed here.
 - **`snap/agents/skills/`** — Recurring multi-step workflows.
-  - **`snap/agents/setup.sh`** — Applies the agent setup, including copying the skills into each agent tool. Re-run after changing a skill.
 
-## Suite, checked in
+## Suite
 
-Loaded in every SNAP package and the workspace, via `AGENTS-shared.md`.
+Loaded in every SNAP package and the workspace, as described in `snap/docs/suite/agent-setup.md`.
 
 - **`snap/agents/AGENTS-shared.md`** — What is specific to the SNAP suite.
 - **`snap/agents/AGENTS-workspace.md`** — Additions for sessions started in the workspace folder.
 - **`snap/docs/suite/`** — Documentation about the suite as a whole.
 - **`snap/docs/plans/`** — Outstanding work on the suite.
 
-## Module, checked in
+## Module
 
 - **`<module>/AGENTS.md`** — Agent orientation for working on the module itself: what it does, how it is structured and what is easy to get wrong.
 - **`<module>/README.md`** — Consumer overview, install, headline features.
@@ -46,7 +45,7 @@ Add one when there is content for it, not upfront.
   - An item that outgrows a few bullets moves into its own `<topic>.md` next to `todo.md`. Its entry stays in `todo.md` and links to the file.
 - **`<topic>.md`** — A guide for a single topic, e.g. usage, setup or migration.
 
-## Per-machine, not synced
+## Per-machine
 
 - **`~/.claude/projects/<project>/memory/`** — Only for things tied to one machine, or as temporary notes before a finding settles into a checked-in location.
 
