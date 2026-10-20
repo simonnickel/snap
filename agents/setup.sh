@@ -25,8 +25,8 @@ SKILL_DESTINATIONS=(
     "$HOME/Library/Developer/Xcode/CodingAssistant/ClaudeAgentConfig/skills"
 )
 
-# Lists the skills this script copied into a destination, so removed or renamed ones can be cleaned up.
-MANIFEST_NAME=".snap-skills"
+# Every skill is named snap-*, so the script owns all folders with that prefix in a destination.
+SKILL_PREFIX="snap-"
 
 PROBLEMS=0
 
@@ -68,7 +68,12 @@ fi
 shopt -s nullglob
 SKILL_NAMES=()
 for dir in "$SKILLS_DIR"/*/; do
-    SKILL_NAMES+=("$(basename "$dir")")
+    name="$(basename "$dir")"
+    if [[ "$name" != "$SKILL_PREFIX"* ]]; then
+        echo "Skill $name is not prefixed with $SKILL_PREFIX" >&2
+        exit 1
+    fi
+    SKILL_NAMES+=("$name")
 done
 if [[ ${#SKILL_NAMES[@]} -eq 0 ]]; then
     echo "No skills found in $SKILLS_DIR" >&2
@@ -90,15 +95,11 @@ for destination in "${SKILL_DESTINATIONS[@]}"; do
         continue
     fi
 
-    manifest="$destination/$MANIFEST_NAME"
     stale=()
-    if [[ -f "$manifest" ]]; then
-        while IFS= read -r name; do
-            if [[ -n "$name" ]] && ! is_skill "$name"; then
-                stale+=("$name")
-            fi
-        done < "$manifest"
-    fi
+    for dir in "$destination/$SKILL_PREFIX"*/; do
+        name="$(basename "$dir")"
+        is_skill "$name" || stale+=("$name")
+    done
 
     outdated=()
     for name in "${SKILL_NAMES[@]}"; do
@@ -116,18 +117,13 @@ for destination in "${SKILL_DESTINATIONS[@]}"; do
         fi
     else
         mkdir -p "$destination"
-        for name in ${stale[@]+"${stale[@]}"}; do
-            rm -rf "${destination:?}/$name"
+        for dir in "$destination/$SKILL_PREFIX"*/; do
+            rm -rf "${dir%/}"
         done
-        for name in ${outdated[@]+"${outdated[@]}"}; do
-            rm -rf "${destination:?}/$name"
+        for name in "${SKILL_NAMES[@]}"; do
             cp -R "$SKILLS_DIR/$name" "$destination/$name"
         done
         fixed "$destination synced (updated: ${outdated[*]:-none}, removed: ${stale[*]:-none})"
-    fi
-
-    if ! $CHECK_ONLY; then
-        printf '%s\n' "${SKILL_NAMES[@]}" > "$manifest"
     fi
 done
 

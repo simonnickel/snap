@@ -1,5 +1,5 @@
 ---
-name: sn-proofread
+name: snap-generic-proofread
 description: Proofread text files for spelling, grammar and wording issues, fixing typos automatically and suggesting other improvements. Use when asked to proofread, check writing, or review wording in a file or folder.
 ---
 

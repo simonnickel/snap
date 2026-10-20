@@ -1,5 +1,5 @@
 ---
-name: check-agents-md
+name: snap-package-check-agents-md
 description: Create, update or improve the local AGENTS.md for the current package. Use when setting up a new package, after significant code changes, or when new process knowledge should be captured. Imports `AGENTS-shared.md` and extends it with package-specific context.
 ---
 
@@ -54,7 +54,7 @@ Typical sections to consider:
 - For packages of independent utilities with no shared architecture, skip individual type docs entirely. If something looks wrong but is intentional, document it in the source comment. Only add it here if the source comment alone isn't enough, e.g. the pattern spans multiple files and a reader of any single one wouldn't understand the constraint.
 - **This file is for agents working on the package internals, not its consumers.** If a detail only matters to someone integrating the package, put it in doc comments instead.
 
-When done, suggest running `/reflect` to capture any process improvements from the session.
+When done, suggest running `/snap-generic-reflect` to capture any process improvements from the session.
 
 ## Constraints
 

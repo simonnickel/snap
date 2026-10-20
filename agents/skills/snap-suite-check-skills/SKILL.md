@@ -1,5 +1,5 @@
 ---
-name: snap-check-skills
+name: snap-suite-check-skills
 description: Audit all skill files for quality and consistency. Checks each skill against project conventions and checks across all skills for gaps, redundancies, conflicts, ambiguities, scope issues, stale references and naming discrepancies.
 ---
 
@@ -18,7 +18,7 @@ Read in full:
 Apply each category both within individual skills and across all skills as a set. Complete the full analysis before presenting anything.
 
 **Correctness**
-- Claims about other skills are accurate and references use correct names (e.g. `/check-comments`)
+- Claims about other skills are accurate and references use correct names (e.g. `/snap-package-check-comments`)
 - AGENTS.md conventions are followed
 - Frontmatter `name` matches the folder name and `description` accurately reflects the skill's scope
 - Standalone skills include a suggest-reflect line after the phases (composite skills that run reflect as a step omit it)
@@ -60,7 +60,7 @@ Apply each category both within individual skills and across all skills as a set
 
 Present findings using the standard format defined in AGENTS.md.
 
-When done, suggest running `/reflect` to capture any process improvements from the session.
+When done, suggest running `/snap-generic-reflect` to capture any process improvements from the session.
 
 ## Constraints
 

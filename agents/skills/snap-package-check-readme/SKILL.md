@@ -1,5 +1,5 @@
 ---
-name: check-readme
+name: snap-package-check-readme
 description: Review and improve the README of the current project. Use when the user asks to check, audit, verify or update a README, especially when correctness against the public API matters.
 ---
 
@@ -51,7 +51,7 @@ Complete the full analysis before presenting anything. Check every claim against
 
 Present findings using the standard format defined in AGENTS.md.
 
-When done, suggest running `/reflect` to capture any process improvements from the session.
+When done, suggest running `/snap-generic-reflect` to capture any process improvements from the session.
 
 ## Constraints
 

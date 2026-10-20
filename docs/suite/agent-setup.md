@@ -34,8 +34,8 @@ Creates the symlink and the workspace `AGENTS.md`, and copies the skills. An exi
 
 `--check` reports what differs from the expected setup without changing anything.
 
-Re-run it after adding, editing, renaming or removing a skill. Skills removed from `snap/agents/skills/` are removed from each skill folder, other skills in those folders are left untouched. Changes to `AGENTS*.md` and convention files need no re-run, they are imported directly.
+Re-run it after adding, editing, renaming or removing a skill. Every `snap-*` folder in each skill folder is replaced with the current skills, other skills in those folders are left untouched. Changes to `AGENTS*.md` and convention files need no re-run, they are imported directly.
 
 ## Package context
 
-Each package `AGENTS.md` is created and maintained with the `check-agents-md` skill, including its import. The script does not touch or check package files.
+Each package `AGENTS.md` is created and maintained with the `snap-package-check-agents-md` skill, including its import. The script does not touch or check package files.

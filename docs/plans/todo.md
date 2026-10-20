@@ -13,10 +13,10 @@ Outstanding work on the agent setup, conventions and documentation structure.
 
 The skills still describe the layout from before the conventions moved out of `AGENTS-shared.md` into topic files.
 
-- `snap-check-guidelines` audits both locations but has no criterion for deciding which one a rule belongs in. Write down the criterion the moves settled on. A section mixing suite-specific and generic content should be split, not left whole.
-- `check-agents-md` needs checking against the `AGENTS.md` description in `docs/documentation.md`.
-- `check-agents-md` Phase 1: drop the `setup.sh --check` step (setup belongs to the script) and merge the `AGENTS-shared.md` and `/context` steps into one check that the setup is loaded.
-- `check-agents-md` checks the package import itself, the script no longer does. Allow the import at the end of the file instead of requiring it as the first line, and decide on one position for the template.
+- `snap-suite-check-guidelines` audits both locations but has no criterion for deciding which one a rule belongs in. Write down the criterion the moves settled on. A section mixing suite-specific and generic content should be split, not left whole.
+- `snap-package-check-agents-md` needs checking against the `AGENTS.md` description in `docs/documentation.md`.
+- `snap-package-check-agents-md` Phase 1: drop the `setup.sh --check` step (setup belongs to the script) and merge the `AGENTS-shared.md` and `/context` steps into one check that the setup is loaded.
+- `snap-package-check-agents-md` checks the package import itself, the script no longer does. Allow the import at the end of the file instead of requiring it as the first line, and decide on one position for the template.
 
 ## TODO-7: Rewrite the skill conventions
 
@@ -24,17 +24,10 @@ The skills still describe the layout from before the conventions moved out of `A
 
 - Check whether the phases still describe what the reworked skills do.
 
-## TODO-9: Rename every skill to `snap-<scope>-<name>`
-
-Follows the naming in `docs/suite/skills.md`. Replace the `.snap-skills` tracking in `setup.sh`: the script owns every `snap-*` folder in each skill folder, so it can remove them all and copy the source skills fresh without tracking anything.
-
-- Rename all skills and update references to them.
-- Remove the manifest handling from `setup.sh` and the `.snap-skills` files from each skill folder, and update `docs/suite/agent-setup.md`.
-
 ## TODO-10: Consider importing more docs
 
 `AGENTS-shared.md` imports only `mission-statement.md`, `packages-overview.md` and `documentation.md`. Decide whether more docs should load in every session, e.g. `agent-setup.md`, or stay referenced only.
 
 ## TODO-8: Audit
 
-Run `/snap-check-guidelines`. The guidelines and conventions changed substantially, so the audit likely surfaces more than this list.
+Run `/snap-suite-check-guidelines`. The guidelines and conventions changed substantially, so the audit likely surfaces more than this list.

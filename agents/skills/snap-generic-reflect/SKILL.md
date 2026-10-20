@@ -1,5 +1,5 @@
 ---
-name: reflect
+name: snap-generic-reflect
 description: Review the current conversation for learnings that should improve existing skills, AGENTS.md files or memory. Use at the end of a session to capture non-obvious findings before they're lost.
 ---
 

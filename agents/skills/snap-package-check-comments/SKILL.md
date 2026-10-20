@@ -1,5 +1,5 @@
 ---
-name: check-comments
+name: snap-package-check-comments
 description: Check all source comments in the package for typos, correctness, clarity, brevity and policy compliance. Fixes typos immediately; lists content changes for per-item decision.
 ---
 
@@ -51,7 +51,7 @@ Check every comment against each category:
 
 Present findings using the standard format defined in AGENTS.md.
 
-When done, suggest running `/reflect` to capture any process improvements from the session.
+When done, suggest running `/snap-generic-reflect` to capture any process improvements from the session.
 
 ## Constraints
 
