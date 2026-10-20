@@ -8,12 +8,22 @@ A map of where each kind of knowledge, decision or convention lives. Use it to d
 
 ## Global, checked in
 
-Imported into every project on this machine, via the `~/.claude/CLAUDE.md` symlink to `AGENTS-global.md`.
+Loaded in every project on this machine, as described in `snap/docs/suite/agent-setup.md`.
 
 - **`snap/agents/AGENTS-global.md`** — Agent behavior and collaboration norms that apply to any project.
-- **`snap/conventions/`** — Design principles, code style and naming conventions.
-  - **`snap/conventions/index.md`** — Imports every convention file. A new file only loads once listed here.
-- **`snap/agents/skills/`** — Recurring multi-step workflows, synced to the agent tools.
+- **`snap/docs/conventions/`** — Design principles, code style, naming and writing conventions.
+  - **`snap/docs/conventions/index.md`** — Imports every convention file. A new file only loads once listed here.
+- **`snap/agents/skills/`** — Recurring multi-step workflows.
+  - **`snap/agents/setup.sh`** — Applies the agent setup, including copying the skills into each agent tool. Re-run after changing a skill.
+
+## Suite, checked in
+
+Loaded in every SNAP package and the workspace, via `AGENTS-shared.md`.
+
+- **`snap/agents/AGENTS-shared.md`** — What is specific to the SNAP suite.
+- **`snap/agents/AGENTS-workspace.md`** — Additions for sessions started in the workspace folder.
+- **`snap/docs/suite/`** — Documentation about the suite, e.g. mission statement, packages overview and agent setup.
+- **`snap/docs/plans/`** — Outstanding work on the suite.
 
 ## Module, checked in
 

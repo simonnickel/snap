@@ -1,4 +1,3 @@
-@documentation.md
 @principles.md
 @api-design.md
 @naming.md

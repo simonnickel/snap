@@ -6,9 +6,9 @@ How the agent configuration reaches each session, and how to set it up on a mach
 
 Each session loads the layers that apply to where it was started.
 
-- **Global** — `snap/agents/AGENTS-global.md` and every convention file via `snap/conventions/index.md`. Anything that applies regardless of project. Loaded in every project on the machine.
+- **Global** — `snap/agents/AGENTS-global.md` and every convention file via `snap/docs/conventions/index.md`. Anything that applies regardless of project. Loaded in every project on the machine.
 - **Workspace** — `snap/agents/AGENTS-workspace.md`. Loaded when a session starts in the workspace folder.
-- **Suite** — `snap/agents/AGENTS-shared.md`. What is specific to the SNAP suite. Imported by every package and by the workspace.
+- **Suite** — `snap/agents/AGENTS-shared.md` and the docs it imports. What is specific to the SNAP suite. Imported by every package and by the workspace.
 - **Package** — `<package>/AGENTS.md`. Loaded when a session starts in that package.
 - **Skills** — `snap/agents/skills/`. Copied into the skill folders of Claude Code, Claude in Xcode, Codex CLI and Codex in Xcode.
 

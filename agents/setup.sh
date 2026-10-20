@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-# Applies the agent setup described in snap/docs/agent-setup.md.
+# Applies the agent setup described in snap/docs/suite/agent-setup.md.
 # Usage: setup.sh [--check]
 #   --check  Report what differs from the expected setup without changing anything.
 
