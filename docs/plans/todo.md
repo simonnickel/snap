@@ -23,14 +23,12 @@ The skills still describe the layout from before the conventions moved out of `A
 `docs/suite/skills.md` holds the phase structure copied from the old `Skill Conventions` section in `AGENTS-shared.md`. It was derived from how the skills were written, so it has to follow the rework rather than lead it.
 
 - Check whether the phases still describe what the reworked skills do.
-- Decide whether the file should also cover the skill name prefixes currently in `docs/suite/agent-setup.md`.
 
-## TODO-9: Prefix every skill with `snap-`
+## TODO-9: Rename every skill to `snap-<scope>-<name>`
 
-Replace the `.snap-skills` tracking in `setup.sh`. Once every skill is named `snap-*`, the script owns everything with that prefix in each skill folder, so it can remove all `snap-*` folders and copy the source skills fresh without tracking anything.
+Follows the naming in `docs/suite/skills.md`. Replace the `.snap-skills` tracking in `setup.sh`: the script owns every `snap-*` folder in each skill folder, so it can remove them all and copy the source skills fresh without tracking anything.
 
-- Rename all skills, including the unprefixed ones and `sn-proofread`, and update references to them.
-- The prefixes in `docs/suite/agent-setup.md` currently express scope (package, suite, generic). Decide how scope is shown instead, which also settles the prefix question in TODO-7.
+- Rename all skills and update references to them.
 - Remove the manifest handling from `setup.sh` and the `.snap-skills` files from each skill folder, and update `docs/suite/agent-setup.md`.
 
 ## TODO-10: Consider importing more docs
