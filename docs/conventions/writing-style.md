@@ -19,4 +19,8 @@ Conventions for all written content: documentation, code comments, AGENTS.md, RE
 
 - Avoid phrasing that is open to misinterpretation.
 - Cut vague qualifiers ("generally", "typically", "in most cases") or state the actual condition.
+
+## References
+
 - Refer to code symbols by their exact identifier, not a paraphrase.
+- Describe a referenced target by its purpose or category, not by listing its current parts.

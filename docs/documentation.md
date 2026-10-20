@@ -22,14 +22,14 @@ Loaded in every SNAP package and the workspace, via `AGENTS-shared.md`.
 
 - **`snap/agents/AGENTS-shared.md`** — What is specific to the SNAP suite.
 - **`snap/agents/AGENTS-workspace.md`** — Additions for sessions started in the workspace folder.
-- **`snap/docs/suite/`** — Documentation about the suite, e.g. mission statement, packages overview and agent setup.
+- **`snap/docs/suite/`** — Documentation about the suite as a whole.
 - **`snap/docs/plans/`** — Outstanding work on the suite.
 
 ## Module, checked in
 
 - **`<module>/AGENTS.md`** — Agent orientation for working on the module itself: what it does, how it is structured and what is easy to get wrong.
 - **`<module>/README.md`** — Consumer overview, install, headline features.
-- **`<module>/docs/`** — Any documentation about the module, e.g. architecture rationale, guides, design decisions.
+- **`<module>/docs/`** — Any documentation about the module.
 - **Doc comments on public symbols** — How to use the API.
 
 ### Common files in `docs/`
