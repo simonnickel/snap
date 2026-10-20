@@ -1,25 +1,33 @@
 ---
 name: snap-suite-check
-description: Suite-level audit of skill files and guidelines. Runs snap-suite-check-skills, snap-suite-check-guidelines and snap-generic-reflect in sequence.
+description: Audit the suite documentation, skills and agent setup of the whole suite.
+argument-hint: [docs] [skills] [setup]
 ---
 
-Run the following skills in order:
+## Parts
 
-1. `/snap-suite-check-skills` — audit all skill files for quality and cross-skill consistency
-2. `/snap-suite-check-guidelines` — audit `AGENTS-shared.md` and conventions for quality and correctness
-3. `/snap-generic-reflect` — capture any process improvements from the session
+- `docs` — every file in `snap/docs/` and `snap/agents/AGENTS-*.md`
+- `skills` — every skill in `snap/agents/skills/`
+- `setup` — the output of `snap/agents/setup.sh --check` and every `AGENTS.md` in the workspace
 
-Complete each skill fully before starting the next.
+Without an argument, every part is checked. With arguments, findings are limited to the named parts.
 
-## Synthesis
+## Phase 1: Gather context
 
-After all sub-skills complete, before running reflect, cross-check skill files and guidelines for mutual consistency:
-- Skills that violate or contradict the conventions they are supposed to follow
-- Conventions not reflected in any skill's checks or scope
-- Guidelines that conflict with what skills actually audit
+Gather every part in full, regardless of the arguments.
 
-Present any findings using the standard format defined in `AGENTS-shared.md`.
+## Phase 2: Analyse
 
-## Constraints
+Check every part against:
+- `snap/docs/documentation.md` for placement
+- `snap/docs/conventions/writing-style.md` for wording and references
+- `snap/docs/suite/skills.md` for skills
+- `snap/docs/suite/agent-setup.md` for the setup
 
-- When running sub-skills, skip their suggestions to run `/snap-generic-reflect` because it runs as the final step.
+Look for duplication, contradictions and overlap across all files, including skills that do the same work.
+
+Verify that every referenced path, skill and symbol exists.
+
+## Phase 3: Present findings
+
+Present findings using the standard format defined in `AGENTS-global.md`.

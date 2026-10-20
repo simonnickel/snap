@@ -9,11 +9,18 @@ Outstanding work on the agent setup, conventions and documentation structure.
 - Decide on a rule under `Structure` in `docs/conventions/writing-style.md`: "Don't list a file in its own index or map."
 - `Common files in docs/` in `docs/documentation.md` places `mission-statement.md` and `todo.md` directly in `docs/`, while `snap` uses `suite/` and `plans/`. Decide whether packages follow the subfolder layout.
 
+## TODO-11: Decide the scope of package skills
+
+Most `snap-package-*` skills do not depend on suite docs. Their criteria live in the global conventions, so they could work in any project.
+
+- Decide whether `snap-package-check-comments` and `snap-package-check-readme` become `generic`. Their only package assumptions are the `Sources/` path, Swift comment syntax and reading the public API.
+- Decide what `package` means in `docs/suite/skills.md`: a skill operating on a SNAP package, or one depending on suite docs.
+- Decide whether the skill scopes in `docs/suite/skills.md` and the layers in `docs/documentation.md` (Global, Suite, Module) share one set of terms.
+
 ## TODO-6: Rework the skills for the new structure
 
 The skills still describe the layout from before the conventions moved out of `AGENTS-shared.md` into topic files.
 
-- `snap-suite-check-guidelines` audits both locations but has no criterion for deciding which one a rule belongs in. Write down the criterion the moves settled on. A section mixing suite-specific and generic content should be split, not left whole.
 - `snap-package-check-agents-md` needs checking against the `AGENTS.md` description in `docs/documentation.md`.
 - `snap-package-check-agents-md` Phase 1: drop the `setup.sh --check` step (setup belongs to the script) and merge the `AGENTS-shared.md` and `/context` steps into one check that the setup is loaded.
 - `snap-package-check-agents-md` checks the package import itself, the script no longer does. Allow the import at the end of the file instead of requiring it as the first line, and decide on one position for the template.
@@ -30,4 +37,4 @@ The skills still describe the layout from before the conventions moved out of `A
 
 ## TODO-8: Audit
 
-Run `/snap-suite-check-guidelines`. The guidelines and conventions changed substantially, so the audit likely surfaces more than this list.
+Run `/snap-suite-check`. The guidelines and conventions changed substantially, so the audit likely surfaces more than this list.

@@ -21,6 +21,12 @@ A skill defines only the workflow: its steps, their order and where the user dec
 - A `generic` skill references only the global layer, since suite docs are not loaded outside the suite.
 - A skill that combines other skills references them by name and adds only the steps that cross them.
 
+## Structure
+
+- The frontmatter `name` matches the folder name.
+- The frontmatter `description` states the skill's scope. A skill that combines other skills names them in it.
+- `## Constraints`, if present, is the last section.
+
 ## Phases
 
 Skills use this phase structure. Diverge when a phase does something meaningfully different:
