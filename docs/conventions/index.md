@@ -6,4 +6,3 @@
 @swiftui.md
 @code-comments.md
 @writing-style.md
-@skills.md

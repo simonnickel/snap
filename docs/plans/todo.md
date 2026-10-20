@@ -20,7 +20,7 @@ The skills still describe the layout from before the conventions moved out of `A
 
 ## TODO-7: Rewrite the skill conventions
 
-`docs/conventions/skills.md` holds the phase structure copied from the old `Skill Conventions` section in `AGENTS-shared.md`. It was derived from how the skills were written, so it has to follow the rework rather than lead it.
+`docs/suite/skills.md` holds the phase structure copied from the old `Skill Conventions` section in `AGENTS-shared.md`. It was derived from how the skills were written, so it has to follow the rework rather than lead it.
 
 - Check whether the phases still describe what the reworked skills do.
 - Decide whether the file should also cover the skill name prefixes currently in `docs/suite/agent-setup.md`.
