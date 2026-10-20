@@ -43,6 +43,7 @@ Add one when there is content for it, not upfront.
   - Each item has a fixed id (`TODO-1`) that is never reassigned.
   - Items are ordered by execution, not by id.
   - Resolved items are removed and their id is retired.
+  - An item that outgrows a few bullets moves into its own `<topic>.md` next to `todo.md`. Its entry stays in `todo.md` and links to the file.
 - **`<topic>.md`** — A guide for a single topic, e.g. usage, setup or migration.
 
 ## Per-machine, not synced
