@@ -36,7 +36,13 @@ Loaded in every SNAP package and the workspace, as described in `snap/docs/suite
   - Excludes what one source file, a file listing or a doc comment already shows.
   - Excludes general language, framework and tooling knowledge.
   - Excludes details that only matter to consumers. These belong in doc comments.
-- **`<module>/README.md`** — Consumer overview, install, headline features.
+- **`<module>/README.md`** — Consumer overview: features, requirements and install.
+  - Covers each feature with the smallest example needed to use it. A package of independent utilities summarizes its features by group.
+  - Covers limitations that would surprise a new user.
+  - Covers the design choices that explain why a feature behaves as it does.
+  - States platforms, language version and dependencies in the text, not only in badges.
+  - Excludes API reference detail. It belongs in doc comments.
+  - Excludes filler, marketing voice and emojis.
 - **`<module>/docs/`** — Any documentation about the module.
 - **Doc comments on public symbols** — How to use the API.
 

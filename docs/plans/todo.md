@@ -8,14 +8,15 @@ Outstanding work on the agent setup, conventions and documentation structure.
 - Consider renaming `Module` in `docs/documentation.md`. For a single-package repository the `<module>/` placeholder resolves to the root.
 - Decide on a rule under `Structure` in `docs/conventions/writing-style.md`: "Don't list a file in its own index or map."
 - `Common files in docs/` in `docs/documentation.md` places `mission-statement.md` and `todo.md` directly in `docs/`, while `snap` uses `suite/` and `plans/`. Decide whether packages follow the subfolder layout.
+- Decide whether the README entry in `docs/documentation.md` requires linking to the package's `docs/`, e.g. a guide per topic or the DocC documentation.
 
 ## TODO-11: Make the generic skills work outside the suite
 
-`snap-generic-check-comments`, `snap-generic-check-readme` and `snap-generic-analyse-todos` moved from `package` to `generic` and have to work in any project, including apps.
+`snap-generic-check-comments` and `snap-generic-analyse-todos` moved from `package` to `generic` and have to work in any project, including apps.
 
-- Move the `Module` section of `docs/documentation.md` into a global convention, so generic skills can reference the README role, `todo.md` and the common files in `docs/`.
+- Move the `Module` section of `docs/documentation.md` into a global convention, so generic skills can reference `todo.md` and the common files in `docs/`.
 - Replace the SPM-specific paths `Sources/` and `Package.swift` in the generic skills.
-- Make the public API checks in `snap-generic-check-comments` and `snap-generic-check-readme` conditional on the project exposing public API.
+- Make the public API check in `snap-generic-check-comments` conditional on the project exposing public API.
 - Decide whether the skill scopes in `docs/suite/skills.md` and the layers in `docs/documentation.md` (Global, Suite, Module) share one set of terms.
 
 ## TODO-7: Rewrite the skill conventions

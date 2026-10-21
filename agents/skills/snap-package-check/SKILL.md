@@ -1,12 +1,12 @@
 ---
 name: snap-package-check
-description: Full audit of the current package: comments, README and AGENTS.md. Runs snap-generic-check-comments, snap-generic-check-readme, snap-package-check-agents-md and snap-generic-reflect in sequence.
+description: Full audit of the current package: comments, README and AGENTS.md. Runs snap-generic-check-comments, snap-package-check-readme, snap-package-check-agents-md and snap-generic-reflect in sequence.
 ---
 
 Run the following skills in order:
 
 1. `/snap-generic-check-comments` — audit all source comments for typos, correctness, clarity, brevity and policy compliance
-2. `/snap-generic-check-readme` — verify the README against the public API and update it
+2. `/snap-package-check-readme` — verify the README against the public API and update it
 3. `/snap-package-check-agents-md` — review and update the local AGENTS.md
 4. `/snap-generic-reflect` — capture any process improvements from the session
 
