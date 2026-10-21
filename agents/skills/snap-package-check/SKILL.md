@@ -1,26 +1,24 @@
 ---
 name: snap-package-check
-description: Full audit of the current package: comments, README and AGENTS.md. Runs snap-generic-check-comments, snap-package-check-readme, snap-package-check-agents-md and snap-generic-reflect in sequence.
+description: Maintain the comments, README and AGENTS.md of the current package. Runs snap-generic-check-comments, snap-package-check-readme and snap-package-check-agents-md in sequence.
 ---
 
-Run the following skills in order:
+## Phase 1: Run the skills
 
-1. `/snap-generic-check-comments` — audit all source comments for typos, correctness, clarity, brevity and policy compliance
-2. `/snap-package-check-readme` — verify the README against the public API and update it
-3. `/snap-package-check-agents-md` — review and update the local AGENTS.md
-4. `/snap-generic-reflect` — capture any process improvements from the session
+Run the following skills in order, completing each before starting the next:
 
-Complete each skill fully before starting the next.
+1. `/snap-generic-check-comments`
+2. `/snap-package-check-readme`
+3. `/snap-package-check-agents-md`
 
-## Synthesis
+## Phase 2: Analyse
 
-After all sub-skills complete, before running reflect, cross-check the audited content for mutual consistency:
-- Descriptions of types, behavior or constraints that differ between source comments and the README
-- Conventions defined in AGENTS.md that source comments or the README violate or contradict
-- Claims in the README that contradict what source comments document
+Check the comments, README and `AGENTS.md` together for:
+- Duplication: the same content in more than one place
+- Overlap: content or workflows that partly cover the same topic
+- Contradictions: statements that disagree
+- Inconsistent terms: one concept named differently
 
-Present any findings using the standard format defined in AGENTS.md.
+## Phase 3: Present findings
 
-## Constraints
-
-- When running sub-skills, skip their suggestions to run `/snap-generic-reflect` because it runs as the final step.
+Present findings using the standard format defined in `AGENTS-global.md`.

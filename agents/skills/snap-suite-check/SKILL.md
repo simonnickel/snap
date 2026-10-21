@@ -8,7 +8,7 @@ argument-hint: [docs] [skills] [setup]
 
 - `docs` — every file in `snap/docs/` and `snap/agents/AGENTS-*.md`
 - `skills` — every skill in `snap/agents/skills/`
-- `setup` — the output of `snap/agents/setup.sh --check` and every `AGENTS.md` in the workspace
+- `setup` — the output of `snap/agents/setup.sh --check` and the imports of every `AGENTS.md` in the workspace
 
 Without an argument, every part is checked. With arguments, findings are limited to the named parts.
 
@@ -24,7 +24,11 @@ Check every part against:
 - `snap/docs/suite/skills.md` for skills
 - `snap/docs/suite/agent-setup.md` for the setup
 
-Look for duplication, contradictions and overlap across all files, including skills that do the same work.
+Check all parts together for:
+- Duplication: the same content in more than one place
+- Overlap: content or workflows that partly cover the same topic
+- Contradictions: statements that disagree
+- Inconsistent terms: one concept named differently
 
 Verify that every referenced path, skill and symbol exists.
 
