@@ -1,5 +1,5 @@
 ---
-name: snap-package-analyse-todos
+name: snap-generic-analyse-todos
 description: Scan the whole project for improvements in implementation, architecture, API, clarity, refactoring and guideline compliance. Records findings as TODO comments in source or as bullets in the README TODO section.
 ---
 
@@ -39,7 +39,7 @@ Complete the full analysis before presenting anything.
 - Names that obscure intent
 
 **Guideline compliance**
-- Violations of any rule in `AGENTS.md` (shared and local) not already caught by `/snap-package-check-comments`
+- Violations of any rule in `AGENTS.md` (shared and local) not already caught by `/snap-generic-check-comments`
 
 **Existing TODOs**
 - Is the item still valid, or has it already been resolved?

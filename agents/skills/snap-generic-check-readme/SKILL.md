@@ -1,5 +1,5 @@
 ---
-name: snap-package-check-readme
+name: snap-generic-check-readme
 description: Review and improve the README of the current project. Use when the user asks to check, audit, verify or update a README, especially when correctness against the public API matters.
 ---
 

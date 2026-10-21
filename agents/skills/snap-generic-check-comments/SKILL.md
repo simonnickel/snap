@@ -1,5 +1,5 @@
 ---
-name: snap-package-check-comments
+name: snap-generic-check-comments
 description: Check all source comments in the package for typos, correctness, clarity, brevity and policy compliance. Fixes typos immediately; lists content changes for per-item decision.
 ---
 
