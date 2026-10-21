@@ -14,12 +14,7 @@ Collect what the package would need in its README, following the README entry in
 
 ## Phase 3: Compare
 
-Compare the collected content with the README:
-- Missing: collected content the README lacks
-- Outdated: claims, code samples or links that no longer match the package
-- Misplaced: content that belongs in another file
-- Redundant: content already covered elsewhere
-- Wording: issues against `snap/docs/conventions/writing-style.md`
+Compare the collected content with the README, following the content checks in `AGENTS-global.md`.
 
 ## Phase 4: Present findings
 

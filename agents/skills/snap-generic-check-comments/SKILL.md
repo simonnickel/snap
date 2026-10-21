@@ -21,11 +21,7 @@ Collect where the code needs a comment, following `snap/docs/conventions/code-co
 
 ## Phase 3: Compare
 
-Compare the collected comments with the existing ones:
-- Missing: collected comments the code lacks
-- Outdated: parameters, return values or claims that no longer match the code
-- Redundant: comments the conventions advise against
-- Wording: issues against `snap/docs/conventions/writing-style.md`
+Compare the collected comments with the existing ones, following the content checks in `AGENTS-global.md`.
 
 ## Phase 4: Present findings
 

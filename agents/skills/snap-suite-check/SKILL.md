@@ -24,11 +24,7 @@ Check every part against:
 - `snap/docs/suite/skills.md` for skills
 - `snap/docs/suite/agent-setup.md` for the setup
 
-Check all parts together for:
-- Duplication: the same content in more than one place
-- Overlap: content or workflows that partly cover the same topic
-- Contradictions: statements that disagree
-- Inconsistent terms: one concept named differently
+Check all parts together, following the "Across files" content checks in `AGENTS-global.md`.
 
 Verify that every referenced path, skill and symbol exists.
 

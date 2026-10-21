@@ -14,12 +14,7 @@ Collect what the package would need in its `AGENTS.md`, following the `AGENTS.md
 
 ## Phase 3: Compare
 
-Compare the collected content with the `AGENTS.md`:
-- Missing: collected content the file lacks
-- Outdated: claims, symbols or paths that no longer match the package
-- Misplaced: content that belongs in another file
-- Redundant: content already covered elsewhere
-- Wording: issues against `snap/docs/conventions/writing-style.md`
+Compare the collected content with the `AGENTS.md`, following the content checks in `AGENTS-global.md`.
 
 ## Phase 4: Present findings
 

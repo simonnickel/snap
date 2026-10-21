@@ -13,11 +13,7 @@ Run the following skills in order, completing each before starting the next:
 
 ## Phase 2: Analyse
 
-Check the comments, README and `AGENTS.md` together for:
-- Duplication: the same content in more than one place
-- Overlap: content or workflows that partly cover the same topic
-- Contradictions: statements that disagree
-- Inconsistent terms: one concept named differently
+Check the comments, README and `AGENTS.md` together, following the "Across files" content checks in `AGENTS-global.md`.
 
 ## Phase 3: Present findings
 
