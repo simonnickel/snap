@@ -8,9 +8,7 @@
 - Don't summarize what you just did at the end of a response.
 - Don't explain common patterns, language features or tooling.
 
-## Proposing changes
-
-Propose changes first, implement after confirmation.
+## Decisions
 
 For open design questions, give the recommendation and the tradeoffs in the response first. Ask only once the decision is ready to be made, not while it is still being formed.
 
