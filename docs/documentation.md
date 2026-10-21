@@ -28,6 +28,14 @@ Loaded in every SNAP package and the workspace, as described in `snap/docs/suite
 ## Module
 
 - **`<module>/AGENTS.md`** — Agent orientation for working on the module itself: what it does, how it is structured and what is easy to get wrong.
+  - Contains only what an agent would get wrong without it.
+  - Covers what spans several files: structure, layering, recurring patterns and invariants.
+  - Covers related types that are easily confused.
+  - Covers what looks wrong but is intentional, when a source comment alone does not explain it.
+  - Excludes content already loaded through imports.
+  - Excludes what one source file, a file listing or a doc comment already shows.
+  - Excludes general language, framework and tooling knowledge.
+  - Excludes details that only matter to consumers. These belong in doc comments.
 - **`<module>/README.md`** — Consumer overview, install, headline features.
 - **`<module>/docs/`** — Any documentation about the module.
 - **Doc comments on public symbols** — How to use the API.

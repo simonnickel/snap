@@ -18,14 +18,6 @@ Outstanding work on the agent setup, conventions and documentation structure.
 - Make the public API checks in `snap-generic-check-comments` and `snap-generic-check-readme` conditional on the project exposing public API.
 - Decide whether the skill scopes in `docs/suite/skills.md` and the layers in `docs/documentation.md` (Global, Suite, Module) share one set of terms.
 
-## TODO-6: Rework the skills for the new structure
-
-The skills still describe the layout from before the conventions moved out of `AGENTS-shared.md` into topic files.
-
-- `snap-package-check-agents-md` needs checking against the `AGENTS.md` description in `docs/documentation.md`.
-- `snap-package-check-agents-md` Phase 1: drop the `setup.sh --check` step (setup belongs to the script) and merge the `AGENTS-shared.md` and `/context` steps into one check that the setup is loaded.
-- `snap-package-check-agents-md` checks the package import itself, the script no longer does. Allow the import at the end of the file instead of requiring it as the first line, and decide on one position for the template.
-
 ## TODO-7: Rewrite the skill conventions
 
 `docs/suite/skills.md` holds the phase structure copied from the old `Skill Conventions` section in `AGENTS-shared.md`. It was derived from how the skills were written, so it has to follow the rework rather than lead it.

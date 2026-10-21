@@ -38,4 +38,4 @@ Re-run it after adding, editing, renaming or removing a skill. Every `snap-*` fo
 
 ## Package context
 
-Each package `AGENTS.md` is created and maintained with the `snap-package-check-agents-md` skill, including its import. The script does not touch or check package files.
+The content of each package `AGENTS.md` is maintained with the `snap-package-check-agents-md` skill. Its import is checked by `snap-suite-check`. The script does not touch or check package files.
