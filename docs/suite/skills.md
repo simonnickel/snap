@@ -26,6 +26,7 @@ A skill defines only the workflow: its steps, their order and where the user dec
 - The frontmatter `name` matches the folder name.
 - The frontmatter `description` states the skill's scope. A skill that combines other skills names them in it.
 - `## Constraints`, if present, is the last section.
+- A skill that works on part of a project takes the scope as an argument, covering the whole project without one.
 
 ## Phases
 

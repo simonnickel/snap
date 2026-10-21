@@ -1,60 +1,32 @@
 ---
 name: snap-generic-check-comments
-description: Check all source comments in the package for typos, correctness, clarity, brevity and policy compliance. Fixes typos immediately; lists content changes for per-item decision.
+description: Maintain the source comments of the current project or a given part of it. Analyses the code and suggests additions, updates and removals.
+argument-hint: [scope]
 ---
 
-Audit every source comment in the package and fix issues.
+## Scope
 
-**Goal:** source comments that are correct, clear, brief and compliant with the project's comment policy.
+The arguments name the part of the project to cover. Without an argument, the whole project is covered.
 
-**Typos and spelling:** fix all immediately without asking, then report the changes made.
-**All other issues:** collect every finding first, then present as a numbered list. The user decides per item before any edit is applied.
+Findings are limited to the scope. Code outside it is read only where needed to understand the code in scope.
 
-## Phase 1: Scan all source files
+## Phase 1: Gather context
 
-Collect every comment from `Sources/`:
-- Doc comments (`///`) on any declaration
-- Inline comments (`//`) in function bodies
-- `// MARK:` and other structural markers: check for typos only, not content
+- Read every source file in scope with its comments.
+- Skip file header boilerplate and `TODO` comments. Check `// MARK:` only for wording.
 
-Skip:
-- File header boilerplate (the standard project/author block at the top of each file)
-- `TODO` and `FIXME` markers
+## Phase 2: Analyse the code
 
-## Phase 2: Fix typos immediately
+Collect where the code needs a comment, following `snap/docs/conventions/code-comments.md`. Work from the code, not from the existing comments.
 
-Fix all spelling errors across all files without asking. Report each change as: file path, line, old → new.
+## Phase 3: Compare
 
-## Phase 3: Collect content issues
-
-Check every comment against each category:
-
-**Correctness**
-- Parameter names or labels in a doc comment don't match the actual signature
-- Return description doesn't match the actual return type or behavior
-- Vague or unsupported claims ("for some reason", "somehow", "always"): propose a precise replacement or flag for removal.
-
-**Clarity**
-- Phrasing that has two reasonable readings
-
-**Brevity**
-- Comment adds nothing beyond what the declaration name and surrounding call site already communicate
-- Explanation longer than necessary for the idea it carries
-
-**Policy compliance**
-- Flag violations of the project's comment policy
-
-**Missing doc comments**
-- Flag public declarations whose purpose isn't obvious from the name and propose a doc comment.
+Compare the collected comments with the existing ones:
+- Missing: collected comments the code lacks
+- Outdated: parameters, return values or claims that no longer match the code
+- Redundant: comments the conventions advise against
+- Wording: issues against `snap/docs/conventions/writing-style.md`
 
 ## Phase 4: Present findings
 
-Present findings using the standard format defined in AGENTS.md.
-
-When done, suggest running `/snap-generic-reflect` to capture any process improvements from the session.
-
-## Constraints
-
-- Complete Phase 3 in full before presenting anything.
-- Apply only the content changes the user accepts.
-- Do not modify source code for any reason other than comments.
+Present findings using the standard format defined in `AGENTS-global.md`.

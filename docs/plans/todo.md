@@ -10,13 +10,12 @@ Outstanding work on the agent setup, conventions and documentation structure.
 - `Common files in docs/` in `docs/documentation.md` places `mission-statement.md` and `todo.md` directly in `docs/`, while `snap` uses `suite/` and `plans/`. Decide whether packages follow the subfolder layout.
 - Decide whether the README entry in `docs/documentation.md` requires linking to the package's `docs/`, e.g. a guide per topic or the DocC documentation.
 
-## TODO-11: Make the generic skills work outside the suite
+## TODO-11: Make snap-generic-analyse-todos work outside the suite
 
-`snap-generic-check-comments` and `snap-generic-analyse-todos` moved from `package` to `generic` and have to work in any project, including apps.
+`snap-generic-analyse-todos` moved from `package` to `generic` and has to work in any project, including apps.
 
-- Move the `Module` section of `docs/documentation.md` into a global convention, so generic skills can reference `todo.md` and the common files in `docs/`.
-- Replace the SPM-specific paths `Sources/` and `Package.swift` in the generic skills.
-- Make the public API check in `snap-generic-check-comments` conditional on the project exposing public API.
+- Move the `Module` section of `docs/documentation.md` into a global convention, so it can reference `todo.md` and the common files in `docs/`.
+- Replace the SPM-specific paths `Sources/` and `Package.swift`.
 - Decide whether the skill scopes in `docs/suite/skills.md` and the layers in `docs/documentation.md` (Global, Suite, Module) share one set of terms.
 
 ## TODO-7: Rewrite the skill conventions

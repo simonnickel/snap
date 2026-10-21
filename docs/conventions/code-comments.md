@@ -10,11 +10,18 @@ Write a comment when it helps understand design, usage or intent. That can inclu
 - Non-obvious constraints or invariants
 - Usage guidance for public API
 
+A public declaration whose purpose is not obvious from its name has a doc comment.
+
 Don't write comments that:
 
 - Describe what the code does (naming should do that)
 - Reference the task, fix or PR that introduced them
 - Make specific claims about the current structure of a type, such as the number of cases or variants. They become wrong as the type evolves.
+
+## Content
+
+- Parameters, return values and claims in a doc comment match the declaration.
+- A comment is as short as the idea it carries.
 
 ## TODO
 
