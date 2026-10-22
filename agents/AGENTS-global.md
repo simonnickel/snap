@@ -26,6 +26,7 @@ When checking written content (documentation, comments, AGENTS.md, README, skill
 
 ### Each file
 
+- Spelling: typos and misspelled words
 - Misplaced: content that belongs in another file
 - Redundant: content already covered elsewhere or advised against by the conventions
 - Wording: issues against `writing-style.md`
