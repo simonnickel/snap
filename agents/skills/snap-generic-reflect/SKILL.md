@@ -1,38 +1,25 @@
 ---
 name: snap-generic-reflect
-description: Review the current conversation for learnings that should improve existing skills, AGENTS.md files or memory. Use at the end of a session to capture non-obvious findings before they're lost.
+description: Review the current conversation for learnings worth persisting in the project's documentation, skills or memory. Use at the end of a session to capture non-obvious findings before they're lost.
 ---
-
-**Goal:** review this conversation for anything worth persisting: corrections, validated approaches, new conventions or structural gaps in the agent setup.
 
 ## Phase 1: Identify candidates
 
 Scan the conversation for:
-- Corrections to your approach ("no, don't do X")
-- Confirmed non-obvious choices (explicit confirmation or absence of pushback on an unusual approach)
+- Corrections to the approach
+- Non-obvious choices the user confirmed, explicitly or by accepting them without pushback
 - Patterns or constraints established during the session
-- Gaps: something you had to discover that agent setup files should have covered
+- Gaps: something that had to be discovered that the loaded instructions should have covered
 
-## Phase 2: Check existing files
+## Phase 2: Place
 
-Avoid redundancy by reading:
-- Shared AGENTS.md and its imports
-- Local AGENTS.md
-- Available skills that overlap in scope with the proposed addition
-- Existing memory entries
+- Determine where each candidate belongs, following the loaded documentation conventions. Without them, propose a location.
+- Read each target and compare the candidate with it, following the content checks in `AGENTS-global.md`.
 
 ## Phase 3: Present findings
 
-For each finding, identify where it belongs:
-- **Memory** — user preferences or project context specific to this machine; not shared across machines, so avoid it for suite-wide conventions
-- **Local AGENTS.md** — package-specific architecture or conventions
-- **Shared AGENTS.md** — conventions that apply across all packages in the suite and all machines
-- **A skill** — a reusable multi-step workflow that would benefit future sessions
-
-Present findings using the standard format defined in AGENTS.md.
+Present findings using the standard format defined in `AGENTS-global.md`. State the target for each finding.
 
 ## Constraints
 
 - If nothing meaningful was learned, say so. Don't invent improvements.
-- Don't add things already covered. Read the target file before proposing an addition.
-- Prefer updating an existing entry over adding a new one.
