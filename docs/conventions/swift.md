@@ -13,3 +13,4 @@
 ## Testing
 
 - Tests use Swift Testing (`@Test`, `@Suite`), not XCTest.
+- Public behavior is covered by tests.

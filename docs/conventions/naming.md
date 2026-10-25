@@ -1,5 +1,7 @@
 # Naming
 
+Follow the [Swift API Design Guidelines](https://www.swift.org/documentation/api-design-guidelines/).
+
 ## Service layer types
 While most of them are basically the same, sometimes nuances make sense to better communicate expectations.
 

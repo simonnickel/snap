@@ -1,63 +1,76 @@
 ---
 name: snap-generic-analyse-todos
-description: Scan the whole project for improvements in implementation, architecture, API, clarity, refactoring and guideline compliance. Records findings as TODO comments in source or as bullets in the README TODO section.
+description: Analyse the current project or a given part of it for improvements and record them as TODOs, following the project's documentation style. Does not fix anything.
+argument-hint: [scope]
 ---
 
-Scan the project for improvements and record actionable findings.
+## Scope
 
-**Goal:** a list of concrete code-level and structural improvements. Each finding becomes either a `// TODO:` comment in source (single-file or localised change) or a bullet in the README `## TODO` section (cross-file, architectural or feature-level work). Both placements are valid when a finding has both a local and a broader dimension.
+The arguments name the part of the project to cover. Without an argument, the whole project is covered.
+
+Findings are limited to the scope. Code outside it is read only where needed to understand the code in scope.
 
 ## Phase 1: Gather context
 
-Read in full:
-- `Package.swift` and `README.md`
-- All files in `Sources/`
-- All existing `// TODO:` and `// FIXME:` comments, noting file and line for each
-- `AGENTS.md` (shared and local) for guidelines
+- Read the manifest and every source and test file in scope.
+- Collect every existing `TODO` and `FIXME` comment with its file and line.
+- Determine where findings are recorded:
+  - Local items: TODO comments in source, following the loaded comment conventions.
+  - Cross-file items: the project-level list defined by the loaded documentation conventions. Without one, the list the project already uses. Without either, ask the user.
+- Read the project-level list.
 
 ## Phase 2: Analyse
 
 Complete the full analysis before presenting anything.
 
-**Implementation**
+**Correctness** (`snap/docs/conventions/swift.md`)
 - Incorrect or incomplete behavior
-- Missing edge-case handling at system boundaries (user input, external APIs)
+- Missing edge-case handling at system boundaries (user input, external APIs, persistence)
+- Concurrency issues: data races, actor isolation, `@unchecked Sendable` without documented synchronization
+- Code that compiles with warnings
+
+**Efficiency**
 - Inefficient patterns with a clear better alternative
 
-**Architecture**
-- Coupling between layers that should be separate
+**Architecture** (`snap/docs/conventions/principles.md`, `snap/docs/conventions/api-design.md`)
+- Coupling between modules, features or layers that should be independent
 - Responsibilities that belong in a different type
-- Patterns that will not scale as the package grows
+- Assumptions about the consumer's architecture, threading model or lifecycle
+- Patterns that will not hold up as the project grows
+- External dependencies that a simpler built-in solution could replace
 
-**API design**
-- Names that don't match Swift API Design Guidelines or the project's naming patterns
-- Public API that is easy to misuse. Prefer compile-time errors over runtime ones.
-- Missing conveniences a consumer would reasonably expect
+**API design** (`snap/docs/conventions/api-design.md`, `snap/docs/conventions/naming.md`, `snap/docs/conventions/swiftui.md`)
+- Names that don't follow the Swift API Design Guidelines or the project's naming patterns
+- Public API that is easy to misuse, where a compile-time error could replace a runtime failure
+- Public API larger than the problem needs
+- View modifiers without an inert variant
 
-**Clarity**
-- Code flow that requires significant effort to follow
+**Clarity** (`snap/docs/conventions/principles.md`)
+- Code flow that takes significant effort to follow
+- Implicit behavior that should be explicit
 - Names that obscure intent
 
+**Tests** (`snap/docs/conventions/swift.md`)
+- Public behavior without test coverage
+- Tests not using Swift Testing
+
 **Guideline compliance**
-- Violations of any rule in `AGENTS.md` (shared and local) not already caught by `/snap-generic-check-comments`
+- Violations of the loaded conventions not covered above or by `/snap-generic-check-comments`
 
 **Existing TODOs**
-- Is the item still valid, or has it already been resolved?
-- Is the text clear enough to act on without reading the surrounding code?
-- Is it placed correctly? Source for local changes, README for broader work.
-- Should it be promoted from source to the README, or demoted?
-- Should it be split into multiple items or merged with a related one?
-- Should it be removed entirely: resolved, obsolete or no longer aligned with the design intent?
+- Items that are resolved or no longer valid
+- Items not clear enough to act on without reading the surrounding code
+- Items that should move between source and the project-level list
+- Items that should be split, merged with a related item or removed
 
 ## Phase 3: Present findings
 
-Present findings using the standard format defined in AGENTS.md.
+Present findings using the standard format defined in `AGENTS-global.md`. State for each finding where it is recorded.
 
 ## Phase 4: Apply
 
-For source TODOs, insert the comment above the relevant declaration or block. For README entries, append to the `## TODO` section, creating it if absent.
-
-When done, suggest running `/snap-generic-reflect` to capture any process improvements from the session.
+- Insert each accepted local item as a comment above the relevant declaration or block.
+- Add each accepted cross-file item to the project-level list, following its format.
 
 ## Constraints
 
