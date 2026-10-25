@@ -16,10 +16,10 @@ Every skill in `snap/agents/skills/` is named `snap-<scope>-<name>`. The scope s
 
 A skill defines only the workflow: its steps, their order and where the user decides.
 
-- What is checked or produced lives in the documentation and conventions. The skill references it by path.
-- A criterion with no home in the documentation gets one there first, before a skill references it.
+- Document anything that also applies outside the skill, and reference it by path.
+	- Repeat it in the skill only where an explicit list makes the workflow clearer.
 - A `generic` skill references only the global layer, since suite docs are not loaded outside the suite.
-- A skill that combines other skills references them by name and adds only the steps that cross them.
+
 
 ## Structure
 
