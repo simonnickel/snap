@@ -1,10 +1,10 @@
-# Documentation Overview
+# Documentation
 
-A map of where each kind of knowledge, decision or convention lives. Use it to decide where to write or find something, depending on its kind and scope.
+Where each kind of knowledge, decision or convention lives in a project. Use it to decide where to write or find something, depending on its kind and scope.
 
 - Split a section that mixes content of different scopes.
 - Keep one topic per file.
-- Before adding to any of these files, check all of them, following the "Across files" content checks in `AGENTS-global.md`.
+- Before adding to a documentation file, check the related ones, following the "Across files" content checks in `AGENTS-global.md`.
 - Prefer updating an existing entry over adding a new one.
 - Delete an entry that is redundant or no longer holds.
 
@@ -17,7 +17,7 @@ Loaded in every project on this machine, as described in `snap/docs/suite/agent-
   - **`snap/docs/conventions/index.md`** — Imports every convention file. A new file only loads once listed here.
 - **`snap/agents/skills/`** — Recurring multi-step workflows.
 
-## Suite
+## SNAP Suite
 
 Loaded in every SNAP package and the workspace, as described in `snap/docs/suite/agent-setup.md`.
 

@@ -1,3 +1,5 @@
+@../docs/documentation.md
+
 @../docs/conventions/index.md
 
 # Agent Instructions

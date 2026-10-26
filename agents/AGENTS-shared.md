@@ -6,6 +6,4 @@ SNAP (SN App Packages) is a set of Swift libraries for building iOS apps. `snap/
 
 @../docs/suite/packages-overview.md
 
-@../docs/documentation.md
-
 @../docs/suite/skills.md
