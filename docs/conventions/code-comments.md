@@ -4,24 +4,20 @@ Comments are for developers exploring the code, not a changelog.
 
 ## When to write
 
-Write a comment when it helps understand design, usage or intent. That can include:
+Write a comment when it explains something the code cannot show:
 
 - Why a design was chosen over alternatives
 - Non-obvious constraints or invariants
-- Usage guidance for public API
+- How to use a public declaration whose purpose is not obvious from its name
 
-A public declaration whose purpose is not obvious from its name has a doc comment.
-
-Don't write comments that:
-
-- Describe what the code does (naming should do that)
-- Reference the task, fix or PR that introduced them
-- Make specific claims about the current structure of a type, such as the number of cases or variants. They become wrong as the type evolves.
+Don't write a comment that describes what the code does. Naming should do that.
 
 ## Content
 
-- Parameters, return values and claims in a doc comment match the declaration.
 - A comment is as short as the idea it carries.
+- Parameters, return values and claims in a doc comment match the declaration.
+- A comment does not reference the task, fix or PR that introduced it.
+- A comment makes no specific claims about the current structure of a type, such as the number of cases or variants. They become wrong as the type evolves.
 
 ## TODO
 
