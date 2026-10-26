@@ -5,6 +5,7 @@ Outstanding work on the agent setup, conventions and documentation structure.
 ## TODO-11: Make snap-generic-analyse-todos work outside the suite
 
 `snap-generic-analyse-todos` moved from `package` to `generic` and has to work in any project, including apps.
+`snap-generic-pick-todo` relies on the same convention.
 
 - Move the `Repository` section of `docs/documentation.md` into a global convention, so it can reference `todo/` and the common files in `docs/`.
 - Replace the SPM-specific paths `Sources/` and `Package.swift`.
@@ -29,11 +30,3 @@ Run `/snap-suite-check`. The guidelines and conventions changed substantially, s
 The rule "Propose changes first, implement after confirmation." was removed from `agents/AGENTS-global.md` in `398d328`.
 
 - Decide whether to bring it back, based on how sessions go without it.
-
-## TODO-13: Add a skill to analyse a TODO
-
-A skill that picks one item from `todos.md`, analyses the options and recommends one.
-
-- Takes the TODO id as an argument. Decide how to pick one without it, e.g. the first item.
-- Decide on the scope. `generic` fits once `todo/` is a global convention (TODO-11).
-- Presents the options and tradeoffs following `## Decisions` in `AGENTS-global.md`.
