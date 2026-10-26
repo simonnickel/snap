@@ -37,3 +37,11 @@ Run `/snap-suite-check`. The guidelines and conventions changed substantially, s
 The rule "Propose changes first, implement after confirmation." was removed from `agents/AGENTS-global.md` in `398d328`.
 
 - Decide whether to bring it back, based on how sessions go without it.
+
+## TODO-13: Add a skill to analyse a TODO
+
+A skill that picks one item from `todo.md`, analyses the options and recommends one.
+
+- Takes the TODO id as an argument. Decide how to pick one without it, e.g. the first item.
+- Decide on the scope. `generic` fits once `todo.md` is a global convention (TODO-11).
+- Presents the options and tradeoffs following `## Decisions` in `AGENTS-global.md`.
