@@ -28,8 +28,6 @@ Don't write a comment that describes what the code does. Naming should do that.
 
 `// TODO <xyz>:` indicates an optional improvement for the future. Common tags:
 
-- `FB#`: A workaround because something does not work as expected, reference related FB number. Fix when FB is resolved.
+- `FB#`: A workaround because something does not work as expected, reference related Apple Feedback (FB) number. Fix when resolved.
 - `finetuning`: A non critical improvement is possible.
 - `idea`: A new feature might evolve here.
-
-Don't remove existing TODO/FIXME comments unless explicitly asked to.
