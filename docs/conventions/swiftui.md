@@ -1,4 +1,9 @@
 # SwiftUI
 
 ## View Modifier
-Every ViewModifier should have an inert variant: a neutral value that preserves context rather than overriding it. This allows conditional application without breaking view identity, which is required for animations. The inert variant should be documented and as self-evident as possible.
+
+### Inert variant
+
+- Every `ViewModifier` has an inert variant: a neutral value that preserves context rather than overriding it.
+- It allows conditional application without breaking view identity, which animations require.
+- It is documented and as self-evident as possible.
