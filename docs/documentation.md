@@ -3,6 +3,7 @@
 A map of where each kind of knowledge, decision or convention lives. Use it to decide where to write or find something, depending on its kind and scope.
 
 - Split a section that mixes content of different scopes.
+- Keep one topic per file.
 - Before adding to any of these files, check all of them, following the "Across files" content checks in `AGENTS-global.md`.
 - Prefer updating an existing entry over adding a new one.
 - Delete an entry that is redundant or no longer holds.
@@ -23,11 +24,13 @@ Loaded in every SNAP package and the workspace, as described in `snap/docs/suite
 - **`snap/agents/AGENTS-shared.md`** — What is specific to the SNAP suite.
 - **`snap/agents/AGENTS-workspace.md`** — Additions for sessions started in the workspace folder.
 - **`snap/docs/suite/`** — Documentation about the suite as a whole.
-- **`snap/docs/plans/`** — Outstanding work on the suite.
+- **`snap/docs/todo/`** — Outstanding work on the suite.
 
-## Module
+## Repository
 
-- **`<module>/AGENTS.md`** — Agent orientation for working on the module itself: what it does, how it is structured and what is easy to get wrong.
+Paths are relative to the repository root.
+
+- **`AGENTS.md`** — Agent orientation for working on the repository itself: what it does, how it is structured and what is easy to get wrong.
   - Contains only what an agent would get wrong without it.
   - Covers what spans several files: structure, layering, recurring patterns and invariants.
   - Covers related types that are easily confused.
@@ -36,14 +39,15 @@ Loaded in every SNAP package and the workspace, as described in `snap/docs/suite
   - Excludes what one source file, a file listing or a doc comment already shows.
   - Excludes general language, framework and tooling knowledge.
   - Excludes details that only matter to consumers. These belong in doc comments.
-- **`<module>/README.md`** — Consumer overview: features, requirements and install.
+- **`README.md`** — Consumer overview: features, requirements and install.
   - Covers each feature with the smallest example needed to use it. A package of independent utilities summarizes its features by group.
   - Covers limitations that would surprise a new user.
   - Covers the design choices that explain why a feature behaves as it does.
   - States platforms, language version and dependencies in the text, not only in badges.
+  - Links to each guide in `docs/` intended for consumers.
   - Excludes API reference detail. It belongs in doc comments.
   - Excludes filler, marketing voice and emojis.
-- **`<module>/docs/`** — Any documentation about the module.
+- **`docs/`** — Any documentation about the repository.
 - **Doc comments on public symbols** — How to use the API.
 
 ### Common files in `docs/`
@@ -53,11 +57,13 @@ Add one when there is content for it, not upfront.
 - **`mission-statement.md`** — Why the project exists and what it optimizes for.
 - **`architecture.md`** — How the project is structured and why.
 - **`decisions.md`** — A decision, the alternatives considered and the reason for the choice.
-- **`todo.md`** — Outstanding work that is not tied to one place in the code.
-  - Each item has a fixed id (`TODO-1`) that is never reassigned.
-  - Items are ordered by execution, not by id.
-  - Resolved items are removed and their id is retired.
-  - An item that outgrows a few bullets moves into its own `<topic>.md` next to `todo.md`. Its entry stays in `todo.md` and links to the file.
+- **`todo/`** — Outstanding work that is not tied to one place in the code.
+  - **`todos.md`** — The list of items.
+    - Each item has a fixed id (`TODO-1`) that is never reassigned.
+    - Items are ordered by execution, not by id.
+    - Resolved items are removed and their id is retired.
+  - **`todo-<id>.md`** — The details of an item that outgrows a few bullets. Its entry stays in `todos.md` and links to the file.
+  - **`plan-<description>.md`** — A plan that is not decided yet. It becomes an item in `todos.md` once decided.
 - **`<topic>.md`** — A guide for a single topic, e.g. usage, setup or migration.
 
 ## Per-machine
