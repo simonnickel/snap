@@ -11,6 +11,7 @@ What to weigh when a design decision is not obvious.
 
 
 ## Dependencies
+
 Trying to prevent using external dependencies. This is a guideline, not a rule. The closer to the core, the more significant it becomes.
 
 1. Try a simpler solution that works out of the box.
