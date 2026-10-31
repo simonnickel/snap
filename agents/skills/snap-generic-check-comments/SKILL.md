@@ -23,6 +23,6 @@ Collect where the code needs a comment, following `snap/docs/conventions/code-co
 
 Compare the collected comments with the existing ones, following the content checks in `AGENTS-global.md`.
 
-## Phase 4: Present findings
+## Phase 4: Present
 
 Present findings.

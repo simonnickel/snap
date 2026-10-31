@@ -31,6 +31,6 @@ Verify that:
 - each skill's description matches its phases
 - `snap/docs/conventions/index.md` imports every file in `snap/docs/conventions/`
 
-## Phase 3: Present findings
+## Phase 3: Present
 
 Present findings.

@@ -16,7 +16,7 @@ Scan the conversation for:
 - Determine where each candidate belongs, following the loaded documentation conventions. Without them, propose a location.
 - Read each target and compare the candidate with it, following the content checks in `AGENTS-global.md`.
 
-## Phase 3: Present findings
+## Phase 3: Present
 
 Present findings. State the target for each finding.
 

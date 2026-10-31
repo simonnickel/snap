@@ -63,7 +63,7 @@ Complete the full analysis before presenting anything.
 - Items that should move between source and the project-level list
 - Items that should be split, merged with a related item or removed
 
-## Phase 3: Present findings
+## Phase 3: Present
 
 Present findings. State for each finding where it is recorded.
 

@@ -33,6 +33,6 @@ Work from the package, not from the existing files.
 
 Compare the collected content with the README and `AGENTS.md`, following the content checks in `AGENTS-global.md`, including "Across files".
 
-## Phase 3: Present findings
+## Phase 3: Present
 
 Present findings. State for each difference from the template whether the package or the template should change.

@@ -35,7 +35,7 @@ Each phase is a `## Phase <n>: <name>` section. Skills use this structure and di
 
 - **Gather context** — read files and collect inputs before analysis
 - **Analyse** — evaluate the gathered context against defined criteria
-- **Present findings** — present the findings and ask how to proceed
+- **Present** — present the result and ask how to proceed
 
 ## Setup
 

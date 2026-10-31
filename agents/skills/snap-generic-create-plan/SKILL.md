@@ -15,7 +15,7 @@ argument-hint: <goal>
 - Find the open questions the steps depend on: unclear scope, missing requirements or a choice between valid approaches.
 - Find parts of the goal that could be implemented and reviewed independently.
 
-## Phase 3: Present findings
+## Phase 3: Present
 
 - Ask the open questions, one per reply.
 - When the user leaves a decision open, make it and state it in the plan.
