@@ -6,7 +6,7 @@ argument-hint: [todo-id]
 
 ## Phase 1: Gather context
 
-- Locate the project-level list defined by the loaded documentation conventions. Without one, ask the user.
+- Locate the project-level list defined by the loaded documentation conventions. Without one, the list the project already uses. Without either, ask the user.
 - Pick the item named by the argument. Without an argument, choose one:
   - Read every open item.
   - Rule out items that depend on an unresolved item or wait on a condition that is not met yet.
