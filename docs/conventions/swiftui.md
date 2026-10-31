@@ -8,7 +8,8 @@
 ## View composition
 
 - Prefer storing content built in `init` over a `@ViewBuilder` closure, since SwiftUI cannot compare closures.
-- Keep a closure when there is a reason for it, such as content that takes input or is built later.
+  - Keep a closure when there is a reason for it, such as content that takes input or is built later.
+- Prefer a separate `View` over a computed property for a self-contained part, so it gets its own invalidation boundary.
 
 ## View Modifier
 
