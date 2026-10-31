@@ -6,7 +6,6 @@ A skill describes a recurring multi-step workflow.
 
 Every skill in `snap/agents/skills/` is named `snap-<scope>-<name>`. The scope states what the skill operates on:
 
-- `package` — the current SNAP package, using suite docs
 - `suite` — the whole suite
 - `generic` — any project, unrelated to the suite
 
