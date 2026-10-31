@@ -28,7 +28,8 @@ Check every part against:
 
 Compare every package against the template:
 - Files of the template that the package lacks
-- Settings that differ, such as the tools version, `.spi.yml` targets or the file header
+- Settings that differ, such as the tools version or the file header
+- `.spi.yml` targets that don't match the package's targets
 - The README structure: badges and sections, not their content
 - Values that are specific to the package are ignored, such as names, platforms and dependencies.
 
