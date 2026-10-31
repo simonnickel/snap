@@ -6,7 +6,7 @@ How the agent configuration reaches each session, and how to set it up on a mach
 
 Each session loads the layers that apply to where it was started.
 
-- **Global** — `snap/agents/AGENTS-global.md` and every convention file via `snap/docs/conventions/index.md`. Loaded in every project on the machine.
+- **Global** — `snap/agents/AGENTS-global.md`, `snap/docs/documentation.md` and every convention file via `snap/docs/conventions/index.md`. Loaded in every project on the machine.
 - **Workspace** — `snap/agents/AGENTS-workspace.md`. Loaded when a session starts in the workspace folder.
 - **Suite** — `snap/agents/AGENTS-shared.md` and the docs it imports. Imported by every package and by the workspace.
 - **Package** — `<package>/AGENTS.md`. Loaded when a session starts in that package.
