@@ -1,6 +1,6 @@
 ---
 name: snap-generic-pick-todo
-description: Analyse one item of the project-level TODO list and recommend an option. Takes a TODO id or picks the next item and explains why. Use for requests to pick the next task or look at a TODO.
+description: Analyze one item of the project-level TODO list and recommend an option. Takes a TODO id or picks the next item and explains why. Use for requests to pick the next task or look at a TODO.
 argument-hint: [todo-id]
 ---
 
@@ -15,7 +15,7 @@ argument-hint: [todo-id]
   - State the chosen item and the reasoning before continuing.
 - Read the item and every file and item it references.
 
-## Phase 2: Analyse
+## Phase 2: Analyze
 
 - Identify the open decisions in the item.
 - For each decision, collect the options.
@@ -38,4 +38,4 @@ Present in this order:
 
 ## Constraints
 
-- Analyse one item at a time.
+- Analyze one item at a time.

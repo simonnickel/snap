@@ -18,7 +18,7 @@ Without an argument, every part is checked. With arguments, findings are limited
 
 Gather every part in full, regardless of the arguments.
 
-## Phase 2: Analyse
+## Phase 2: Analyze
 
 Check every part against:
 - `snap/docs/documentation.md` for placement

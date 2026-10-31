@@ -10,7 +10,7 @@ argument-hint: <goal>
 - Determine where plans are recorded, as defined by the loaded documentation conventions. Without one, ask the user.
 - Read the code and documentation the goal touches.
 
-## Phase 2: Analyse
+## Phase 2: Analyze
 
 - Find the open questions the steps depend on: unclear scope, missing requirements or a choice between valid approaches.
 - Find parts of the goal that could be implemented and reviewed independently.

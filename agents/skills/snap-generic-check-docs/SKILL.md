@@ -18,7 +18,7 @@ Gather every part in full, regardless of the arguments.
 
 - Read the project in full: manifest, sources with their doc comments, tests, demo, README, `AGENTS.md` with everything it imports and `docs/`. A missing README or `AGENTS.md` counts as empty.
 
-## Phase 2: Analyse
+## Phase 2: Analyze
 
 Work from the project, not from the existing files.
 

@@ -1,6 +1,6 @@
 ---
-name: snap-generic-analyse-todos
-description: Analyse the current project or a given part of it for improvements and record them as TODOs, following the project's documentation style. Does not fix anything. Use for requests to find improvements or record TODOs.
+name: snap-generic-analyze-todos
+description: Analyze the current project or a given part of it for improvements and record them as TODOs, following the project's documentation style. Does not fix anything. Use for requests to find improvements or record TODOs.
 argument-hint: [scope]
 ---
 
@@ -18,7 +18,7 @@ Findings are limited to the scope. Code outside it is read only where needed to 
 - Places in source that an item relates to are marked as defined by the loaded comment conventions.
 - Read the project-level list.
 
-## Phase 2: Analyse
+## Phase 2: Analyze
 
 Complete the full analysis before presenting anything.
 

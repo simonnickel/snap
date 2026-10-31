@@ -71,4 +71,4 @@ Decide whether to bring back the rule to use Xcode MCP for building and testing.
 - Rewrite workarounds as workaround comments: `// TODO FB:` comments, comments starting with a Feedback number, such as `// FB19669133: …`, and doc comments with a `Workaround:` line.
 - Move `// TODO finetuning:` and `// TODO idea:` comments to the package's TODO list, or drop them.
 - Treat other tags, such as `macOS` or `feature`, and plain `// TODO:` comments on main the same way.
-- `snap-generic-analyse-todos` covers this per package, through its check of existing TODOs.
+- `snap-generic-analyze-todos` covers this per package, through its check of existing TODOs.
