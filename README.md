@@ -70,7 +70,7 @@ Mermaid: [Docs](http://mermaid.js.org/intro/), [Editor](https://mermaid.live/)
 
 ### snap-style
 
-[snap-style](https://github.com/simonnickel/snap-style) abstracts colors, fonts, icons and numbers for multi-platform SwiftUI apps. Define semantic attributes in a theme and apply them in views.
+[snap-style](https://github.com/simonnickel/snap-style) is a semantic styling system for multi-platform SwiftUI apps. Define visual attributes such as colors, fonts, icons and spacing once, reference them by semantic key paths and apply them in views.
 
 
 ### snap-settings-service
