@@ -6,3 +6,4 @@
 @swiftui.md
 @code-comments.md
 @writing-style.md
+@commits.md
