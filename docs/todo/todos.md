@@ -1,6 +1,6 @@
 # TODO
 
-Outstanding work on the agent setup, conventions and documentation structure.
+Outstanding work on the suite.
 
 ## TODO-12: Reconsider asking before changes
 
