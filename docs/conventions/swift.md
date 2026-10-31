@@ -9,6 +9,11 @@
 
 - Model data that a state requires as an associated value of its case, so invalid states cannot be constructed.
 
+## Closures
+
+- Name closure parameters instead of using `$0` and `$1`, so a change in the closure's arity becomes a compile error.
+- Exception: a short single-parameter closure that uses its parameter once, such as `.map { $0.title }`.
+
 ## Error handling
 
 - No force unwraps outside tests, unless a comment justifies it.
