@@ -58,7 +58,7 @@ Add one when there is content for it, not upfront.
 - **`decisions.md`** — A decision, the alternatives considered and the reason for the choice.
 - **`todo/`** — Outstanding work.
   - Actionable without the conversation that produced it.
-  - Each place it relates to mentions its id, in source as described in `code-comments.md`.
+  - A place it relates to mentions its id when someone working there should know about the item, in source as described in `code-comments.md`.
   - Removed once done, along with its mentions.
   - **`todos.md`** — The list of items.
     - Each item has a fixed id (`TODO-1`) that is never reassigned.
