@@ -65,7 +65,7 @@ Complete the full analysis before presenting anything.
 
 ## Phase 3: Present findings
 
-Present findings using the standard format defined in `AGENTS-global.md`. State for each finding where it is recorded.
+Present findings. State for each finding where it is recorded.
 
 ## Constraints
 

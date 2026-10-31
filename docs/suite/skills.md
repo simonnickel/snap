@@ -18,7 +18,7 @@ A skill defines only the workflow: its steps, their order and where the user dec
 
 - Document anything that also applies outside the skill, and reference it by path.
 	- Repeat it in the skill only where an explicit list makes the workflow clearer.
-- A skill states where to ask the user and which choices to offer, not how to ask. The global rules define how.
+- A skill states what to present and where to ask the user, not how. The global rules define how.
 - A `generic` skill references only the global layer, since suite docs are not loaded outside the suite.
 
 
@@ -35,7 +35,7 @@ Each phase is a `## Phase <n>: <name>` section. Skills use this structure and di
 
 - **Gather context** — read files and collect inputs before analysis
 - **Analyse** — evaluate the gathered context against defined criteria
-- **Present findings** — present using the standard format defined in `AGENTS-global.md`
+- **Present findings** — present the findings and ask how to proceed
 
 ## Setup
 

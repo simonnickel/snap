@@ -30,4 +30,4 @@ Verify that every referenced path, skill and symbol exists.
 
 ## Phase 3: Present findings
 
-Present findings using the standard format defined in `AGENTS-global.md`.
+Present findings.

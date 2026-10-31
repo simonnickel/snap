@@ -25,4 +25,4 @@ Compare the collected comments with the existing ones, following the content che
 
 ## Phase 4: Present findings
 
-Present findings using the standard format defined in `AGENTS-global.md`.
+Present findings.

@@ -17,4 +17,4 @@ Check the comments, README and `AGENTS.md` together, following the "Across files
 
 ## Phase 3: Present findings
 
-Present findings using the standard format defined in `AGENTS-global.md`.
+Present findings.

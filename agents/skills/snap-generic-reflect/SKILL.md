@@ -18,7 +18,7 @@ Scan the conversation for:
 
 ## Phase 3: Present findings
 
-Present findings using the standard format defined in `AGENTS-global.md`. State the target for each finding.
+Present findings. State the target for each finding.
 
 ## Constraints
 

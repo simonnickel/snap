@@ -18,4 +18,4 @@ Compare the collected content with the `AGENTS.md`, following the content checks
 
 ## Phase 4: Present findings
 
-Present findings using the standard format defined in `AGENTS-global.md`.
+Present findings.
