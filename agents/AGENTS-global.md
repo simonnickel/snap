@@ -12,10 +12,10 @@
 
 ## Asking questions
 
-- List the choices as a numbered list, so the user can answer with a number.
-- Always include an option to skip (leave unchanged).
-- End the response after the list.
-- Don't use the AskUserQuestion tool, since the content before it is often not posted.
+Ask in the response, not with the AskUserQuestion tool, since the content before it is often not posted.
+
+- End the response with the choices as a numbered list, so the user can answer with a number.
+- Include an option to skip (leave unchanged).
 
 ## Decisions
 
