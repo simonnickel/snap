@@ -54,6 +54,11 @@ I chose to use the MIT License (created by Github template) because it is most c
 (see [LICENSE](../../package-template/LICENSE)).
 
 
+## AGENTS.md
+
+Imports the suite layer, as described in [agent-setup.md](agent-setup.md) (see [AGENTS.md](../../package-template/AGENTS.md)).
+
+
 # Demo Project
 
 Create a demo project if suitable and configure project to edit the package directly from the demo project:
