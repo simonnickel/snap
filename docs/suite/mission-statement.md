@@ -17,4 +17,4 @@ The suite is public for reference and feedback. It is shaped around my own proje
 ## Current state
 
 - Unreleased. Changing public API is fine.
-- The demo verifies integration. It does not drive API design.
+- Demo projects verify integration. They do not drive API design.
