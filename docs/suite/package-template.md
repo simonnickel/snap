@@ -23,20 +23,20 @@ Partly inspired by https://github.com/mattmassicotte/PackageTemplate
 # Package Template Content
 
 ## Package.swift
-Some adjustments to the Package definition (see [Package.swift](../../package-template/Package.swift)).
+Adjustments to the package definition. The current values are in [Package.swift](../../package-template/Package.swift).
 
-### Add platforms definition:
+### Platforms
 
-```
+```swift
 platforms: [
-    .iOS(.v17), .macOS(.v15)
+    .iOS(.v<version>), .macOS(.v<version>)
 ],
 ```
 
-### Use Swift 6
+### Swift 6
 
-```
-// swift-tools-version: 6.3
+```swift
+// swift-tools-version: <version>
 ```
 
 ## .gitignore
