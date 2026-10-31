@@ -13,6 +13,7 @@ Where each kind of knowledge, decision or convention lives in a project. Use it 
 Loaded in every project on this machine, as described in `snap/docs/suite/agent-setup.md`.
 
 - **`snap/agents/AGENTS-global.md`** — Agent behavior and collaboration norms that apply to any project.
+- **`snap/docs/documentation.md`** — Where each kind of knowledge, decision or convention lives in a project.
 - **`snap/docs/conventions/`** — Conventions that apply to any project.
   - **`snap/docs/conventions/index.md`** — Imports every convention file. A new file only loads once listed here.
 - **`snap/agents/skills/`** — Recurring multi-step workflows.
@@ -22,7 +23,6 @@ Loaded in every project on this machine, as described in `snap/docs/suite/agent-
 Loaded in every SNAP package and the workspace, as described in `snap/docs/suite/agent-setup.md`.
 
 - **`snap/agents/AGENTS-shared.md`** — What is specific to the SNAP suite.
-- **`snap/agents/AGENTS-workspace.md`** — Additions for sessions started in the workspace folder.
 - **`snap/docs/suite/`** — Documentation about the suite as a whole.
 - **`snap/docs/todo/`** — Outstanding work on the suite.
 
@@ -48,7 +48,6 @@ Paths are relative to the repository root.
   - Excludes API reference detail. It belongs in doc comments.
   - Excludes filler, marketing voice and emojis.
 - **`docs/`** — Any documentation about the repository.
-- **Doc comments on public symbols** — How to use the API.
 
 ### Common files in `docs/`
 
@@ -57,14 +56,21 @@ Add one when there is content for it, not upfront.
 - **`mission-statement.md`** — Why the project exists and what it optimizes for.
 - **`architecture.md`** — How the project is structured and why.
 - **`decisions.md`** — A decision, the alternatives considered and the reason for the choice.
-- **`todo/`** — Outstanding work that is not tied to one place in the code.
+- **`todo/`** — Outstanding work.
+  - Actionable without the conversation that produced it.
+  - A place it relates to mentions its id when someone working there should know about the item, in source as described in `code-comments.md`.
+  - Removed once done, along with its mentions.
   - **`todos.md`** — The list of items.
     - Each item has a fixed id (`TODO-1`) that is never reassigned.
     - Items are ordered by execution, not by id.
-    - Resolved items are removed and their id is retired.
-  - **`todo-<id>.md`** — The details of an item that outgrows a few bullets. Its entry stays in `todos.md` and links to the file.
-  - **`plan-<description>.md`** — A plan that is not decided yet. It becomes an item in `todos.md` once decided.
+    - The id of a removed item is retired.
+    - An item that outgrows a few bullets becomes a plan.
+  - **`plans/<goal>.md`** — A goal and the steps to reach it.
 - **`<topic>.md`** — A guide for a single topic, e.g. usage, setup or migration.
+
+## Source comments
+
+Doc comments and TODOs in source, as described in `code-comments.md`.
 
 ## Per-machine
 
@@ -73,4 +79,3 @@ Add one when there is content for it, not upfront.
 ## Ephemeral
 
 - **Commit messages and PR descriptions** — Why this change.
-- **`// TODO:` in source** — Outstanding work in one place in the code.

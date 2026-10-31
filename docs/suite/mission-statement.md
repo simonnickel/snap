@@ -6,7 +6,7 @@ Why the SNAP suite exists and what it optimizes for.
 
 SNAP exists so I stop rebuilding the same foundation for every iOS app. Each package solves one recurring problem once, well enough to reuse without adapting it.
 
-The suite is public for reference and feedback. It is shaped around my own projects and does not aim to serve every use case. Which problems a package solves follows my projects, how it solves them does not.
+The suite is public for reference and feedback. It is shaped around my own projects and does not aim to serve every use case. My projects decide which problems a package solves, but not how it solves them.
 
 ## What the suite optimizes for
 
@@ -17,4 +17,4 @@ The suite is public for reference and feedback. It is shaped around my own proje
 ## Current state
 
 - Unreleased. Changing public API is fine.
-- The demo verifies integration, it does not drive API design.
+- The demo verifies integration. It does not drive API design.

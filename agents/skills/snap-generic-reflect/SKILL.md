@@ -1,6 +1,6 @@
 ---
 name: snap-generic-reflect
-description: Review the current conversation for learnings worth persisting in the project's documentation, skills or memory. Use at the end of a session to capture non-obvious findings before they're lost.
+description: Review the current conversation for learnings worth persisting in the project's documentation, skills or memory. Use for requests to reflect on the session or capture learnings.
 ---
 
 ## Phase 1: Identify candidates
@@ -16,9 +16,9 @@ Scan the conversation for:
 - Determine where each candidate belongs, following the loaded documentation conventions. Without them, propose a location.
 - Read each target and compare the candidate with it, following the content checks in `AGENTS-global.md`.
 
-## Phase 3: Present findings
+## Phase 3: Present
 
-Present findings using the standard format defined in `AGENTS-global.md`. State the target for each finding.
+Present findings. State the target for each finding.
 
 ## Constraints
 

@@ -1,6 +1,6 @@
 ---
-name: snap-generic-analyse-todos
-description: Analyse the current project or a given part of it for improvements and record them as TODOs, following the project's documentation style. Does not fix anything.
+name: snap-generic-analyze-todos
+description: Analyze the current project or a given part of it for improvements and record them as TODOs, following the project's documentation style. Does not fix anything. Use for requests to find improvements or record TODOs.
 argument-hint: [scope]
 ---
 
@@ -14,12 +14,11 @@ Findings are limited to the scope. Code outside it is read only where needed to 
 
 - Read the manifest and every source and test file in scope.
 - Collect every existing `TODO` and `FIXME` comment with its file and line.
-- Determine where findings are recorded:
-  - Local items: TODO comments in source, following the loaded comment conventions.
-  - Cross-file items: the project-level list defined by the loaded documentation conventions. Without one, the list the project already uses. Without either, ask the user.
+- Determine where findings are recorded: the project-level list defined by the loaded documentation conventions. Without one, the list the project already uses. Without either, ask the user.
+- Places in source that an item relates to are marked as defined by the loaded comment conventions.
 - Read the project-level list.
 
-## Phase 2: Analyse
+## Phase 2: Analyze
 
 Complete the full analysis before presenting anything.
 
@@ -63,14 +62,9 @@ Complete the full analysis before presenting anything.
 - Items that should move between source and the project-level list
 - Items that should be split, merged with a related item or removed
 
-## Phase 3: Present findings
+## Phase 3: Present
 
-Present findings using the standard format defined in `AGENTS-global.md`. State for each finding where it is recorded.
-
-## Phase 4: Apply
-
-- Insert each accepted local item as a comment above the relevant declaration or block.
-- Add each accepted cross-file item to the project-level list, following its format.
+Present findings. State for each finding where it is recorded.
 
 ## Constraints
 

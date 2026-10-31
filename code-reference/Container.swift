@@ -1,12 +1,17 @@
 import SwiftUI
 
-/// A simple Container View implementation example.
+/// A container view that stores its content built in `init` instead of the `@ViewBuilder` closure.
+/// See "View composition" in `docs/conventions/swiftui.md`.
 struct Container<Content: View>: View {
 	
-	@ViewBuilder let content: () -> Content
-	
+	let content: Content
+
+	init(@ViewBuilder content: () -> Content) {
+		self.content = content()
+	}
+
 	var body: some View {
-		content()
+		content
 	}
 	
 }
@@ -15,7 +20,7 @@ struct Container<Content: View>: View {
 // MARK: - Preview
 
 #Preview {
-	Container() {
+	Container {
 		Text("Test")
 	}
 }

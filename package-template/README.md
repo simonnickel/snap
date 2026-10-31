@@ -15,6 +15,13 @@ Short description ...
 [documentation badge]: https://img.shields.io/badge/Documentation-DocC-blue
 
 
+## Requirements
+
+- iOS 17+, macOS 15+
+- Swift 6.3
+- Dependencies: [snap-foundation](https://github.com/simonnickel/snap-foundation)
+
+
 ## Setup
 
 Steps to setup the package ...
@@ -27,6 +34,6 @@ The [demo project](/PackageDemo) shows ...
 <img src="/screenshot.png" height="400">
 
 
-## How to use
+## Usage
 
 Details about package content ...

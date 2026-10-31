@@ -2,15 +2,16 @@
 
 How the agent configuration reaches each session, and how to set it up on a machine.
 
+Only Claude Code is fully supported. Other tools get the skills, but the setup does not ensure that they load the global layer or resolve `@` imports.
+
 ## Layers
 
-Each session loads the layers that apply to where it was started.
+Each session loads the layers that apply to where it was started, through the files in "Expected setup".
 
-- **Global** — `snap/agents/AGENTS-global.md` and every convention file via `snap/docs/conventions/index.md`. Loaded in every project on the machine.
-- **Workspace** — `snap/agents/AGENTS-workspace.md`. Loaded when a session starts in the workspace folder.
-- **Suite** — `snap/agents/AGENTS-shared.md` and the docs it imports. Imported by every package and by the workspace.
-- **Package** — `<package>/AGENTS.md`. Loaded when a session starts in that package.
-- **Skills** — `snap/agents/skills/`. Copied into the skill folders of Claude Code, Claude in Xcode, Codex CLI and Codex in Xcode.
+- **Global** — `snap/agents/AGENTS-global.md`, `snap/docs/documentation.md` and every convention file via `snap/docs/conventions/index.md`.
+- **Suite** — `snap/agents/AGENTS-shared.md` and the docs it imports.
+- **Package** — `<package>/AGENTS.md`.
+- **Skills** — `snap/agents/skills/`, copied into the skill folders and available in every project.
 
 ## Expected setup
 
@@ -19,7 +20,7 @@ Machine:
 - Every skill copied into each skill folder
 
 Workspace folder, containing `snap/` and all packages:
-- `AGENTS.md` containing only `@snap/agents/AGENTS-workspace.md`
+- `AGENTS.md` containing only `@snap/agents/AGENTS-shared.md`
 
 Each package, including `snap/`:
 - `AGENTS.md` importing `@../snap/agents/AGENTS-shared.md` and adding package-specific context
@@ -34,8 +35,8 @@ Creates the symlink and the workspace `AGENTS.md`, and copies the skills. An exi
 
 `--check` reports what differs from the expected setup without changing anything.
 
-Re-run it after adding, editing, renaming or removing a skill. Every `snap-*` folder in each skill folder is replaced with the current skills, other skills in those folders are left untouched. Changes to `AGENTS*.md` and convention files need no re-run, they are imported directly.
+Re-run it after adding, editing, renaming or removing a skill. Every `snap-*` folder in each skill folder is replaced with the current skills. Other skills in those folders are left untouched. Changes to `AGENTS*.md` and convention files need no re-run, since they are imported directly.
 
 ## Package context
 
-The content of each package `AGENTS.md` is maintained with the `snap-package-check-agents-md` skill. Its import is checked by `snap-suite-check`. The script does not touch or check package files.
+The content of each package `AGENTS.md` is maintained with the `agents-md` part of the `snap-generic-check-docs` skill. Its import is checked by `snap-suite-check`. The script does not touch or check package files.

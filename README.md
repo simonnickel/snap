@@ -1,28 +1,28 @@
 # SNAP - SN App Packages
 
-SNAP is a set of Swift packages I use to build iOS apps. This repository is the overview for the suite; the packages live in their own repositories.
+SNAP is a set of Swift packages I use to build iOS apps. This repository is the overview for the suite. The packages live in their own repositories.
 
-The packages contain shared code, reusable implementations of common app features, and a template for starting a new app. They are public for reference and feedback, but they are mainly shaped around my own projects.
+The packages contain shared code and reusable implementations of common app features. [snap-template](https://github.com/simonnickel/snap-template) shows them all together in action and is the starting point for a new app.
 
-
-## Highlights
-
-- [snap-template](https://github.com/simonnickel/snap-template) contains shared app code and the demo project that shows the suite in use.
-- [snap-style](https://github.com/simonnickel/snap-style) abstracts semantic colors, fonts, icons and numbers for SwiftUI apps.
-- Other packages cover foundation extensions, SwiftUI helpers, settings storage, navigation, dependency injection and SwiftData/CoreData interop.
+The suite is shaped around my own needs, see the [mission statement](./docs/suite/mission-statement.md). It is unreleased, so public API can change at any time.
 
 
 ## Guides
 
 You need rules to break them, so I made up some of my own: [conventions](./docs/conventions/).
 
-Packages are set up as described in [package-template.md](./package-template.md).
+Packages are set up as described in [package-template.md](./docs/suite/package-template.md).
+
+Coding agents share instructions and skills across the suite, as described in [agent-setup.md](./docs/suite/agent-setup.md).
+
+Recurring code patterns are collected as examples in [code-reference](./code-reference/).
 
 
 ## Package Dependencies
 
 ```mermaid
 flowchart TD
+%% Edges show only dependencies not already covered through another package.
 
     subgraph Snap-Packages
     C1[snap-foundation]
@@ -75,12 +75,12 @@ Mermaid: [Docs](http://mermaid.js.org/intro/), [Editor](https://mermaid.live/)
 
 ### snap-style
 
-[snap-style](https://github.com/simonnickel/snap-style) abstracts colors, fonts, icons and numbers for multi-platform SwiftUI apps. Define semantic attributes in a theme and apply them in views.
+[snap-style](https://github.com/simonnickel/snap-style) is a semantic styling system for multi-platform SwiftUI apps. Define visual attributes such as colors, fonts, icons and spacing once, reference them by semantic key paths and apply them in views.
 
 
 ### snap-settings-service
 
-[snap-settings-service](https://github.com/simonnickel/snap-settings-service) stores `Codable` values for `String` keys in `UserDefaults`, `NSUbiquitousKeyValueStore`, or a custom store.
+[snap-settings-service](https://github.com/simonnickel/snap-settings-service) stores `Codable` values for `String` keys in `UserDefaults`, `NSUbiquitousKeyValueStore` or a custom store.
 
 
 ### snap-navigation
@@ -95,7 +95,8 @@ Mermaid: [Docs](http://mermaid.js.org/intro/), [Editor](https://mermaid.live/)
 
 ### snap-swift-data
 
-[snap-swift-data](https://github.com/simonnickel/snap-swift-data) improves interoperability between SwiftData, CoreData objects, and Persistent History Tracking.
+[snap-swift-data](https://github.com/simonnickel/snap-swift-data) improves interoperability between SwiftData, CoreData objects and Persistent History Tracking.
+
 
 ### snap-template
 
@@ -104,16 +105,11 @@ Mermaid: [Docs](http://mermaid.js.org/intro/), [Editor](https://mermaid.live/)
 
 ## History
 
-- The [snap-app-template](https://github.com/simonnickel/snap-app-template) was moved as Demo project into [snap-template](https://github.com/simonnickel/snap-template).
+- [snap-app-template](https://github.com/simonnickel/snap-app-template) was moved into [snap-template](https://github.com/simonnickel/snap-template) as its demo project.
 - [snap-matching-navigation](https://github.com/simonnickel/snap-matching-navigation) was replaced by [snap-navigation](https://github.com/simonnickel/snap-navigation).
 - [snap-theme](https://github.com/simonnickel/snap-theme) was replaced by [snap-style](https://github.com/simonnickel/snap-style).
 
 
 ## Package Collections
 
-Not working at the moment (2026-05)! The Generator does not build, will try again in the future.
-
-`packages.json` is prepared.
-
-[Swift Package Collection](https://www.swift.org/blog/package-collections/)
-[Generator](https://github.com/swiftlang/swift-package-collection-generator)
+`packages.json` defines a [Swift Package Collection](https://www.swift.org/blog/package-collections/) of the suite. It is not published yet.
