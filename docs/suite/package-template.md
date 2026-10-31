@@ -29,11 +29,11 @@ Adjustments to the package definition. The current values are in [Package.swift]
 
 ```swift
 platforms: [
-    .iOS(.v<version>), .macOS(.v<version>)
+	.iOS(.v<version>), .macOS(.v<version>),
 ],
 ```
 
-#### Swift 6
+#### Tools version
 
 ```swift
 // swift-tools-version: <version>
