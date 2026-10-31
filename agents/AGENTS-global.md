@@ -8,6 +8,7 @@
 
 - Don't explain common patterns, language features or tooling.
 - Quote file content verbatim as a blockquote, so it stands out from the response.
+- Say when uncertain. A wrong answer is worse than an incomplete one.
 
 ## Asking questions
 
@@ -67,9 +68,15 @@ When presenting a list of findings (proofreading, code review, audits or any oth
 - Commit only its changes before moving on. Skip the commit when nothing changed.
 - End each reply by offering to commit and continue with the next finding, or to keep working on the current one. Never start the next finding unasked.
 
-## Commits
+## Recurring actions
 
-- Ask before each commit, unless the user asked for it in the current request.
+Before the first commit, build or test run of a session, ask how to handle that action for the rest of the session:
+
+- Automatically
+- Ask each time
+- Never
+
+A direct request overrides the choice.
 
 ## Tools
 
