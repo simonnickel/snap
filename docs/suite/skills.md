@@ -30,7 +30,7 @@ A skill defines only the workflow: its steps, their order and where the user dec
 
 ## Phases
 
-Skills use this phase structure. Diverge when a phase does something meaningfully different:
+Each phase is a `## Phase <n>: <name>` section. Skills use this structure and diverge when a phase does something meaningfully different:
 
 - **Gather context** — read files and collect inputs before analysis
 - **Analyse** — evaluate the gathered context against defined criteria

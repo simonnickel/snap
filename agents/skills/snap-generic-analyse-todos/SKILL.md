@@ -67,11 +67,6 @@ Complete the full analysis before presenting anything.
 
 Present findings using the standard format defined in `AGENTS-global.md`. State for each finding where it is recorded.
 
-## Phase 4: Apply
-
-- Insert each accepted local item as a comment above the relevant declaration or block.
-- Add each accepted cross-file item to the project-level list, following its format.
-
 ## Constraints
 
 - Do not fix anything. Only record findings as TODOs.
