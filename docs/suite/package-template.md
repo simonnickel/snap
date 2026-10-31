@@ -64,6 +64,11 @@ Imports the suite layer, as described in [agent-setup.md](agent-setup.md) (see [
 
 The structure of a package README: badges from the Swift Package Index, a link to the suite, requirements, setup, demo project and usage (see [README.md](../../package-template/README.md)).
 
+- Requirements is always present.
+- Setup, Demo project and Usage are present when there is content for them.
+- The template sections keep their names and order.
+- Sections specific to the package can be added between them.
+
 
 ### IDETemplateMacros.plist
 

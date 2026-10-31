@@ -34,6 +34,6 @@ The [demo project](/PackageDemo) shows ...
 <img src="/screenshot.png" height="400">
 
 
-## How to use
+## Usage
 
 Details about package content ...
