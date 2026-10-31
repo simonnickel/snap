@@ -12,7 +12,7 @@
   - Keep a closure when there is a reason for it, such as content that takes input or is built later.
 - Prefer a separate `View` over a computed property for a self-contained part, so it gets its own invalidation boundary.
 
-## View Modifier
+## View modifier
 
 ### Inert variant
 

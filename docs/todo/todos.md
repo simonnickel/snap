@@ -62,7 +62,7 @@ Decide whether to bring back the rule to use Xcode MCP for building and testing.
   `openssl pkcs12 -nocerts -in Certificates.p12 -out key.pem && openssl rsa -in key.pem -out rsa_key.pem`
 - Generate the collection from `packages.json` with `package-collection-generate`, then sign it with `package-collection-sign`.
 - Decide where to host the signed `collection.json`, e.g. as a raw GitHub file in this repository.
-- Update `## Package Collections` in `README.md` with the collection URL.
+- Update `## Package collections` in `README.md` with the collection URL.
 
 ## TODO-21: Migrate TODO and workaround comments
 

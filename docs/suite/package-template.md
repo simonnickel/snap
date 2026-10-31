@@ -5,7 +5,7 @@ Considerations and description of the content in [package-template](../../packag
 Partly inspired by [PackageTemplate](https://github.com/mattmassicotte/PackageTemplate).
 
 
-## Create new Package
+## Create a new package
 
 1. Create and clone repository named `snap-<package-name>`
 2. Create package (Multiplatform > Library) named `Snap<PackageName>`
@@ -21,7 +21,7 @@ Partly inspired by [PackageTemplate](https://github.com/mattmassicotte/PackageTe
 6. Add the package to [packages-overview.md](packages-overview.md), [packages.json](../../packages.json) and the [README](../../README.md), including its dependency graph
 
 
-## Package Template Content
+## Package template content
 
 ### Package.swift
 Adjustments to the package definition. The current values are in [Package.swift](../../package-template/Package.swift).
@@ -76,7 +76,7 @@ The structure of a package README: badges from the Swift Package Index, a link t
 The file header for new files created in Xcode, linking to the suite (see [IDETemplateMacros.plist](../../package-template/.swiftpm/xcode/xcshareddata/IDETemplateMacros.plist)).
 
 
-## Demo Project
+## Demo project
 
 Create a demo project if suitable and configure project to edit the package directly from the demo project:
 

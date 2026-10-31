@@ -18,7 +18,7 @@ Loaded in every project on this machine, as described in `snap/docs/suite/agent-
   - **`snap/docs/conventions/index.md`** — Imports every convention file. A new file only loads once listed here.
 - **`snap/agents/skills/`** — Recurring multi-step workflows.
 
-## SNAP Suite
+## SNAP suite
 
 Loaded in every SNAP package and the workspace, as described in `snap/docs/suite/agent-setup.md`.
 

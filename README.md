@@ -18,7 +18,7 @@ Coding agents share instructions and skills across the suite, as described in [a
 Recurring code patterns are collected as examples in [code-reference](./code-reference/).
 
 
-## Package Dependencies
+## Package dependencies
 
 ```mermaid
 flowchart TD
@@ -110,6 +110,6 @@ Mermaid: [Docs](http://mermaid.js.org/intro/), [Editor](https://mermaid.live/)
 - [snap-theme](https://github.com/simonnickel/snap-theme) was replaced by [snap-style](https://github.com/simonnickel/snap-style).
 
 
-## Package Collections
+## Package collections
 
 `packages.json` defines a [Swift Package Collection](https://www.swift.org/blog/package-collections/) of the suite. It is not published yet.

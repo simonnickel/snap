@@ -9,6 +9,11 @@ Conventions for all written content: documentation, code comments, AGENTS.md, RE
 - Avoid semicolons and mid-sentence dashes. Consider a new sentence, conjunction, colon, comma, parentheses or rewording instead.
 - Describe behavior in present tense: "Returns the cached value", not "Will return the cached value".
 
+## Headings
+
+- The document title uses title case. Section headings use sentence case.
+- Proper names keep their capitalization.
+
 ## Structure
 
 - When presenting multiple points, use a list rather than prose.

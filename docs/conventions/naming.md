@@ -23,7 +23,7 @@ Source of information to read and write.
 Read-only source of information to be consumed.
 
 
-## View Naming
+## View naming
 
 **<xyz>Flow**
 A structurally independent section of the app.
@@ -47,7 +47,7 @@ A view intended for use in a list or grid. Can be a Component or View depending 
 A view wrapping other content via a ViewBuilder parameter.
 
 
-## View Related Types
+## View-related types
 
 **<xyz>State**
 A struct that represents a snapshot of changeable state for a Flow or Screen.

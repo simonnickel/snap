@@ -2,7 +2,7 @@
 
 Applies to Swift source files.
 
-## Code Structure
+## Code structure
 
 - Structure a file with `// MARK: - XYZ` so its sections are findable in the minimap.
 - Structure a block like a text. Related lines stay together, separated from other blocks by an empty line.
