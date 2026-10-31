@@ -60,6 +60,16 @@ I chose to use the MIT License (created by GitHub template) because it is most c
 Imports the suite layer, as described in [agent-setup.md](agent-setup.md) (see [AGENTS.md](../../package-template/AGENTS.md)).
 
 
+### README.md
+
+The structure of a package README: badges from the Swift Package Index, a link to the suite, requirements, setup, demo project and usage (see [README.md](../../package-template/README.md)).
+
+
+### IDETemplateMacros.plist
+
+The file header for new files created in Xcode, linking to the suite (see [IDETemplateMacros.plist](../../package-template/.swiftpm/xcode/xcshareddata/IDETemplateMacros.plist)).
+
+
 ## Demo Project
 
 Create a demo project if suitable and configure project to edit the package directly from the demo project:
