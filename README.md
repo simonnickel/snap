@@ -76,7 +76,7 @@ Mermaid: [Docs](http://mermaid.js.org/intro/), [Editor](https://mermaid.live/)
 
 ### snap-settings-service
 
-[snap-settings-service](https://github.com/simonnickel/snap-settings-service) stores `Codable` values for `String` keys in `UserDefaults`, `NSUbiquitousKeyValueStore`, or a custom store.
+[snap-settings-service](https://github.com/simonnickel/snap-settings-service) stores `Codable` values for `String` keys in `UserDefaults`, `NSUbiquitousKeyValueStore` or a custom store.
 
 
 ### snap-navigation
@@ -91,7 +91,7 @@ Mermaid: [Docs](http://mermaid.js.org/intro/), [Editor](https://mermaid.live/)
 
 ### snap-swift-data
 
-[snap-swift-data](https://github.com/simonnickel/snap-swift-data) improves interoperability between SwiftData, CoreData objects, and Persistent History Tracking.
+[snap-swift-data](https://github.com/simonnickel/snap-swift-data) improves interoperability between SwiftData, CoreData objects and Persistent History Tracking.
 
 ### snap-template
 
