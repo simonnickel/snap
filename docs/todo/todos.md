@@ -47,3 +47,10 @@ Decide whether to add permission rules to the Claude Code settings:
 - Verify it, for example with `Self._printChanges()` or Instruments on a container in both forms.
 - If it holds, migrate the package types that store a builder closure without a reason for it, such as `ScrollViewWith` in `snap-core` and `StyleScreen` in `snap-style`.
 - If it does not, remove the rule and revert `code-reference/Container.swift`.
+
+## TODO-19: SwiftUI and UIKit code in snap-foundation
+
+`snap-foundation` has a `SwiftUI+UIKit` folder of extensions, while `docs/suite/packages-overview.md` lists only Swift, Foundation and OSLog for it and assigns SwiftUI and UIKit to `snap-core`.
+
+- Decide whether the code moves to `snap-core` or the overview changes.
+- Apply the change in the affected repository.
