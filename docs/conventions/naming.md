@@ -27,9 +27,11 @@ Read-only source of information to be consumed.
 **<xyz>Flow**
 A structurally independent section of the app.
 Usually owns a NavigationStack to show a series of Screens.
+Owns navigation chrome, such as a button that dismisses the flow.
 
 **<xyz>Screen**
 An arrangement of views filling the screen, displayed within a `Flow`. Owns the overall layout, manages data flow to its elements and coordinates interactions between them.
+Owns the chrome that configures the screen, such as title, toolbar and background.
 
 **<xyz>Component**
 A reusable view that presents or interacts with business logic: calling services, handling actions or managing state.
@@ -41,7 +43,7 @@ A reusable view focused on styling and layout, with no business logic.
 A view intended for use in a list or grid. Can be a Component or View depending on whether it connects to business logic.
 
 **<xyz>Container**
-A generic view wrapping another view, typically via a ViewBuilder parameter.
+A view wrapping other content via a ViewBuilder parameter.
 
 
 ## View Related Types
