@@ -4,6 +4,7 @@ Follow the [Swift API Design Guidelines](https://www.swift.org/documentation/api
 
 - Avoid names that collide with SwiftUI types, such as `Label` or `Section`.
 - Name event handler closures `on...`, matching SwiftUI modifiers such as `onAppear`.
+  - Name what happened in the view, such as `onTapClose`, not what the parent should do, such as `onShouldDismiss`.
 
 ## Service layer types
 
