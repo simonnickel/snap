@@ -12,7 +12,7 @@ Conventions for all written content: documentation, code comments, AGENTS.md, RE
 ## Headings
 
 - The document title uses title case. Section headings use sentence case.
-- Proper names keep their capitalization.
+- Proper names and type names keep their capitalization.
 
 ## Structure
 
