@@ -28,6 +28,8 @@ Check all parts together, following the "Across files" content checks in `AGENTS
 
 Verify that every referenced path, skill and symbol exists.
 
+Verify that `snap/docs/conventions/index.md` imports every file in `snap/docs/conventions/`.
+
 ## Phase 3: Present findings
 
 Present findings.
