@@ -19,3 +19,7 @@ The rule "Propose changes first, implement after confirmation." was removed from
 - Waits on a newer Claude Code version.
 - Try `snap-generic-pick-todo` with the dialog again and check that the full item shows before it.
 - Bring the dialog back if it does.
+
+## TODO-15: Code of Conduct
+
+Add a Code of Conduct to the package template, e.g. the [Contributor Covenant](https://www.contributor-covenant.org).

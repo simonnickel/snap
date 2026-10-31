@@ -6,7 +6,7 @@ argument-hint: [docs] [skills] [setup]
 
 ## Parts
 
-- `docs` — every file in `snap/docs/` and `snap/agents/AGENTS-*.md`
+- `docs` — every file in `snap/docs/`, `snap/agents/AGENTS-*.md` and `snap/README.md`
 - `skills` — every skill in `snap/agents/skills/`
 - `setup` — the output of `snap/agents/setup.sh --check` and the imports of every `AGENTS.md` in the workspace
 

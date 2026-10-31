@@ -16,7 +16,7 @@ The packages contain shared code, reusable implementations of common app feature
 
 You need rules to break them, so I made up some of my own: [conventions](./docs/conventions/).
 
-Packages are set up as described in [package-template.md](./package-template.md).
+Packages are set up as described in [package-template.md](./docs/suite/package-template.md).
 
 
 ## Package Dependencies
@@ -42,6 +42,7 @@ flowchart TD
     end
 
     C1 --> C2
+    C1 --> M2
     C1 --> M4
     C1 --> M5
 
