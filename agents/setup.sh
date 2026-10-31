@@ -50,11 +50,11 @@ else
     fixed "$global_link linked to AGENTS-global.md"
 fi
 
-# Workspace: AGENTS.md contains only the import of AGENTS-workspace.md.
+# Workspace: AGENTS.md contains only the import of AGENTS-shared.md.
 workspace_file="$WORKSPACE_DIR/AGENTS.md"
-workspace_content="@snap/agents/AGENTS-workspace.md"
+workspace_content="@snap/agents/AGENTS-shared.md"
 if [[ -f "$workspace_file" && "$(cat "$workspace_file")" == "$workspace_content" ]]; then
-    ok "$workspace_file imports AGENTS-workspace.md"
+    ok "$workspace_file imports AGENTS-shared.md"
 elif [[ -e "$workspace_file" ]]; then
     problem "$workspace_file should contain only '$workspace_content'"
 elif $CHECK_ONLY; then

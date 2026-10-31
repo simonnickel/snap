@@ -22,7 +22,6 @@ Loaded in every project on this machine, as described in `snap/docs/suite/agent-
 Loaded in every SNAP package and the workspace, as described in `snap/docs/suite/agent-setup.md`.
 
 - **`snap/agents/AGENTS-shared.md`** — What is specific to the SNAP suite.
-- **`snap/agents/AGENTS-workspace.md`** — Additions for sessions started in the workspace folder.
 - **`snap/docs/suite/`** — Documentation about the suite as a whole.
 - **`snap/docs/todo/`** — Outstanding work on the suite.
 
