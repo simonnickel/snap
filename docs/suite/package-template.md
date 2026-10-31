@@ -12,6 +12,7 @@ Partly inspired by [PackageTemplate](https://github.com/mattmassicotte/PackageTe
     1. Move files from `Snap<PackageName>/` to root of repository
     2. Copy files from [package-template](../../package-template/) folder (make sure to include .-files)
     3. Fix names in `Package.swift`
+    4. Resolve the remaining placeholders and `TODO` comments
 3. Create a [demo project](#demo-project) if suitable
 4. Set up GitHub page: Add Description and Topics, uncheck Packages and Deployments
 5. Add to [Swift Package Index](https://swiftpackageindex.com)
