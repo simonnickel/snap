@@ -23,12 +23,16 @@ argument-hint: [todo-id]
 
 ## Phase 3: Present
 
-Present the recommendation and tradeoffs following `## Decisions` in `AGENTS-global.md`. Options:
+Present in this order, each step visible in the response before the next:
 
-- **Implement**: apply the chosen option and remove the item once resolved.
-- **Record**: update the item with the decision, leaving it open.
-- **Skip**: leave everything unchanged.
+1. Post the full content of the item and its details file verbatim in a fenced `markdown` block. Do not summarize or shorten it.
+2. Summarize what to do about it: the recommendation and its tradeoffs.
+3. Ask how to proceed. Options:
+   - **Implement**: apply the chosen option and remove the item once resolved.
+   - **Record**: update the item with the decision, leaving it open.
+   - **Delete**: remove the item without implementing it.
+   - **Skip and next**: leave the item unchanged and continue with the next item, excluding the skipped ones.
 
 ## Constraints
 
-- Analyse one item only.
+- Analyse one item at a time.
