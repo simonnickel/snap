@@ -2,6 +2,8 @@
 
 Follow the [Swift API Design Guidelines](https://www.swift.org/documentation/api-design-guidelines/).
 
+Avoid names that collide with SwiftUI types, such as `Label` or `Section`.
+
 ## Service layer types
 
 The suffixes overlap, but each one communicates a different expectation.
