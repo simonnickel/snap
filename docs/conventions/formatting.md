@@ -13,6 +13,10 @@ Use Xcode default formatting with `control + m`.
 
 ## Trailing commas
 
-- Multi-line parameter and argument lists keep a trailing comma on the last entry.
-- Applies to function signatures and call sites.
+- Multi-line lists keep a trailing comma on the last entry.
+- Applies to function signatures, call sites and collection literals.
 - Single-line lists have no trailing comma.
+
+## Package manifest
+
+- Dependencies in `Package.swift` are listed alphabetically.
