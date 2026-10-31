@@ -32,13 +32,21 @@ Add a Code of Conduct to the package template, e.g. the [Contributor Covenant](h
 - Delete the file once reviewed.
 - Remove this item and the exclude entry once the folder is empty.
 
-## TODO-17: Claude Code permissions
+## TODO-17: Claude Code permissions and Xcode MCP
 
 Decide whether to add permission rules to the Claude Code settings:
 
 - Allow `mcp__xcode__*`, so building and testing through Xcode MCP needs no permission prompt.
 - Deny `Edit` on `.claude/settings.json`, `.claude/settings.local.json` and `.mcp.json`, so the agent cannot widen its own permissions. Check first how far Claude Code already protects these files.
 - Decide where they live: the user `~/.claude/settings.json`, or a versioned file distributed by `setup.sh`.
+
+Decide whether to bring back the rule to use Xcode MCP for building and testing. It was removed from `agents/AGENTS-global.md`, since the server was not set up on the machine.
+
+- Set up the server:
+  1. In Xcode > Settings > Intelligence, enable "Allow external agents to use Xcode tools". The label is unverified.
+  2. Register it for all projects: `claude mcp add --scope user xcode -- xcrun mcpbridge`.
+  3. Open the project in Xcode and approve the connection prompt.
+- If the rule comes back, list the registration under "Expected setup" in `docs/suite/agent-setup.md`.
 
 ## TODO-18: Verify stored view content
 

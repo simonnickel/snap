@@ -85,5 +85,4 @@ A direct request overrides the choice.
 
 ## Tools
 
-- Use Xcode MCP when working on an Xcode project (building, running tests, checking errors).
 - When a tool fails because of a one-time environment fix (e.g. `xcode-select` points to CLT, missing simulator platform), surface it instead of silently working around it.
