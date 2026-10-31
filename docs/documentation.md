@@ -56,9 +56,10 @@ Add one when there is content for it, not upfront.
 - **`mission-statement.md`** — Why the project exists and what it optimizes for.
 - **`architecture.md`** — How the project is structured and why.
 - **`decisions.md`** — A decision, the alternatives considered and the reason for the choice.
-- **`todo/`** — Outstanding work that is not tied to one place in the code.
+- **`todo/`** — Outstanding work.
   - Actionable without the conversation that produced it.
-  - Removed once done.
+  - Each place it relates to mentions its id, in source as described in `code-comments.md`.
+  - Removed once done, along with its mentions.
   - **`todos.md`** — The list of items.
     - Each item has a fixed id (`TODO-1`) that is never reassigned.
     - Items are ordered by execution, not by id.

@@ -26,8 +26,8 @@ Don't write a comment that describes what the code does. Naming should do that.
 - Use on a branch to indicate ongoing development.
 - Never merge to main.
 
-`// TODO <xyz>:` indicates an optional improvement for the future. Common tags:
+`// TODO-<n>:` marks a place an item of the project-level TODO list relates to. `<n>` is the item's id.
 
-- `FB`: A workaround for something that does not work as expected. States the affected OS versions in parentheses and, if filed, the Apple Feedback number. Fix when resolved.
-- `finetuning`: A non-critical improvement is possible.
-- `idea`: A new feature might evolve here.
+## Workarounds
+
+A workaround for something that does not work as expected starts with `// Workaround`. It states the affected OS versions and, if filed, the Apple Feedback number, such as `// Workaround for FB12345678 (iOS 18): …`.

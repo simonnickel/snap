@@ -63,3 +63,12 @@ Decide whether to bring back the rule to use Xcode MCP for building and testing.
 - Generate the collection from `packages.json` with `package-collection-generate`, then sign it with `package-collection-sign`.
 - Decide where to host the signed `collection.json`, e.g. as a raw GitHub file in this repository.
 - Update `## Package Collections` in `README.md` with the collection URL.
+
+## TODO-21: Migrate TODO and workaround comments
+
+`docs/conventions/code-comments.md` replaced tagged `// TODO <xyz>:` comments with items on the TODO list, marked in source with `// TODO-<n>:`, and with workaround comments. The packages still use the old formats.
+
+- Rewrite workarounds as workaround comments: `// TODO FB:` comments, comments starting with a Feedback number, such as `// FB19669133: …`, and doc comments with a `Workaround:` line.
+- Move `// TODO finetuning:` and `// TODO idea:` comments to the package's TODO list, or drop them.
+- Treat other tags, such as `macOS` or `feature`, and plain `// TODO:` comments on main the same way.
+- `snap-generic-analyse-todos` covers this per package, through its check of existing TODOs.
