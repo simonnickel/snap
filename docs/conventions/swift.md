@@ -16,9 +16,9 @@
 
 ## Error handling
 
-- No force unwraps outside tests, unless a comment justifies it.
-- No `fatalError`. For an impossible state, use `assertionFailure`, log it and fall back to a safe value.
-- No `try?` that drops an error the caller could diagnose or recover from.
+- No force unwraps, `try!` or `as!` without a justifying comment.
+- Use `assertionFailure` instead of `fatalError`, log and fall back to a safe value.
+- Prevent `try?` that hides an error the caller needs.
 - Use typed `throws` where possible.
 
 ## Concurrency
@@ -28,6 +28,7 @@
 ## Testing
 
 - Tests use Swift Testing (`@Test`, `@Suite`), not XCTest.
+- Unwrap with `try #require` instead of a force unwrap, so a failure stops only that test.
 - Public behavior is covered by tests.
 - Prefer a parameterized `@Test(arguments:)` over near-duplicate tests.
 - Test own logic, not framework behavior.
