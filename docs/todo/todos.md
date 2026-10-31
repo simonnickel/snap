@@ -20,18 +20,6 @@ The rule "Propose changes first, implement after confirmation." was removed from
 
 Add a Code of Conduct to the package template, e.g. the [Contributor Covenant](https://www.contributor-covenant.org).
 
-## TODO-16: Review reference docs
-
-`docs/todo/reference/` holds docs, skills and agent setup from another project. It is excluded locally in `.git/info/exclude` and never committed.
-
-- Go through the files one by one, one file per reply.
-- Check each file for content to add to the docs, conventions, skills or agent setup, or an approach to take inspiration from.
-- Present the findings and discuss each one before changing anything.
-- Decide on every finding within the current file. Don't hold one back because a later file might cover it.
-- Apply only what is decided.
-- Delete the file once reviewed.
-- Remove this item and the exclude entry once the folder is empty.
-
 ## TODO-17: Claude Code permissions and Xcode MCP
 
 Decide whether to add permission rules to the Claude Code settings:
