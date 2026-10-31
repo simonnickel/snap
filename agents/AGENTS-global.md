@@ -20,7 +20,8 @@ Ask in the response, not with the AskUserQuestion tool, since the content before
 
 ## Diff previews
 
-- When proposing a text or code change before applying it, use a fenced ```diff block (`-`/`+` lines) so it renders as a colored diff. Include the file path and line number.
+- When proposing a text or code change before applying it, use a fenced ```diff block (`-`/`+` lines) so it renders as a colored diff.
+- Put the file path above the block. Start the block with a hunk header (`@@ -23,1 +23,2 @@`) for the line numbers.
 - After applying a change, don't repeat it as a diff. The edit is already shown. Summarize only what the edit does not show, such as reasons or what was left out.
 
 ## Checking content
