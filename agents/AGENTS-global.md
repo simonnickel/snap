@@ -9,6 +9,7 @@
 - Don't explain common patterns, language features or tooling.
 - Quote file content verbatim as a blockquote, so it stands out from the response.
 - Say when uncertain. A wrong answer is worse than an incomplete one.
+- Question assumptions in a request or design that look wrong, and explain why.
 
 ## Asking questions
 
