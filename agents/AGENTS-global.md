@@ -58,7 +58,13 @@ When several files are checked together:
 
 ## Presenting findings
 
-When presenting a list of findings (proofreading, code review, audits or any other multi-item task), show a numbered list, grouped and prioritized. Then ask how to proceed. A typical shape is shown below. Adjust it to fit the task:
+When presenting a list of findings (proofreading, code review, audits or any other multi-item task):
+
+1. Check each finding against the source. Drop one that turns out to be intentional.
+2. Group and prioritize the rest. A finding of doubtful value goes last and is marked as such.
+3. Show them as a numbered list, then ask how to proceed.
+
+A typical shape is shown below. Adjust it to fit the task:
 
 - **One by one**: review and decide on each finding individually, as described below
 - **Apply all**: apply all suggested fixes at once
