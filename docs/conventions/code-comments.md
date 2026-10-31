@@ -28,6 +28,6 @@ Don't write a comment that describes what the code does. Naming should do that.
 
 `// TODO <xyz>:` indicates an optional improvement for the future. Common tags:
 
-- `FB#`: A workaround because something does not work as expected, reference related Apple Feedback (FB) number. Fix when resolved.
-- `finetuning`: A non critical improvement is possible.
+- `FB`: A workaround for something that does not work as expected. States the affected OS versions in parentheses and, if filed, the Apple Feedback number. Fix when resolved.
+- `finetuning`: A non-critical improvement is possible.
 - `idea`: A new feature might evolve here.
