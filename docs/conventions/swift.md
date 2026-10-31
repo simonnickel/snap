@@ -18,7 +18,7 @@
 
 - No force unwraps, `try!` or `as!` without a justifying comment.
 - Use `assertionFailure` instead of `fatalError`, log and fall back to a safe value.
-- Prevent `try?` that hides an error the caller needs.
+- Avoid `try?` that hides an error the caller needs.
 - Use typed `throws` where possible.
 
 ## Concurrency
