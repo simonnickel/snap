@@ -53,8 +53,13 @@ Decide whether to bring back the rule to use Xcode MCP for building and testing.
 
 ## TODO-20: Publish the package collection
 
-`packages.json` defines the suite's package collection. It is not published, since the [Generator](https://github.com/swiftlang/swift-package-collection-generator) did not build in 2026-05.
+`packages.json` defines the suite's package collection. It is not published yet.
 
-- Try to build the Generator again.
-- Generate and sign the collection from `packages.json`, then publish it.
-- Update `## Package Collections` in `README.md`.
+- Build the [Generator](https://github.com/swiftlang/swift-package-collection-generator) with `swift build --configuration release`.
+  - As of 2026-10, it declares `.macOS(.v13)` but depends on `swift-package-manager` `main`, which requires macOS 15. Change the platform in its `Package.swift` to `.macOS("15.0")` until this is fixed upstream.
+- Decide when to publish. The collection lists only tagged versions, and every package is at `0.1.0`, older than `main`.
+- Create a Swift Package Collection certificate in the Apple Developer portal. Export its key from Keychain Access as `.p12` and convert it to an RSA key:
+  `openssl pkcs12 -nocerts -in Certificates.p12 -out key.pem && openssl rsa -in key.pem -out rsa_key.pem`
+- Generate the collection from `packages.json` with `package-collection-generate`, then sign it with `package-collection-sign`.
+- Decide where to host the signed `collection.json`, e.g. as a raw GitHub file in this repository.
+- Update `## Package Collections` in `README.md` with the collection URL.
