@@ -1,7 +1,7 @@
 ---
 name: snap-suite-check
-description: Audit the suite documentation, skills and agent setup of the whole suite, and compare every package against the package template. Use for requests to check or audit the suite documentation, conventions, skills, agent setup or the match of packages with the template.
-argument-hint: [docs] [skills] [setup] [template]
+description: Audit the suite documentation, skills, agent setup and remaining repository files of the whole suite, and compare every package against the package template. Use for requests to check or audit the suite documentation, conventions, skills, agent setup, repository files or the match of packages with the template.
+argument-hint: [docs] [skills] [setup] [template] [other]
 ---
 
 ## Parts
@@ -10,6 +10,7 @@ argument-hint: [docs] [skills] [setup] [template]
 - `skills` — every skill in `snap/agents/skills/`
 - `setup` — the output of `snap/agents/setup.sh --check` and the imports of every `AGENTS.md` in the workspace
 - `template` — `snap/package-template/` with its hidden files, `snap/docs/suite/package-template.md` and the files of every package that correspond to them
+- `other` — every file in `snap/` that no other part covers
 
 Without an argument, every part is checked. With arguments, findings are limited to the named parts.
 
@@ -37,6 +38,7 @@ Verify that:
 - every referenced path, skill and symbol exists
 - each skill's description matches its phases
 - `snap/docs/conventions/index.md` imports every file in `snap/docs/conventions/`
+- `snap/packages.json` lists every package in `snap/docs/suite/packages-overview.md`
 
 ## Phase 3: Present
 
