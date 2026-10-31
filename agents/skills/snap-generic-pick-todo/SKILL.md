@@ -1,6 +1,6 @@
 ---
 name: snap-generic-pick-todo
-description: Analyse one item of the project-level TODO list and recommend an option. Takes a TODO id or picks the next item and explains why.
+description: Analyse one item of the project-level TODO list and recommend an option. Takes a TODO id or picks the next item and explains why. Use for requests to pick the next task or look at a TODO.
 argument-hint: [todo-id]
 ---
 

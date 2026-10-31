@@ -1,6 +1,6 @@
 ---
 name: snap-generic-check-comments
-description: Maintain the source comments of the current project or a given part of it. Analyses the code and suggests additions, updates and removals.
+description: Maintain the source comments of the current project or a given part of it. Analyses the code and suggests additions, updates and removals. Use for requests to check, review or update source comments.
 argument-hint: [scope]
 ---
 

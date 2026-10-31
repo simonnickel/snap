@@ -1,6 +1,6 @@
 ---
 name: snap-package-check
-description: Maintain the README and AGENTS.md of the current package and compare the package against the package template. Suggests additions, updates and removals.
+description: Maintain the README and AGENTS.md of the current package and compare the package against the package template. Suggests additions, updates and removals. Use for requests to check or review a package, its README, AGENTS.md or match with the template.
 argument-hint: [readme] [agents-md] [template]
 ---
 

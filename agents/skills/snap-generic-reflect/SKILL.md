@@ -1,6 +1,6 @@
 ---
 name: snap-generic-reflect
-description: Review the current conversation for learnings worth persisting in the project's documentation, skills or memory. Use at the end of a session to capture non-obvious findings before they're lost.
+description: Review the current conversation for learnings worth persisting in the project's documentation, skills or memory. Use for requests to reflect on the session or capture learnings.
 ---
 
 ## Phase 1: Identify candidates

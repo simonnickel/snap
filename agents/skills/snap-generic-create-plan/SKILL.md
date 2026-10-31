@@ -1,6 +1,6 @@
 ---
 name: snap-generic-create-plan
-description: Create a plan for a goal in the current project, following the project's documentation style. Resolves open questions before writing. Does not implement anything.
+description: Create a plan for a goal in the current project, following the project's documentation style. Resolves open questions before writing. Does not implement anything. Use for requests to plan a goal or turn a TODO into a plan.
 argument-hint: <goal>
 ---
 

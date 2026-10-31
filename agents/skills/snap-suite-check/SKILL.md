@@ -1,6 +1,6 @@
 ---
 name: snap-suite-check
-description: Audit the suite documentation, skills and agent setup of the whole suite.
+description: Audit the suite documentation, skills and agent setup of the whole suite. Use for requests to check or audit the suite documentation, conventions, skills or agent setup.
 argument-hint: [docs] [skills] [setup]
 ---
 
