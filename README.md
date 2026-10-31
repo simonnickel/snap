@@ -37,7 +37,6 @@ flowchart TD
     end
 
     C1 --> C2
-    C1 --> M2
     C1 --> M4
     C1 --> M5
 
