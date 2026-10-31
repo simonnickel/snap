@@ -67,7 +67,7 @@ The structure of a package README: badges from the Swift Package Index, a link t
 - Requirements is always present.
 - Setup, Demo project and Usage are present when there is content for them.
 - The template sections keep their names and order.
-- Sections specific to the package can be added between them.
+- Sections specific to the package can be added between or after them.
 
 
 ### IDETemplateMacros.plist
