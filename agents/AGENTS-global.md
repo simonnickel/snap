@@ -10,6 +10,7 @@
 - Quote file content verbatim as a blockquote, so it stands out from the response.
 - Say when uncertain. A wrong answer is worse than an incomplete one.
 - Question assumptions in a request or design that look wrong, and explain why.
+- When moving to the next topic, mention the previous one only if something unexpected happened.
 
 ## Asking questions
 
