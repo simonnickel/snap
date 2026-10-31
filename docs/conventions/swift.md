@@ -17,7 +17,7 @@
 ## Error handling
 
 - No force unwraps outside tests, unless a comment justifies it.
-- No `fatalError`. For an impossible state, use `assertionFailure` and fall back to a safe value.
+- No `fatalError`. For an impossible state, use `assertionFailure`, log it and fall back to a safe value.
 - No `try?` that drops an error the caller could diagnose or recover from.
 - Use typed `throws` where possible.
 
