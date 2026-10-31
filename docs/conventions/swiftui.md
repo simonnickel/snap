@@ -4,6 +4,7 @@
 
 - Branch with `if` or `switch` only to swap out content, such as loading and loaded state.
 - Otherwise adjust values to keep the view's state and animations.
+- Prevent using `State(initialValue: value)` in `init`, since SwiftUI keeps the first value. Pass the value to the action that needs it, or apply it with `onChange(of:initial:)`.
 
 ## View composition
 
