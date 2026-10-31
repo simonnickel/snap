@@ -2,6 +2,8 @@
 
 How the agent configuration reaches each session, and how to set it up on a machine.
 
+Only Claude Code is fully supported. Other tools get the skills, but the setup does not ensure that they load the global layer or resolve `@` imports.
+
 ## Layers
 
 Each session loads the layers that apply to where it was started, through the files in "Expected setup".
