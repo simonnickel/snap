@@ -25,7 +25,7 @@ argument-hint: [todo-id]
 
 Present in this order:
 
-1. Post the full content of the item and its details file verbatim in a fenced `markdown` block. Do not summarize or shorten it.
+1. Quote the full content of the item and its details file. Do not summarize or shorten it.
 2. Summarize what to do about it: the recommendation and its tradeoffs.
 3. Ask how to proceed. Options:
    - **Implement**: apply the chosen option and remove the item once resolved.

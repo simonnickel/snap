@@ -7,6 +7,7 @@
 ## Responses
 
 - Don't explain common patterns, language features or tooling.
+- Quote file content verbatim as a blockquote, so it stands out from the response.
 
 ## Asking questions
 
