@@ -17,8 +17,10 @@ argument-hint: [todo-id]
 
 ## Phase 2: Analyse
 
-- Identify the open decisions in the item. An item without one has a single option: implementing it as described.
-- For each decision, collect the options and weigh them against the loaded conventions and principles.
+- Identify the open decisions in the item.
+- For each decision, collect the options.
+- Weigh the options against the loaded conventions and principles, but only for a decision with more than one option.
+- An item without an open decision has a single option: implementing it as described.
 - Note dependencies on other items.
 
 ## Phase 3: Present
@@ -31,7 +33,7 @@ Present in this order:
    - **Implement**: apply the chosen option and remove the item once resolved.
    - **Record**: update the item with the decision, leaving it open.
    - **Delete**: remove the item without implementing it.
-   - **Skip and next**: leave the item unchanged and continue with the next item, excluding the skipped ones.
+   - **Skip and next**: leave the item unchanged and continue with the next item, excluding the skipped ones. Only when another item can be picked.
 
 ## Constraints
 
