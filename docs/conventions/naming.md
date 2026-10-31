@@ -2,7 +2,8 @@
 
 Follow the [Swift API Design Guidelines](https://www.swift.org/documentation/api-design-guidelines/).
 
-Avoid names that collide with SwiftUI types, such as `Label` or `Section`.
+- Avoid names that collide with SwiftUI types, such as `Label` or `Section`.
+- Name event handler closures `on...`, matching SwiftUI modifiers such as `onAppear`.
 
 ## Service layer types
 
