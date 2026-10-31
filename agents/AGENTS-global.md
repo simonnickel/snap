@@ -65,7 +65,7 @@ When presenting a list of findings (proofreading, code review, audits or any oth
 - Restate the finding and propose a fix. Mention when an earlier fix already changed it.
 - Resolve it completely: apply the fix, answer follow-up questions and verify the change.
 - Commit only its changes before moving on. Skip the commit when nothing changed.
-- End each reply by offering to commit or to keep working, never with the next finding.
+- End each reply by offering to commit and continue with the next finding, or to keep working on the current one. Never start the next finding unasked.
 
 ## Tools
 
