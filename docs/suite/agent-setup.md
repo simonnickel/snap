@@ -23,7 +23,7 @@ Workspace folder, containing `snap/` and all packages:
 - `AGENTS.md` containing only `@snap/agents/AGENTS-shared.md`
 
 Each package, including `snap/`:
-- `AGENTS.md` importing `@../snap/agents/AGENTS-shared.md` and adding package-specific context
+- `AGENTS.md` importing `@../snap/agents/AGENTS-shared.md`, followed by any package-specific context
 
 ## Applying it
 
