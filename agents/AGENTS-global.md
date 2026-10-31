@@ -32,8 +32,10 @@ When checking written content (documentation, comments, AGENTS.md, README, skill
 
 ### Each file
 
-- Spelling: typos and misspelled words
+- Language: typos, misspelled words and grammatical errors
 - Wording: issues against `writing-style.md`
+- Leftovers: placeholder text or unresolved markers
+- Conventions: code samples that violate them
 - Misplaced: content that belongs in another file
 - Redundant: content already covered elsewhere
 
