@@ -17,6 +17,7 @@ Partly inspired by https://github.com/mattmassicotte/PackageTemplate
 5. Add to [Swift Package Index](https://swiftpackageindex.com)
     1. Update Badge and Documentation urls in README.md
     2. Update `.spi.yml` to contain target names
+6. Add the package to [packages-overview.md](packages-overview.md), [packages.json](../../packages.json) and the [README](../../README.md), including its dependency graph
 
 
 # Package Template Content
