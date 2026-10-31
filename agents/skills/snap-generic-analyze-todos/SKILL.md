@@ -15,7 +15,6 @@ Findings are limited to the scope. Code outside it is read only where needed to 
 - Read the manifest and every source and test file in scope.
 - Collect every existing `TODO` and `FIXME` comment with its file and line.
 - Determine where findings are recorded: the project-level list defined by the loaded documentation conventions. Without one, the list the project already uses. Without either, ask the user.
-- Places in source that an item relates to are marked as defined by the loaded comment conventions.
 - Read the project-level list.
 
 ## Phase 2: Analyze
