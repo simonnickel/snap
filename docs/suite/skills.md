@@ -18,6 +18,7 @@ A skill defines only the workflow: its steps, their order and where the user dec
 
 - Document anything that also applies outside the skill, and reference it by path.
 	- Repeat it in the skill only where an explicit list makes the workflow clearer.
+- A skill states where to ask the user and which choices to offer, not how to ask. The global rules define how.
 - A `generic` skill references only the global layer, since suite docs are not loaded outside the suite.
 
 
