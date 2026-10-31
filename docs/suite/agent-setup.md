@@ -11,7 +11,7 @@ Each session loads the layers that apply to where it was started, through the fi
 - **Global** — `snap/agents/AGENTS-global.md`, `snap/docs/documentation.md` and every convention file via `snap/docs/conventions/index.md`.
 - **Suite** — `snap/agents/AGENTS-shared.md` and the docs it imports.
 - **Package** — `<package>/AGENTS.md`.
-- **Skills** — `snap/agents/skills/`.
+- **Skills** — `snap/agents/skills/`, copied into the skill folders and available in every project.
 
 ## Expected setup
 
