@@ -67,6 +67,10 @@ When presenting a list of findings (proofreading, code review, audits or any oth
 - Commit only its changes before moving on. Skip the commit when nothing changed.
 - End each reply by offering to commit and continue with the next finding, or to keep working on the current one. Never start the next finding unasked.
 
+## Commits
+
+- Ask before each commit, unless the user asked for it in the current request.
+
 ## Tools
 
 - Use Xcode MCP when working on an Xcode project (building, running tests, checking errors).
