@@ -110,9 +110,4 @@ Mermaid: [Docs](http://mermaid.js.org/intro/), [Editor](https://mermaid.live/)
 
 ## Package Collections
 
-Not working at the moment (2026-05)! The Generator does not build, will try again in the future.
-
-`packages.json` is prepared.
-
-[Swift Package Collection](https://www.swift.org/blog/package-collections/)
-[Generator](https://github.com/swiftlang/swift-package-collection-generator)
+`packages.json` defines a [Swift Package Collection](https://www.swift.org/blog/package-collections/) of the suite. It is not published yet.

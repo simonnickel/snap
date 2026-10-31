@@ -50,3 +50,11 @@ Decide whether to bring back the rule to use Xcode MCP for building and testing.
 
 - Decide whether the code moves to `snap-core` or the overview changes.
 - Apply the change in the affected repository, and to the snap-foundation description in `README.md`.
+
+## TODO-20: Publish the package collection
+
+`packages.json` defines the suite's package collection. It is not published, since the [Generator](https://github.com/swiftlang/swift-package-collection-generator) did not build in 2026-05.
+
+- Try to build the Generator again.
+- Generate and sign the collection from `packages.json`, then publish it.
+- Update `## Package Collections` in `README.md`.
