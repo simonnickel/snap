@@ -46,7 +46,7 @@ Decide whether to bring back the rule to use Xcode MCP for building and testing.
 
 ## TODO-19: SwiftUI and UIKit code in snap-foundation
 
-`snap-foundation` has a `SwiftUI+UIKit` folder of extensions, while `docs/suite/packages-overview.md` lists only Swift, Foundation and OSLog for it and assigns SwiftUI and UIKit to `snap-core`.
+`snap-foundation` has a `SwiftUI+UIKit` folder of extensions, while `docs/suite/packages-overview.md` describes it as extensions for Swift and Foundation and assigns SwiftUI and UIKit to `snap-core`.
 
 - Decide whether the code moves to `snap-core` or the overview changes.
-- Apply the change in the affected repository.
+- Apply the change in the affected repository, and to the snap-foundation description in `README.md`.
