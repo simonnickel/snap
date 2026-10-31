@@ -22,6 +22,7 @@ Recurring code patterns are collected as examples in [code-reference](./code-ref
 
 ```mermaid
 flowchart TD
+%% Edges show only dependencies not already covered through another package.
 
     subgraph Snap-Packages
     C1[snap-foundation]
