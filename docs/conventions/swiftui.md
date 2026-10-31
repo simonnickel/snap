@@ -1,5 +1,10 @@
 # SwiftUI
 
+## View identity
+
+- Branch with `if` or `switch` only to swap out content, such as loading and loaded state.
+- Otherwise adjust values to keep the view's state and animations.
+
 ## View Modifier
 
 ### Inert variant
