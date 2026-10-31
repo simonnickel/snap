@@ -96,6 +96,7 @@ Mermaid: [Docs](http://mermaid.js.org/intro/), [Editor](https://mermaid.live/)
 
 [snap-swift-data](https://github.com/simonnickel/snap-swift-data) improves interoperability between SwiftData, CoreData objects and Persistent History Tracking.
 
+
 ### snap-template
 
 [snap-template](https://github.com/simonnickel/snap-template) contains shared code and a demo Xcode project for using SNAP in an iOS app. The demo includes prepared app structure, navigation and infrastructure.
