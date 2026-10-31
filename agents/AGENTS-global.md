@@ -10,13 +10,18 @@
 - Don't summarize what you just did at the end of a response.
 - Don't explain common patterns, language features or tooling.
 
+## Asking questions
+
+- List the choices as a numbered list, so the user can answer with a number.
+- Always include an option to skip (leave unchanged).
+- End the response after the list.
+- Don't use the AskUserQuestion tool, since the content before it is often not posted.
+
 ## Decisions
 
 For open design questions, give the recommendation and the tradeoffs in the response first. Ask only once the decision is ready to be made, not while it is still being formed.
 
-To ask, use the AskUserQuestion tool with whatever concrete choices fit the decision: a single proposal or several named alternatives. Always include an option to skip (leave unchanged).
-
-Its text does not render markdown, so all content belongs in the response and the question only asks how to proceed.
+Offer whatever concrete choices fit the decision: a single proposal or several named alternatives.
 
 ## Diff previews
 
@@ -51,7 +56,7 @@ When several files are checked together:
 
 ## Presenting findings
 
-When presenting a list of findings (proofreading, code review, audits, or any other multi-item task), show a numbered list, grouped and prioritized. Then use the AskUserQuestion tool to ask how to proceed. A typical shape is shown below, adjust it to fit the task:
+When presenting a list of findings (proofreading, code review, audits, or any other multi-item task), show a numbered list, grouped and prioritized. Then ask how to proceed. A typical shape is shown below, adjust it to fit the task:
 
 - **One by one**: review and decide on each finding individually
   - Restate the proposal for that finding
