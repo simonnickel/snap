@@ -17,12 +17,12 @@ SNAP_DIR="$(dirname "$AGENTS_DIR")"
 WORKSPACE_DIR="$(dirname "$SNAP_DIR")"
 SKILLS_DIR="$AGENTS_DIR/skills"
 
-# Skill folders of Codex CLI, Codex in Xcode, Claude CLI and Claude in Xcode.
+# Skill folders of Claude Code, Claude in Xcode, Codex CLI and Codex in Xcode.
 SKILL_DESTINATIONS=(
-    "${CODEX_HOME:-$HOME/.codex}/skills"
-    "$HOME/Library/Developer/Xcode/CodingAssistant/codex/skills"
     "$HOME/.claude/skills"
     "$HOME/Library/Developer/Xcode/CodingAssistant/ClaudeAgentConfig/skills"
+    "${CODEX_HOME:-$HOME/.codex}/skills"
+    "$HOME/Library/Developer/Xcode/CodingAssistant/codex/skills"
 )
 
 # Every skill is named snap-*, so the script owns all folders with that prefix in a destination.
