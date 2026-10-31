@@ -5,7 +5,7 @@ The packages of the SNAP suite and how they depend on each other.
 | Package | Purpose | Depends on |
 |---|---|---|
 | `snap-foundation` | Extensions for Swift, Foundation and OSLog | — |
-| `snap-core` | SwiftUI/UIKit extensions, helpers and workarounds | snap-foundation |
+| `snap-core` | Extensions for Swift, SwiftUI and UIKit, helpers and workarounds | snap-foundation |
 | `snap-style` | Semantic styling system (colors, fonts, spacing) for SwiftUI | snap-foundation, snap-core |
 | `snap-settings-service` | Settings storage: Codable values in UserDefaults, iCloud KV or custom store | snap-core |
 | `snap-navigation` | SwiftUI navigation structure decoupled from presentation | snap-foundation |
