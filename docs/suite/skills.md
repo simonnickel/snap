@@ -23,7 +23,7 @@ A skill defines only the workflow: its steps, their order and where the user dec
 ## Structure
 
 - The frontmatter `name` matches the folder name.
-- The frontmatter `description` states the skill's scope. A skill that combines other skills names them in it.
+- The frontmatter `description` states the skill's scope.
 - The frontmatter `description` states which requests trigger the skill, in a sentence starting with "Use for requests to".
 - A skill that takes arguments names them in the frontmatter `argument-hint`.
 - `## Constraints`, if present, is the last section.
