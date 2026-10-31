@@ -6,8 +6,6 @@
 
 ## Responses
 
-- Keep responses concise.
-- Don't summarize what you just did at the end of a response.
 - Don't explain common patterns, language features or tooling.
 
 ## Asking questions
@@ -16,7 +14,7 @@ Ask in the response, not with the AskUserQuestion tool, since the content before
 
 - Ask only once the decision is ready to be made, not while it is still being formed.
 - Give the recommendation and the tradeoffs first.
-- End the response with the choices as a numbered list, so the user can answer with a number.
+- End the response with the choices as a numbered list, so the user can answer with a number. After a numbered list of findings, use letters instead.
 - Include an option to skip (leave unchanged).
 
 ## Diff previews
@@ -30,9 +28,9 @@ When checking written content (documentation, comments, AGENTS.md, README, skill
 ### Each file
 
 - Spelling: typos and misspelled words
-- Misplaced: content that belongs in another file
-- Redundant: content already covered elsewhere or advised against by the conventions
 - Wording: issues against `writing-style.md`
+- Misplaced: content that belongs in another file
+- Redundant: content already covered elsewhere
 
 ### Against the source
 
@@ -52,7 +50,7 @@ When several files are checked together:
 
 ## Presenting findings
 
-When presenting a list of findings (proofreading, code review, audits, or any other multi-item task), show a numbered list, grouped and prioritized. Then ask how to proceed. A typical shape is shown below, adjust it to fit the task:
+When presenting a list of findings (proofreading, code review, audits or any other multi-item task), show a numbered list, grouped and prioritized. Then ask how to proceed. A typical shape is shown below. Adjust it to fit the task:
 
 - **One by one**: review and decide on each finding individually
   - Restate the proposal for that finding
