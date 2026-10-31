@@ -89,3 +89,4 @@ Create a demo project if suitable and configure project to edit the package dire
 5. Replace all file headers with the one from the previous step.
 6. Convert root folder to Group and create folder `Views` in it, move `ContentView.swift` into it.
 7. Set Swift Language Version to 6.
+8. Create `Project/config-private.xcconfig` in the demo folder with `DEVELOPMENT_TEAM = <team id>`, and set it as base configuration of the project. It is ignored by git, so the team id stays private.
