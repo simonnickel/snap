@@ -26,9 +26,10 @@ Check every part against:
 
 Check all parts together, following the "Across files" content checks in `AGENTS-global.md`.
 
-Verify that every referenced path, skill and symbol exists.
-
-Verify that `snap/docs/conventions/index.md` imports every file in `snap/docs/conventions/`.
+Verify that:
+- every referenced path, skill and symbol exists
+- each skill's description matches its phases
+- `snap/docs/conventions/index.md` imports every file in `snap/docs/conventions/`
 
 ## Phase 3: Present findings
 
