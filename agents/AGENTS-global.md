@@ -53,11 +53,17 @@ When several files are checked together:
 
 When presenting a list of findings (proofreading, code review, audits or any other multi-item task), show a numbered list, grouped and prioritized. Then ask how to proceed. A typical shape is shown below. Adjust it to fit the task:
 
-- **One by one**: review and decide on each finding individually
-  - Restate the proposal for that finding
-  - Ask explicitly before moving to the next finding
+- **One by one**: review and decide on each finding individually, as described below
 - **Apply all**: apply all suggested fixes at once
 - **Skip all**: leave the content unchanged
+
+### One by one
+
+- Present one finding per reply, starting with its position, e.g. "Finding 3 of 7".
+- Restate the finding and propose a fix. Mention when an earlier fix already changed it.
+- Resolve it completely: apply the fix, answer follow-up questions and verify the change.
+- Commit only its changes before moving on. Skip the commit when nothing changed.
+- End each reply by offering to commit or to keep working, never with the next finding.
 
 ## Tools
 
