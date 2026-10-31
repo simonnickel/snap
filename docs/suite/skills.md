@@ -10,8 +10,6 @@ Every skill in `snap/agents/skills/` is named `snap-<scope>-<name>`. The scope s
 - `suite` — the whole suite
 - `generic` — any project, unrelated to the suite
 
-`setup.sh` owns every `snap-*` folder in each skill folder.
-
 ## Content
 
 A skill defines only the workflow: its steps, their order and where the user decides.
@@ -39,4 +37,4 @@ Each phase is a `## Phase <n>: <name>` section. Skills use this structure and di
 
 ## Setup
 
-- After changing a skill in `snap/agents/skills/`, run `snap/agents/setup.sh` to copy it into the skill folders of each agent tool.
+- After changing a skill in `snap/agents/skills/`, run `snap/agents/setup.sh`, as described in `snap/docs/suite/agent-setup.md`.
