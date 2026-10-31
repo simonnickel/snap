@@ -30,3 +30,11 @@ Add a Code of Conduct to the package template, e.g. the [Contributor Covenant](h
 - Apply only what is decided.
 - Delete the file once reviewed.
 - Remove this item and the exclude entry once the folder is empty.
+
+## TODO-17: Claude Code permissions
+
+Decide whether to add permission rules to the Claude Code settings:
+
+- Allow `mcp__xcode__*`, so building and testing through Xcode MCP needs no permission prompt.
+- Deny `Edit` on `.claude/settings.json`, `.claude/settings.local.json` and `.mcp.json`, so the agent cannot widen its own permissions. Check first how far Claude Code already protects these files.
+- Decide where they live: the user `~/.claude/settings.json`, or a versioned file distributed by `setup.sh`.
