@@ -1,7 +1,7 @@
 ---
 name: snap-suite-check
-description: Audit the suite documentation, skills and agent setup of the whole suite. Use for requests to check or audit the suite documentation, conventions, skills or agent setup.
-argument-hint: [docs] [skills] [setup]
+description: Audit the suite documentation, skills and agent setup of the whole suite, and compare every package against the package template. Use for requests to check or audit the suite documentation, conventions, skills, agent setup or the match of packages with the template.
+argument-hint: [docs] [skills] [setup] [template]
 ---
 
 ## Parts
@@ -9,6 +9,7 @@ argument-hint: [docs] [skills] [setup]
 - `docs` — every file in `snap/docs/`, `snap/agents/AGENTS-*.md` and `snap/README.md`
 - `skills` — every skill in `snap/agents/skills/`
 - `setup` — the output of `snap/agents/setup.sh --check` and the imports of every `AGENTS.md` in the workspace
+- `template` — `snap/package-template/` with its hidden files, `snap/docs/suite/package-template.md` and the files of every package that correspond to them
 
 Without an argument, every part is checked. With arguments, findings are limited to the named parts.
 
@@ -24,6 +25,12 @@ Check every part against:
 - `snap/docs/suite/skills.md` for skills
 - `snap/docs/suite/agent-setup.md` for the setup
 
+Compare every package against the template:
+- Files of the template that the package lacks
+- Settings that differ, such as the tools version, `.spi.yml` targets or the file header
+- The README structure: badges and sections, not their content
+- Values that are specific to the package are ignored, such as names, platforms and dependencies.
+
 Check all parts together, following the "Across files" content checks in `AGENTS-global.md`.
 
 Verify that:
@@ -33,4 +40,4 @@ Verify that:
 
 ## Phase 3: Present
 
-Present findings.
+Present findings. State for each difference from the template whether the package or the template should change.
