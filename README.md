@@ -2,7 +2,9 @@
 
 SNAP is a set of Swift packages I use to build iOS apps. This repository is the overview for the suite; the packages live in their own repositories.
 
-The packages contain shared code, reusable implementations of common app features, and a template for starting a new app. They are public for reference and feedback, but they are mainly shaped around my own projects.
+The packages contain shared code, reusable implementations of common app features and a template for starting a new app. They are public for reference and feedback, but they are mainly shaped around my own projects.
+
+Why the suite exists and what it optimizes for: [mission statement](./docs/suite/mission-statement.md).
 
 
 ## Highlights
