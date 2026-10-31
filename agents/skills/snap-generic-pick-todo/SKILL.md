@@ -13,7 +13,7 @@ argument-hint: [todo-id]
   - Of the rest, prefer the earliest in the list, since the list is ordered by execution.
   - Prefer a later item only when resolving it first unblocks or simplifies others.
   - State the chosen item and the reasoning before continuing.
-- Read the item, its details file if linked, and every file and item it references.
+- Read the item and every file and item it references.
 
 ## Phase 2: Analyse
 
@@ -27,11 +27,12 @@ argument-hint: [todo-id]
 
 Present in this order:
 
-1. Quote the full content of the item and its details file. Do not summarize or shorten it.
+1. Quote the full content of the item. Do not summarize or shorten it.
 2. Summarize what to do about it: the recommendation and its tradeoffs.
 3. Ask how to proceed. Typical options are shown below. Adjust them to fit the item:
    - **Implement**: apply the chosen option and remove the item once resolved.
    - **Record**: update the item with the decision, leaving it open.
+   - **Plan**: turn the item into a plan with `/snap-generic-create-plan`.
    - **Delete**: remove the item without implementing it.
    - **Skip and next**: leave the item unchanged and continue with the next item, excluding the skipped ones. Only when another item can be picked.
 

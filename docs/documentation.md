@@ -57,12 +57,14 @@ Add one when there is content for it, not upfront.
 - **`architecture.md`** — How the project is structured and why.
 - **`decisions.md`** — A decision, the alternatives considered and the reason for the choice.
 - **`todo/`** — Outstanding work that is not tied to one place in the code.
+  - Actionable without the conversation that produced it.
+  - Removed once done.
   - **`todos.md`** — The list of items.
     - Each item has a fixed id (`TODO-1`) that is never reassigned.
     - Items are ordered by execution, not by id.
-    - Resolved items are removed and their id is retired.
-  - **`todo-<id>.md`** — The details of an item that outgrows a few bullets. Its entry stays in `todos.md` and links to the file.
-  - **`plan-<description>.md`** — A plan that is not decided yet. It becomes an item in `todos.md` once decided.
+    - The id of a removed item is retired.
+    - An item that outgrows a few bullets becomes a plan.
+  - **`plans/<goal>.md`** — A goal and the steps to reach it.
 - **`<topic>.md`** — A guide for a single topic, e.g. usage, setup or migration.
 
 ## Source comments
