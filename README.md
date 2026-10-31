@@ -13,6 +13,10 @@ You need rules to break them, so I made up some of my own: [conventions](./docs/
 
 Packages are set up as described in [package-template.md](./docs/suite/package-template.md).
 
+Coding agents share instructions and skills across the suite, as described in [agent-setup.md](./docs/suite/agent-setup.md).
+
+Recurring code patterns are collected as examples in [code-reference](./code-reference/).
+
 
 ## Package Dependencies
 
