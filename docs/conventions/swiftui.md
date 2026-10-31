@@ -5,6 +5,11 @@
 - Branch with `if` or `switch` only to swap out content, such as loading and loaded state.
 - Otherwise adjust values to keep the view's state and animations.
 
+## View composition
+
+- Prefer storing content built in `init` over a `@ViewBuilder` closure, since SwiftUI cannot compare closures.
+- Keep a closure when there is a reason for it, such as content that takes input or is built later.
+
 ## View Modifier
 
 ### Inert variant

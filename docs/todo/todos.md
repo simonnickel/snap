@@ -39,3 +39,11 @@ Decide whether to add permission rules to the Claude Code settings:
 - Allow `mcp__xcode__*`, so building and testing through Xcode MCP needs no permission prompt.
 - Deny `Edit` on `.claude/settings.json`, `.claude/settings.local.json` and `.mcp.json`, so the agent cannot widen its own permissions. Check first how far Claude Code already protects these files.
 - Decide where they live: the user `~/.claude/settings.json`, or a versioned file distributed by `setup.sh`.
+
+## TODO-18: Verify stored view content
+
+`## View composition` in `docs/conventions/swiftui.md` prefers storing content built in `init` over a `@ViewBuilder` closure. The claim that SwiftUI cannot compare closures, and therefore updates the view on every parent update, is unverified.
+
+- Verify it, for example with `Self._printChanges()` or Instruments on a container in both forms.
+- If it holds, migrate the package types that store a builder closure without a reason for it, such as `ScrollViewWith` in `snap-core` and `StyleScreen` in `snap-style`.
+- If it does not, remove the rule and revert `code-reference/Container.swift`.
