@@ -27,7 +27,7 @@ Present in this order:
 
 1. Quote the full content of the item and its details file. Do not summarize or shorten it.
 2. Summarize what to do about it: the recommendation and its tradeoffs.
-3. Ask how to proceed. Options:
+3. Ask how to proceed. Typical options are shown below. Adjust them to fit the item:
    - **Implement**: apply the chosen option and remove the item once resolved.
    - **Record**: update the item with the decision, leaving it open.
    - **Delete**: remove the item without implementing it.
