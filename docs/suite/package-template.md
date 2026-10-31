@@ -51,7 +51,7 @@ Configuration for the Swift Package Index to build DocC documentation.
 
 ## LICENSE
 
-I chose to use the MIT License (created by Github template) because it is most commonly used in the community
+I chose to use the MIT License (created by GitHub template) because it is most commonly used in the community
 (see [LICENSE](../../package-template/LICENSE)).
 
 
@@ -64,13 +64,13 @@ Imports the suite layer, as described in [agent-setup.md](agent-setup.md) (see [
 
 Create a demo project if suitable and configure project to edit the package directly from the demo project:
 
-1. Create a project in package root, name it `PackageNameDemo`
+1. Create a project in package root, name it `Snap<PackageName>Demo`
 2. Add local package as dependency to the project: 
     1. Open Project > Package Dependencies > Add package > "Add local"
 3. Remove unnecessary files: Assets.xcassets, Preview Content (clear DEVELOPMENT_ASSET_PATHS)
 4. Copy IDETemplateMacros.plist to demo project:
     1. From: /package-template/.swiftpm/xcode/xcshareddata/IDETemplateMacros.plist 
-    2. To: /SnapDemo/SnapDemo.xcodeproj/project.xcworkspace/xcshareddata/IDETemplateMacros.plist
+    2. To: /Snap<PackageName>Demo/Snap<PackageName>Demo.xcodeproj/project.xcworkspace/xcshareddata/IDETemplateMacros.plist
 5. Replace all file header with the one from the previous step.
 6. Convert root folder to Group and create folder `Views` in it, move `ContentView.swift` into it.
 7. Set Swift Language Version to 6.
