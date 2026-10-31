@@ -19,3 +19,14 @@ The rule "Propose changes first, implement after confirmation." was removed from
 ## TODO-15: Code of Conduct
 
 Add a Code of Conduct to the package template, e.g. the [Contributor Covenant](https://www.contributor-covenant.org).
+
+## TODO-16: Review reference docs
+
+`docs/todo/reference/` holds docs, skills and agent setup from another project. It is excluded locally in `.git/info/exclude` and never committed.
+
+- Go through the files one by one, one file per reply.
+- Check each file for content to add to the docs, conventions, skills or agent setup, or an approach to take inspiration from.
+- Present the findings and discuss each one before changing anything.
+- Apply only what is decided.
+- Delete the file once reviewed.
+- Remove this item and the exclude entry once the folder is empty.
