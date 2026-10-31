@@ -48,7 +48,6 @@ Paths are relative to the repository root.
   - Excludes API reference detail. It belongs in doc comments.
   - Excludes filler, marketing voice and emojis.
 - **`docs/`** — Any documentation about the repository.
-- **Doc comments on public symbols** — How to use the API.
 
 ### Common files in `docs/`
 
@@ -66,6 +65,10 @@ Add one when there is content for it, not upfront.
   - **`plan-<description>.md`** — A plan that is not decided yet. It becomes an item in `todos.md` once decided.
 - **`<topic>.md`** — A guide for a single topic, e.g. usage, setup or migration.
 
+## Source comments
+
+Doc comments and TODOs in source, as described in `code-comments.md`.
+
 ## Per-machine
 
 - **`~/.claude/projects/<project>/memory/`** — Only for things tied to one machine, or as temporary notes before a finding settles into a checked-in location.
@@ -73,4 +76,3 @@ Add one when there is content for it, not upfront.
 ## Ephemeral
 
 - **Commit messages and PR descriptions** — Why this change.
-- **`// TODO:` in source** — Outstanding work in one place in the code.
