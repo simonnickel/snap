@@ -14,14 +14,10 @@
 
 Ask in the response, not with the AskUserQuestion tool, since the content before it is often not posted.
 
+- Ask only once the decision is ready to be made, not while it is still being formed.
+- Give the recommendation and the tradeoffs first.
 - End the response with the choices as a numbered list, so the user can answer with a number.
 - Include an option to skip (leave unchanged).
-
-## Decisions
-
-For open design questions, give the recommendation and the tradeoffs in the response first. Ask only once the decision is ready to be made, not while it is still being formed.
-
-Offer whatever concrete choices fit the decision: a single proposal or several named alternatives.
 
 ## Diff previews
 
