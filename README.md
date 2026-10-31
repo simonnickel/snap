@@ -4,7 +4,7 @@ SNAP is a set of Swift packages I use to build iOS apps. This repository is the 
 
 The packages contain shared code and reusable implementations of common app features. [snap-template](https://github.com/simonnickel/snap-template) shows them all together in action and is the starting point for a new app.
 
-The suite is shaped around my own needs, see the [mission statement](./docs/suite/mission-statement.md).
+The suite is shaped around my own needs, see the [mission statement](./docs/suite/mission-statement.md). It is unreleased, so public API can change at any time.
 
 
 ## Guides
