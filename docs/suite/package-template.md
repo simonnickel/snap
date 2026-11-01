@@ -83,11 +83,11 @@ Create a demo project if suitable and configure project to edit the package dire
 1. Create a project in package root, name it `Snap<PackageName>Demo`
 2. Add local package as dependency to the project:
     1. Open Project > Package Dependencies > Add package > "Add local"
-3. Remove unnecessary files: `Assets.xcassets`, `Preview Content` (clear `DEVELOPMENT_ASSET_PATHS`)
+3. Remove `Preview Content` (clear `DEVELOPMENT_ASSET_PATHS`)
 4. Copy `IDETemplateMacros.plist` to the demo project:
     1. From: `package-template/.swiftpm/xcode/xcshareddata/IDETemplateMacros.plist`
     2. To: `Snap<PackageName>Demo/Snap<PackageName>Demo.xcodeproj/project.xcworkspace/xcshareddata/IDETemplateMacros.plist`
 5. Replace all file headers with the one from the previous step.
-6. Convert root folder to Group and create folder `Views` in it, move `ContentView.swift` into it.
+6. Convert root folder to Group and create folders `Project` and `Views` in it. Move `Assets.xcassets` into `Project` and `ContentView.swift` into `Views`.
 7. Set Swift Language Version to 6.
 8. Create `Snap<PackageName>Demo/Snap<PackageName>Demo/Project/config-private.xcconfig` with `DEVELOPMENT_TEAM = <team id>`, and set it as base configuration of the project. It is ignored by git, so the team id stays private.
