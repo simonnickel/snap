@@ -89,6 +89,10 @@ Before the first commit, build or test run of a session, ask how to handle that 
 
 A direct request overrides the choice.
 
+## Commits
+
+Commit to the current branch, unless asked to use a different one.
+
 ## Tools
 
 - When a tool fails because of a one-time environment fix (e.g. `xcode-select` points to CLT, missing simulator platform), surface it instead of silently working around it.
