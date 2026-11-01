@@ -12,9 +12,9 @@ Where each kind of knowledge, decision or convention lives in a project. Use it 
 
 Loaded in every project on this machine, as described in `snap/docs/suite/agent-setup.md`.
 
-- **`snap/agents/AGENTS-global.md`** — Agent behavior and collaboration norms that apply to any project.
+- **`snap/agents/AGENTS-global.md`** — Instructions for how an agent works and collaborates in any project, such as communication and workflow. They do not bind a human working on the project.
 - **`snap/docs/documentation.md`** — Where each kind of knowledge, decision or convention lives in a project.
-- **`snap/docs/conventions/`** — Conventions that apply to any project.
+- **`snap/docs/conventions/`** — Rules for the work itself in any project, such as code and writing style. They bind every author, human or agent.
   - **`snap/docs/conventions/index.md`** — Imports every convention file. A new file only loads once listed here.
 - **`snap/agents/skills/`** — Recurring multi-step workflows.
 
