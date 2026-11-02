@@ -32,3 +32,5 @@
 - Public behavior is covered by tests.
 - Prefer a parameterized `@Test(arguments:)` over near-duplicate tests.
 - Test own logic, not framework behavior.
+- A test states the intended behavior, not whatever the code currently does.
+  - Behavior that looks wrong is fixed or recorded as a TODO, not expected by a test.
