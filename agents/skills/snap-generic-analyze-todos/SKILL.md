@@ -65,6 +65,11 @@ Complete the full analysis before presenting anything.
 
 Present findings. State for each finding where it is recorded.
 
+## Phase 4: Record
+
+- Record the accepted findings, following the loaded documentation conventions.
+- Apply the accepted changes to existing items.
+
 ## Constraints
 
 - Do not fix anything. Only record findings as TODOs.
