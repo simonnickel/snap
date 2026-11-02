@@ -13,9 +13,6 @@
             "url": "https://github.com/simonnickel/snap-core"
         },
         {
-            "url": "https://github.com/simonnickel/snap-dependencies"
-        },
-        {
             "url": "https://github.com/simonnickel/snap-style"
         },
         {
@@ -23,6 +20,9 @@
         },
         {
             "url": "https://github.com/simonnickel/snap-navigation"
+        },
+        {
+            "url": "https://github.com/simonnickel/snap-dependencies"
         },
         {
             "url": "https://github.com/simonnickel/snap-swift-data"
