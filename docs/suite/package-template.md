@@ -16,7 +16,7 @@ Partly inspired by [PackageTemplate](https://github.com/mattmassicotte/PackageTe
 3. Create a [demo project](#demo-project) if suitable
 4. Set up GitHub page: Add Description and Topics, uncheck Packages and Deployments
 5. Add to [Swift Package Index](https://swiftpackageindex.com)
-    1. Update Badge and Documentation urls in README.md
+    1. Update Badge and Documentation URLs in README.md
     2. Update `.spi.yml` to contain target names
 6. Add the package to [packages-overview.md](packages-overview.md), [packages.json](../../packages.json) and the [README](../../README.md), including its dependency graph
 
