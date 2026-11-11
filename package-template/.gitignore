@@ -5,7 +5,7 @@
 # Xcode
 xcuserdata/
 contents.xcworkspacedata
-/.build
+.build/
 DerivedData/
 
 # PM
