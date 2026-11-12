@@ -6,7 +6,7 @@ extension Composition {
     ///
     /// It changes nothing itself, so the owner decides how to react, such as animating the change or ignoring it. When the change is a direct edit of a value, take a binding instead, as ``BindingView`` shows.
     ///
-    /// Each closure is named after what happened in the view, such as `onToggle`. The name leaves out the input method, since the same event can come from a tap, a keyboard or an assistive technology. It also leaves out what the owner should do, since the owner decides that.
+    /// Each closure is named after what happened in the view, such as `onToggle`. See "Naming" in `docs/conventions/naming.md`.
     public struct EventView: View {
 
         public init(

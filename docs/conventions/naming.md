@@ -3,8 +3,10 @@
 Follow the [Swift API Design Guidelines](https://www.swift.org/documentation/api-design-guidelines/).
 
 - Avoid names that collide with SwiftUI types, such as `Label` or `Section`.
+  - Exception: the nested `State` described under view-related types.
 - Name event handler closures `on...`, matching SwiftUI modifiers such as `onAppear`.
-  - Name what happened in the view, such as `onTapClose`, not what the parent should do, such as `onShouldDismiss`.
+  - Name what happened in the view, such as `onClose`, not what the parent should do, such as `onShouldDismiss`.
+  - Leave out the input method, such as `Tap`, since the same event can come from a tap, a keyboard or an assistive technology.
 
 ## Service layer types
 
@@ -49,11 +51,13 @@ A view wrapping other content via a ViewBuilder parameter.
 
 ## View-related types
 
-**<xyz>State**
-A struct that represents a snapshot of changeable state for a Flow or Screen.
+**State**
+A struct nested in a view that represents a snapshot of its changeable state. Shadowing SwiftUI's `State` is accepted, since `@State` still resolves to the property wrapper.
 
-**<xyz>Data**
-A struct that represents some content to be displayed by a Screen or View. Used instead of Model or ViewModel.
+**Data**
+A struct nested in a view that represents the content it displays. Used instead of Model or ViewModel. Shadowing Foundation's `Data` is accepted, since a view rarely needs raw bytes.
+Only used when no existing type represents that content. A view that displays or binds a model as a whole takes the model directly.
 
-**<xyz>Delegate**
-A protocol or struct defining actions a view can trigger. Implemented by the parent to handle behavior without the view depending on it.
+**Delegate**
+A struct nested in a view that defines the events it reports as `on...` closures. Provided by the parent to handle behavior without the view depending on it.
+A standalone `<xyz>Delegate` protocol is an alternative when the parent handles the events in a type.
