@@ -1,0 +1,70 @@
+import Foundation
+import Observation
+
+extension Composition {
+
+    /// A data source owns the data that outlives any view and is the single source of truth for it.
+    ///
+    /// It can be any source of data, such as a store, a database or a network service. Only its role in the composition matters, not how it loads or stores the data.
+    ///
+    /// Views edit a single item through bindings to its properties. Changes that a binding cannot express, such as adding or removing an item, go through a method.
+    @Observable public class DataSource {
+
+        public var items: [Item]
+
+        public init(items: [Item]) {
+            self.items = items
+        }
+
+        public func addItem() {
+            items.append(.mock())
+        }
+
+        public func removeItem(id: Item.ID) {
+            items.removeAll { $0.id == id }
+        }
+    }
+
+}
+
+
+// MARK: - Item
+
+extension Composition.DataSource {
+
+    /// An item is the model a data source owns. Every layer reads it, from the screen down to its views.
+    ///
+    /// It is an observable class, like a SwiftData `@Model`, so a view keeps a valid reference after the item is removed. A binding into the data source's array points to an index and crashes when a removed row reads it.
+    ///
+    /// Views bind to its properties with `@Bindable`, which only reaches `var` properties, so the choice between `let` and `var` decides what views may edit.
+    @Observable public final class Item: Identifiable {
+
+        public let id: UUID
+        public let title: String
+        public var isEnabled: Bool
+
+        public init(
+            id: UUID,
+            title: String,
+            isEnabled: Bool,
+        ) {
+            self.id = id
+            self.title = title
+            self.isEnabled = isEnabled
+        }
+    }
+
+}
+
+
+// MARK: - Mock
+
+extension Composition.DataSource.Item {
+    static func mock(isEnabled: Bool = false) -> Self {
+        .init(
+            id: UUID(),
+            title: "Item",
+            isEnabled: isEnabled,
+        )
+    }
+}
