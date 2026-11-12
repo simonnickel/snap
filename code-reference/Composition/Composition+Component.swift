@@ -12,7 +12,7 @@ extension Composition {
     /// - `Delegate` reports events that need the caller, such as a request to delete, through `on...` closures.
     public struct Component: View {
 
-        /// - Parameter initialState: Only applied when the view first appears. Change the view's identity, such as with `id(_:)`, to reset it.
+        /// - Parameter initialState: Only applied when the view's identity is created. Change the identity, such as with `id(_:)`, to reset it.
         public init(
             data: Data,
             item: DataSource.Item,
