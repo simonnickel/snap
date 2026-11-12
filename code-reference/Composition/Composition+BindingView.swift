@@ -35,12 +35,10 @@ extension Composition {
 
 // MARK: - Previews
 
-#Preview("Default") {
-    @Previewable @State var isOn: Bool = false
-    Composition.BindingView(title: "Title", isOn: $isOn)
-}
-
-#Preview("Enabled") {
-    @Previewable @State var isOn: Bool = true
-    Composition.BindingView(title: "Title", isOn: $isOn)
+#Preview {
+    VStack {
+        Composition.BindingView(title: "Title", isOn: .constant(false))
+        Composition.BindingView(title: "Title", isOn: .constant(true))
+    }
+    .padding()
 }

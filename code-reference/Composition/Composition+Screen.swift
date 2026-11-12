@@ -142,7 +142,7 @@ extension Composition {
 
 // MARK: - Previews
 
-#Preview("Default") {
+#Preview {
     @Previewable @State var dataSource: Composition.DataSource = .init(items: [.mock(), .mock(isEnabled: true), .mock()])
 
     NavigationStack {

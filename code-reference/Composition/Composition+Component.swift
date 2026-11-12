@@ -142,51 +142,36 @@ extension Composition {
 
 // MARK: - Previews
 
-#Preview("Default") {
-    @Previewable @State var item: Composition.DataSource.Item = .mock()
-    @Previewable @State var isCollapsed: Bool = false
+#Preview {
+    VStack {
+        Composition.Component(
+            data: .init(position: 1, count: 4),
+            item: .mock(),
+            isCollapsed: .constant(false),
+            delegate: .init(onDelete: {}),
+        )
 
-    Composition.Component(
-        data: .init(position: 1, count: 3),
-        item: item,
-        isCollapsed: $isCollapsed,
-        delegate: .init(onDelete: {}),
-    )
-}
+        Composition.Component(
+            data: .init(position: 2, count: 4),
+            item: .mock(isEnabled: true),
+            isCollapsed: .constant(false),
+            delegate: .init(onDelete: {}),
+        )
 
-#Preview("Enabled") {
-    @Previewable @State var item: Composition.DataSource.Item = .mock(isEnabled: true)
-    @Previewable @State var isCollapsed: Bool = false
+        Composition.Component(
+            data: .init(position: 3, count: 4),
+            item: .mock(),
+            isCollapsed: .constant(true),
+            delegate: .init(onDelete: {}),
+        )
 
-    Composition.Component(
-        data: .init(position: 1, count: 3),
-        item: item,
-        isCollapsed: $isCollapsed,
-        delegate: .init(onDelete: {}),
-    )
-}
-
-#Preview("Collapsed") {
-    @Previewable @State var item: Composition.DataSource.Item = .mock()
-    @Previewable @State var isCollapsed: Bool = true
-
-    Composition.Component(
-        data: .init(position: 1, count: 3),
-        item: item,
-        isCollapsed: $isCollapsed,
-        delegate: .init(onDelete: {}),
-    )
-}
-
-#Preview("Confirm delete") {
-    @Previewable @State var item: Composition.DataSource.Item = .mock()
-    @Previewable @State var isCollapsed: Bool = false
-
-    Composition.Component(
-        data: .init(position: 1, count: 3),
-        item: item,
-        isCollapsed: $isCollapsed,
-        initialState: .init(isConfirmingDelete: true),
-        delegate: .init(onDelete: {}),
-    )
+        Composition.Component(
+            data: .init(position: 4, count: 4),
+            item: .mock(),
+            isCollapsed: .constant(false),
+            initialState: .init(isConfirmingDelete: true),
+            delegate: .init(onDelete: {}),
+        )
+    }
+    .padding()
 }

@@ -44,10 +44,10 @@ extension Composition {
 
 // MARK: - Previews
 
-#Preview("Default") {
-    Composition.EventView(title: "Title", isCollapsed: false) {}
-}
-
-#Preview("Collapsed") {
-    Composition.EventView(title: "Title", isCollapsed: true) {}
+#Preview {
+    VStack {
+        Composition.EventView(title: "Title", isCollapsed: false) {}
+        Composition.EventView(title: "Title", isCollapsed: true) {}
+    }
+    .padding()
 }
