@@ -10,7 +10,7 @@
 /// - A binding, when the change is a direct edit the owner accepts as is.
 /// - A value with an `on...` closure, when the owner decides how to react.
 ///
-/// Each view's `init` groups its parameters by role, in a fixed order: displayed values, bindings, initial state, events.
+/// Each view's `init` groups its parameters by role, in a fixed order: displayed values, bindings, events.
 /// - A view takes a nested `Data` only when no existing type represents its content.
 /// - A nested `Delegate` bundles its events.
 /// - Values and closures take the place of a view model, so no view knows where its data lives.

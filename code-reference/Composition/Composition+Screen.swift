@@ -8,22 +8,11 @@ extension Composition {
     /// It owns the UI state that concerns several elements or has to outlive them, such as which items are collapsed, so it can collapse all of them at once.
     struct Screen: View {
 
-        /// - Parameter initialState: Only applied when the view's identity is created. Change the identity, such as with `id(_:)`, to reset it.
-        init(
-            data: Data,
-            dataSource: DataSource,
-            initialState: State = .init(),
-        ) {
-            self.data = data
-            self.dataSource = dataSource
-            self.state = initialState
-        }
+        let data: Data
 
-        private let data: Data
+        let dataSource: DataSource
 
-        private let dataSource: DataSource
-
-        @State private var state: State
+        @State private var state = State()
         
         
         // MARK: - Body
@@ -115,7 +104,7 @@ extension Composition {
 
         // MARK: - State
 
-        /// `State` holds UI state the screen owns. The caller only sets its initial value.
+        /// `State` holds UI state the screen owns.
         struct State {
 
             var collapsedIDs: Set<DataSource.Item.ID> = []
@@ -128,6 +117,17 @@ extension Composition {
 
 // MARK: - Previews
 
+#if DEBUG
+extension Composition.Screen {
+    /// Sets the initial value of `state`, so a preview can show a state the view only reaches through interaction.
+    func previewState(_ state: State) -> Self {
+        var view = self
+        view._state = SwiftUI.State(initialValue: state)
+        return view
+    }
+}
+#endif
+
 #Preview {
     @Previewable @State var dataSource: Composition.DataSource = .init(items: [.mock(), .mock(isEnabled: true), .mock()])
 
@@ -137,7 +137,7 @@ extension Composition {
                 title: "Title",
             ),
             dataSource: dataSource,
-            initialState: .init(collapsedIDs: Set(dataSource.items.suffix(1).map(\.id))),
         )
+        .previewState(.init(collapsedIDs: Set(dataSource.items.suffix(1).map(\.id))))
     }
 }

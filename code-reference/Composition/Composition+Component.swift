@@ -8,34 +8,19 @@ extension Composition {
     /// - `Data` holds read-only content the caller provides.
     /// - A model, such as an item, arrives as is. The component binds to its properties with `@Bindable` and hands each view a binding to the value it edits.
     /// - Values the caller owns arrive as bindings the component can change, such as whether it is collapsed. Being collapsed is owned by the caller, so it survives the component being recreated and the caller can control it.
-    /// - `State` holds UI state no caller needs to control, such as a confirmation in progress. The caller only sets its initial value, and it is lost when the component's identity changes.
+    /// - `State` holds UI state no caller needs to control, such as a confirmation in progress. It is lost when the component's identity changes.
     /// - `Delegate` reports events that need the caller, such as a request to delete, through `on...` closures.
     struct Component: View {
 
-        /// - Parameter initialState: Only applied when the view's identity is created. Change the identity, such as with `id(_:)`, to reset it.
-        init(
-            data: Data,
-            item: DataSource.Item,
-            isCollapsed: Binding<Bool>,
-            initialState: State = .init(),
-            delegate: Delegate,
-        ) {
-            self.data = data
-            self.item = item
-            self._isCollapsed = isCollapsed
-            self.state = initialState
-            self.delegate = delegate
-        }
+        let data: Data
 
-        private let data: Data
+        @Bindable var item: DataSource.Item
 
-        @Bindable private var item: DataSource.Item
+        @Binding var isCollapsed: Bool
 
-        @Binding private var isCollapsed: Bool
+        let delegate: Delegate
 
-        @State private var state: State
-
-        private let delegate: Delegate
+        @State private var state = State()
 
         var body: some View {
             VStack(alignment: .leading) {
@@ -104,7 +89,7 @@ extension Composition {
 
         // MARK: - State
 
-        /// `State` holds UI state the component owns. The caller only sets its initial value.
+        /// `State` holds UI state the component owns.
         ///
         /// Only for state no caller needs to control. State that has to outlive the component or be controlled from outside belongs to the caller, as ``Screen`` shows.
         struct State {
@@ -116,7 +101,7 @@ extension Composition {
 
         // MARK: - Delegate
 
-        /// `Delegate` holds the events the component reports. The caller implements them and decides how to react.
+        /// `Delegate` holds the events the component reports. The caller provides them and decides how to react.
         ///
         /// Groups the events into one parameter, so adding an event keeps the call sites' shape. A view with a single event can take a plain `on...` closure instead, as ``EventView`` shows.
         struct Delegate {
@@ -130,6 +115,17 @@ extension Composition {
 
 
 // MARK: - Previews
+
+#if DEBUG
+extension Composition.Component {
+    /// Sets the initial value of `state`, so a preview can show a state the view only reaches through interaction.
+    func previewState(_ state: State) -> Self {
+        var view = self
+        view._state = SwiftUI.State(initialValue: state)
+        return view
+    }
+}
+#endif
 
 #Preview {
     VStack {
@@ -158,9 +154,9 @@ extension Composition {
             data: .init(position: 4, count: 4),
             item: .mock(),
             isCollapsed: .constant(false),
-            initialState: .init(isConfirmingDelete: true),
             delegate: .init(onDelete: {}),
         )
+        .previewState(.init(isConfirmingDelete: true))
     }
     .padding()
 }
