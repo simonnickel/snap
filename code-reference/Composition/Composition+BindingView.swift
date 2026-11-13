@@ -7,21 +7,13 @@ extension Composition {
     /// The owner keeps the value and accepts each change as is. When the owner should decide how to react, report the interaction instead, as ``EventView`` shows.
     ///
     /// It takes a binding to the one value it edits, not the model, so it stays reusable for any model with such a value.
-    public struct BindingView: View {
+    struct BindingView: View {
 
-        public init(
-            title: String,
-            isOn: Binding<Bool>,
-        ) {
-            self.title = title
-            self._isOn = isOn
-        }
+        let title: String
 
-        private let title: String
+        @Binding var isOn: Bool
 
-        @Binding private var isOn: Bool
-
-        public var body: some View {
+        var body: some View {
             Toggle(isOn: $isOn) {
                 Text(title)
             }

@@ -10,7 +10,7 @@
 /// - A binding, when the change is a direct edit the owner accepts as is.
 /// - A value with an `on...` closure, when the owner decides how to react.
 ///
-/// Each view's `init` groups its parameters by role, in a fixed order: content, bindings, `initialState`, events.
+/// Each view's `init` groups its parameters by role, in a fixed order: displayed values, bindings, initial state, events.
 /// - A view takes a nested `Data` only when no existing type represents its content.
 /// - A nested `Delegate` bundles its events.
 /// - Values and closures take the place of a view model, so no view knows where its data lives.
@@ -18,4 +18,4 @@
 /// A view adds no spacing around itself. The view that places it decides the spacing. Padding inside a view's own background is part of the view.
 ///
 /// Types are named after their role, not their content, so the example applies to any feature.
-public enum Composition {}
+enum Composition {}

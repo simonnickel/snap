@@ -8,19 +8,19 @@ extension Composition {
     /// It can be any source of data, such as a store, a database or a network service. Only its role in the composition matters, not how it loads or stores the data.
     ///
     /// Views edit a single item through bindings to its properties. Changes that a binding cannot express, such as adding or removing an item, go through a method.
-    @Observable public class DataSource {
+    @Observable class DataSource {
 
-        public var items: [Item]
+        var items: [Item]
 
-        public init(items: [Item]) {
+        init(items: [Item]) {
             self.items = items
         }
 
-        public func addItem() {
+        func addItem() {
             items.append(.mock())
         }
 
-        public func removeItem(id: Item.ID) {
+        func removeItem(id: Item.ID) {
             items.removeAll { $0.id == id }
         }
     }
@@ -37,13 +37,13 @@ extension Composition.DataSource {
     /// It is an observable class, like a SwiftData `@Model`, so a view keeps a valid reference after the item is removed. A binding into the data source's array points to an index and crashes when a removed row reads it.
     ///
     /// Views bind to its properties with `@Bindable`, which only reaches `var` properties, so the choice between `let` and `var` decides what views may edit.
-    @Observable public final class Item: Identifiable {
+    @Observable final class Item: Identifiable {
 
-        public let id: UUID
-        public let title: String
-        public var isEnabled: Bool
+        let id: UUID
+        let title: String
+        var isEnabled: Bool
 
-        public init(
+        init(
             id: UUID,
             title: String,
             isEnabled: Bool,

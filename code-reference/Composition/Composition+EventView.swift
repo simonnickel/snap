@@ -7,24 +7,14 @@ extension Composition {
     /// It changes nothing itself, so the owner decides how to react, such as animating the change or ignoring it. When the change is a direct edit of a value, take a binding instead, as ``BindingView`` shows.
     ///
     /// Each closure is named after what happened in the view, such as `onToggle`. See "Naming" in `docs/conventions/naming.md`.
-    public struct EventView: View {
+    struct EventView: View {
 
-        public init(
-            title: String,
-            isCollapsed: Bool,
-            onToggle: @escaping () -> Void,
-        ) {
-            self.title = title
-            self.isCollapsed = isCollapsed
-            self.onToggle = onToggle
-        }
+        let title: String
+        let isCollapsed: Bool
 
-        private let title: String
-        private let isCollapsed: Bool
+        let onToggle: () -> Void
 
-        private let onToggle: () -> Void
-
-        public var body: some View {
+        var body: some View {
             Button(action: onToggle) {
                 HStack {
                     Text(title)

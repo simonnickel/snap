@@ -6,10 +6,10 @@ extension Composition {
     ///
     /// It hands each element a binding into the data source and handles the events that need the data source, such as deleting an item.
     /// It owns the UI state that concerns several elements or has to outlive them, such as which items are collapsed, so it can collapse all of them at once.
-    public struct Screen: View {
+    struct Screen: View {
 
         /// - Parameter initialState: Only applied when the view's identity is created. Change the identity, such as with `id(_:)`, to reset it.
-        public init(
+        init(
             data: Data,
             dataSource: DataSource,
             initialState: State = .init(),
@@ -28,7 +28,7 @@ extension Composition {
         
         // MARK: - Body
 
-        public var body: some View {
+        var body: some View {
             ScrollView {
                 content
             }
@@ -108,15 +108,9 @@ extension Composition {
         // MARK: - Data
 
         /// `Data` holds content the caller provides. The screen only reads it.
-        public struct Data {
+        struct Data {
 
             let title: String
-
-            public init(
-                title: String,
-            ) {
-                self.title = title
-            }
 
         }
 
@@ -124,15 +118,9 @@ extension Composition {
         // MARK: - State
 
         /// `State` holds UI state the screen owns. The caller only sets its initial value.
-        public struct State {
+        struct State {
 
-            var collapsedIDs: Set<DataSource.Item.ID>
-
-            public init(
-                collapsedIDs: Set<DataSource.Item.ID> = [],
-            ) {
-                self.collapsedIDs = collapsedIDs
-            }
+            var collapsedIDs: Set<DataSource.Item.ID> = []
 
         }
     }

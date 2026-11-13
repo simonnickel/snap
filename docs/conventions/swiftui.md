@@ -15,6 +15,7 @@
 - Order `init` parameters by role: displayed values (plain values, `Data` or a model), bindings, initial state (`initialState`), then events (`on...` closures or a `Delegate`).
   - Each role has one direction of data flow, so the call site shows what flows into the view before what flows back out.
   - A `@ViewBuilder` content parameter comes last, so it can be a trailing closure.
+  - A synthesized `init` follows the declaration order, so the properties are declared in the same order.
 
 ## View modifier
 
