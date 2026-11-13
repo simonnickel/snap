@@ -51,9 +51,7 @@ extension Composition {
         }
 
         private func row(for item: DataSource.Item, position: Int) -> some View {
-            let id = item.id
-
-            return Component(
+            Component(
                 data: .init(
                     position: position,
                     count: dataSource.items.count,
@@ -61,20 +59,20 @@ extension Composition {
                 item: item,
                 // Hand-built, since the binding is derived from a set and `$state` cannot express it.
                 isCollapsed: Binding(
-                    get: { state.collapsedIDs.contains(id) },
+                    get: { state.collapsedIDs.contains(item.id) },
                     set: { isCollapsed in
                         if isCollapsed {
-                            state.collapsedIDs.insert(id)
+                            state.collapsedIDs.insert(item.id)
                         } else {
-                            state.collapsedIDs.remove(id)
+                            state.collapsedIDs.remove(item.id)
                         }
                     },
                 ),
                 delegate: .init(
                     onDelete: {
-                        dataSource.removeItem(id: id)
+                        dataSource.removeItem(id: item.id)
                         // Keeps collapsedIDs free of the ids of removed items.
-                        state.collapsedIDs.remove(id)
+                        state.collapsedIDs.remove(item.id)
                     },
                 ),
             )
