@@ -2,7 +2,7 @@ import SwiftUI
 
 /// A view that reports an interaction takes the values it shows and an `on...` closure for each interaction.
 ///
-/// It changes nothing itself, so the owner decides how to react, such as animating the change or ignoring it. When the change is a direct edit of a value, take a binding instead, as ``BindingView`` shows.
+/// It changes nothing itself, so the owner decides how to react, such as ignoring the interaction or changing a value no binding reaches. When the change is a direct edit of a value, take a binding instead, as ``BindingView`` shows.
 ///
 /// Each closure is named after what happened in the view, such as `onToggle`. See "Naming" in `docs/conventions/naming.md`.
 struct EventView: View {

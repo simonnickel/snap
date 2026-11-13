@@ -2,7 +2,7 @@ import SwiftUI
 
 /// A screen connects a ``DataSource`` to its elements and coordinates their interactions.
 ///
-/// It hands each element a binding into the data source and handles the events that need the data source, such as deleting an item.
+/// It hands each element its item and a binding to the UI state it owns, and handles the events that need the data source, such as deleting an item.
 /// It owns the UI state that concerns several elements or has to outlive them, such as which items are collapsed, so it can collapse all of them at once.
 struct Screen: View {
 
