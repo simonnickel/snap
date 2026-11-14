@@ -1,6 +1,6 @@
 # Composition
 
-An example of composing a screen from components and presentational views. It applies the layers, state ownership and state passing described in [`view-layers.md`](../../docs/conventions/view-layers.md).
+An example of composing a screen from components and presentational views. It applies the layers, state ownership and state passing described in [`view-composition.md`](../../docs/conventions/view-composition.md).
 
 ## Layers
 

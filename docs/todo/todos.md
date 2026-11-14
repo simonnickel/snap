@@ -38,7 +38,7 @@ Decide whether to bring back the rule to use Xcode MCP for building and testing.
 
 ## TODO-18: Verify stored view content
 
-`## View composition` in `docs/conventions/swiftui.md` prefers storing content built in `init` over a `@ViewBuilder` closure. The claim that SwiftUI cannot compare closures, and therefore updates the view on every parent update, is unverified.
+`## Building a view` in `docs/conventions/view-composition.md` prefers storing content built in `init` over a `@ViewBuilder` closure. The claim that SwiftUI cannot compare closures, and therefore updates the view on every parent update, is unverified.
 
 - Verify it, for example with `Self._printChanges()` or Instruments on a container in both forms.
 - If it holds, migrate the package types that store a builder closure without a reason for it, such as `ScrollViewWith` in `snap-core` and `StyleScreen` in `snap-style`.

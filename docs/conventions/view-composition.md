@@ -1,6 +1,6 @@
-# View Layers
+# View Composition
 
-The layers a SwiftUI view hierarchy is composed of, which state each layer owns and how state travels between them. A view's type suffix names its layer.
+How a SwiftUI view hierarchy is composed: its layers, which state each layer owns, how state travels between them and how a view is built. A view's type suffix names its layer.
 
 ## Layers
 
@@ -59,3 +59,13 @@ Only used when no existing type represents that content. A view that displays or
 **Delegate**
 A struct nested in a view that defines the events it reports as `on...` closures. Provided by the parent to handle behavior without the view depending on it.
 A standalone `<xyz>Delegate` protocol is an alternative when the parent handles the events in a type.
+
+## Building a view
+
+- Prefer storing content built in `init` over a `@ViewBuilder` closure, since SwiftUI cannot compare closures.
+  - Keep a closure when there is a reason for it, such as content that takes input or is built later.
+- Prefer a separate `View` over a computed property for a self-contained part, so it gets its own invalidation boundary.
+- Order `init` parameters by role: displayed values (plain values, `Data` or a model), bindings, then events (`on...` closures or a `Delegate`).
+  - Each role has one direction of data flow, so the call site shows what flows into the view before what flows back out.
+  - A `@ViewBuilder` content parameter comes last, so it can be a trailing closure.
+  - A synthesized `init` follows the declaration order, so the properties are declared in the same order.

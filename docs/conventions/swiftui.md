@@ -7,16 +7,6 @@
 - Avoid assigning a `@State` property in `init`, since SwiftUI keeps the first value. Pass the value to the action that needs it, or apply it with `onChange(of:initial:)`.
   - Exception: a `previewState(_:)` method in a `#if DEBUG` extension, so a preview can show a state the view only reaches through interaction.
 
-## View composition
-
-- Prefer storing content built in `init` over a `@ViewBuilder` closure, since SwiftUI cannot compare closures.
-  - Keep a closure when there is a reason for it, such as content that takes input or is built later.
-- Prefer a separate `View` over a computed property for a self-contained part, so it gets its own invalidation boundary.
-- Order `init` parameters by role: displayed values (plain values, `Data` or a model), bindings, then events (`on...` closures or a `Delegate`).
-  - Each role has one direction of data flow, so the call site shows what flows into the view before what flows back out.
-  - A `@ViewBuilder` content parameter comes last, so it can be a trailing closure.
-  - A synthesized `init` follows the declaration order, so the properties are declared in the same order.
-
 ## View modifier
 
 ### Inert variant
