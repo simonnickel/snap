@@ -1,36 +1,19 @@
 # Composition
 
-An example of composing a screen from components and views, showing which layer owns which state and how it travels between them.
+An example of composing a screen from components and presentational views. It applies the layers, state ownership and state passing described in [`view-layers.md`](../../docs/conventions/view-layers.md).
 
-## State ownership
+## Layers
 
-Each piece of state lives with the layer that needs it the longest:
+- `Flow` owns the navigation path and shows the screen in a navigation stack.
+- `Screen` owns which items are collapsed, so it can collapse all of them at once.
+- `Component` owns the delete confirmation and reports the deletion through its `Delegate`.
+- Presentational views, each showing one way to receive state:
+  - `BindingView` edits a value it receives as a binding.
+  - `EventView` reports an interaction through an `on...` closure.
 
-- Model data lives in a data source, the single source of truth. It is injected from outside the view hierarchy, such as from a dependency container, so no view owns it.
-- Navigation state lives in the flow.
-- UI state that concerns several elements or has to outlive them lives in the screen.
-- UI state no one else needs lives in the component that shows it, such as a confirmation in progress.
-- Visual state that only affects how a presentational view looks, such as a hover highlight, lives in that view.
+## Data
 
-## Passing state down
-
-A view below the owner receives state in one of three ways:
-
-- The model, when the view binds to its properties with `@Bindable`.
-- A binding, when the change is a direct edit the owner accepts as is.
-- A value with an `on...` closure, when the owner decides how to react.
-
-## View initializers
-
-Each view's `init` groups its parameters by role, in a fixed order: displayed values, bindings, events.
-
-- A view takes a nested `Data` only when no existing type represents its content.
-- A nested `Delegate` bundles its events.
-- Values and closures take the place of a view model, so no view knows where its data lives.
-
-## Spacing
-
-A view adds no spacing around itself. The view that places it decides the spacing. Padding inside a view's own background is part of the view.
+`DataSource` stands in for any source of external data, such as a database or a network service. It owns the items and is injected from outside the view hierarchy.
 
 ## Naming
 

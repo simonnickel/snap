@@ -37,7 +37,7 @@ Complete the full analysis before presenting anything.
 - Patterns that will not hold up as the project grows
 - External dependencies that a simpler built-in solution could replace
 
-**API design** (`snap/docs/conventions/api-design.md`, `snap/docs/conventions/naming.md`, `snap/docs/conventions/swiftui.md`)
+**API design** (`snap/docs/conventions/api-design.md`, `snap/docs/conventions/naming.md`, `snap/docs/conventions/swiftui.md`, `snap/docs/conventions/view-layers.md`)
 - Names that don't follow the Swift API Design Guidelines or the project's naming patterns
 - Public API that is easy to misuse, where a compile-time error could replace a runtime failure
 - Public API larger than the problem needs

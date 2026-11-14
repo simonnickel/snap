@@ -4,6 +4,7 @@
 @formatting.md
 @swift.md
 @swiftui.md
+@view-layers.md
 @code-comments.md
 @writing-style.md
 @git.md
