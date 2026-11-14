@@ -9,7 +9,8 @@ Each piece of state lives with the layer that needs it the longest:
 - Model data lives in a data source, the single source of truth. It is injected from outside the view hierarchy, such as from a dependency container, so no view owns it.
 - Navigation state lives in the flow.
 - UI state that concerns several elements or has to outlive them lives in the screen.
-- UI state no one else needs lives in the component that shows it.
+- UI state no one else needs lives in the component that shows it, such as a confirmation in progress.
+- Visual state that only affects how a presentational view looks, such as a hover highlight, lives in that view.
 
 ## Passing state down
 
