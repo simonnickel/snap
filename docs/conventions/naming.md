@@ -40,7 +40,8 @@ Owns the chrome that configures the screen, such as title, toolbar and backgroun
 A reusable view that presents or interacts with business logic: calling services, handling actions or managing state.
 
 **<xyz>View**
-A reusable view focused on styling and layout, with no business logic.
+A presentational view: reusable, focused on styling and layout, with no business logic.
+In prose, "presentational view" refers to this tier and "view" to any SwiftUI `View`.
 
 **<xyz>Row, Cell**
 A view intended for use in a list or grid. Can be a Component or View depending on whether it connects to business logic.
