@@ -2,7 +2,7 @@ import SwiftUI
 
 // TODO-18: Verify that SwiftUI cannot compare the closure, or revert to storing it.
 /// A container view that stores its content built in `init` instead of the `@ViewBuilder` closure.
-/// See "Building a view" in `docs/conventions/view-composition.md`.
+/// See "Invalidation" in `docs/conventions/swiftui.md`.
 struct Container<Content: View>: View {
 	
 	let content: Content

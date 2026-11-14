@@ -7,6 +7,12 @@
 - Avoid assigning a `@State` property in `init`, since SwiftUI keeps the first value. Pass the value to the action that needs it, or apply it with `onChange(of:initial:)`.
   - Exception: a `previewState(_:)` method in a `#if DEBUG` extension, so a preview can show a state the view only reaches through interaction.
 
+## Invalidation
+
+- Prefer storing content built in `init` over a `@ViewBuilder` closure, since SwiftUI cannot compare closures.
+  - Keep a closure when there is a reason for it, such as content that takes input or is built later.
+- Prefer a separate `View` over a computed property for a self-contained part, so it gets its own invalidation boundary.
+
 ## View modifier
 
 ### Inert variant
