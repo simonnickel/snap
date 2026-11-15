@@ -66,7 +66,7 @@ struct Screen: View {
                 },
                 onDelete: {
                     dataSource.removeItem(id: item.id)
-                    // Keeps collapsedIDs free of the ids of removed items.
+                    // Otherwise "Expand All" stays enabled for a removed item.
                     state.collapsedIDs.remove(item.id)
                 },
             ),
