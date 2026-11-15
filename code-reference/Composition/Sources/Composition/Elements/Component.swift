@@ -80,7 +80,7 @@ struct Component: View {
 
     // MARK: - Data
 
-    /// `Data` holds content the caller provides because the component cannot derive it, such as its position in a list. The component only reads it and turns it into the values its views show, so they stay unaware of the list.
+    /// `Data` holds content the caller provides because the component cannot derive it, such as its position in a list. The component turns it into the values its views show, so they stay unaware of the list.
     struct Data {
 
         let position: Int
