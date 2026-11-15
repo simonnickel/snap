@@ -2,7 +2,7 @@ import SwiftUI
 
 /// A flow is a structurally independent section of the app that shows its screens in a navigation stack.
 ///
-/// It only handles navigation, such as the navigation path and the destinations its screens lead to.
+/// It owns the navigation state, such as the navigation path and the destinations its screens lead to.
 ///
 /// It passes the ``DataSource`` it receives on to its screen. A screen can also resolve its data source directly, such as from a dependency container, so the flow does not need to know about it.
 struct Flow: View {
