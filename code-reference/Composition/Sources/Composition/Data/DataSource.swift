@@ -3,7 +3,7 @@ import Observation
 
 /// A data source owns the data that outlives any view and is the single source of truth for it.
 ///
-/// It can be any source of data, such as a store, a database or a network service. Only its role in the composition matters, not how it loads or stores the data.
+/// It can be any source of data, such as a store, a database or a network service.
 ///
 /// Views edit a single item through bindings to its properties. Changes that a binding cannot express, such as adding, moving or removing an item, go through a method.
 @Observable class DataSource {
