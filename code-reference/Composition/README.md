@@ -10,6 +10,7 @@ It shows the general concepts and the options between them. It does not cover ho
 - `Screen` connects the data source to its components and owns the UI state they share.
 - `Component` connects presentational views to the model and decides how to react to their events.
 - `BindingView` and `EventView` are presentational views. They show values and report changes, without knowing the model.
+- `Container` wraps any content with layout and styling, without knowing the content.
 - `DataSource` stands in for any source of model data. It is injected from outside the view hierarchy.
 
 ## State ownership
