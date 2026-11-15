@@ -1,13 +1,16 @@
 import SwiftUI
 
-/// A component combines views into a reusable unit and connects them to the values and events of its caller.
+/// A component is a reusable view that connects presentational views to business logic.
+///
+/// It knows the model it shows and handles interactions, such as confirming a delete before reporting it. A presentational view knows neither, as ``BindingView`` and ``EventView`` show.
 ///
 /// Its `init` takes one parameter group per role, each with one direction of data flow:
 /// - `Data` holds read-only content the caller provides.
 /// - A model, such as an item, arrives as is. The component binds to its properties with `@Bindable` and hands each view a binding to the value it edits.
 /// - Values the caller owns arrive as bindings the component can change, such as whether it is collapsed. Being collapsed is owned by the caller, so it survives the component being recreated and the caller can control it.
-/// - `State` holds UI state no caller needs to control, such as a confirmation in progress. It is lost when the component's identity changes.
 /// - `Delegate` reports events that need the caller, such as a request to delete, through `on...` closures.
+///
+/// `State` holds UI state no caller needs to control, such as a confirmation in progress. It is lost when the component's identity changes.
 struct Component: View {
 
     let data: Data
@@ -26,7 +29,7 @@ struct Component: View {
         }
         .frame(maxWidth: .infinity, alignment: .leading)
         .padding()
-        // Follows the same binding as the background of `BindingView`, so a change shows at both levels at once.
+        // Reads the value `BindingView` edits through its binding, so a change shows at both levels at once.
         .background(item.isEnabled ? Color.accentColor.opacity(0.15) : Color.secondary.opacity(0.15), in: .rect(cornerRadius: 12))
     }
     

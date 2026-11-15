@@ -1,9 +1,9 @@
 import SwiftUI
 
-/// A screen connects a ``DataSource`` to its elements and coordinates their interactions.
+/// A screen connects a ``DataSource`` to its components and views and coordinates their interactions.
 ///
-/// It hands each element its item and a binding to the UI state it owns, and handles the events that need the data source, such as deleting an item.
-/// It owns the UI state that concerns several elements or has to outlive them, such as which items are collapsed, so it can collapse all of them at once.
+/// It hands each component its model and a binding to the UI state it owns, and handles the events that need the data source, such as deleting an item.
+/// It owns the UI state that concerns several components or has to outlive them, such as which items are collapsed, so it can collapse all of them at once.
 struct Screen: View {
 
     let data: Data
