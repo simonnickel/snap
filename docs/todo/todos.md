@@ -71,3 +71,11 @@ Decide whether to bring back the rule to use Xcode MCP for building and testing.
 - Rewrite workarounds as workaround comments: `// TODO FB:` comments, comments starting with a Feedback number, such as `// FB19669133: …`, and doc comments with a `Workaround:` line.
 - Move `// TODO finetuning:` and `// TODO idea:` comments to the package's TODO list, or drop them.
 - Treat other tags, such as `macOS` or `feature`, and plain `// TODO:` comments on main the same way.
+
+## TODO-22: Container in the composition example
+
+The Container layer of `docs/conventions/view-composition.md` is only shown in `code-reference/Container.swift`, outside the composition example in `code-reference/Composition`.
+
+- Add a container to the example, such as a card that wraps content through a `@ViewBuilder` parameter and applies the padding and background `Component` applies today.
+- Decide whether `code-reference/Container.swift` then moves into the example or stays as a standalone reference.
+- Whether the container stores its content or the closure depends on TODO-18.
