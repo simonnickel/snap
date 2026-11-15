@@ -104,8 +104,6 @@ struct Component: View {
     // MARK: - Delegate
 
     /// `Delegate` holds the events the component reports. The caller decides how to react.
-    ///
-    /// Groups the events into one parameter, so adding an event keeps the call sites' shape. A view with a single event can take a plain `on...` closure instead.
     struct Delegate {
 
         let onMoveUp: () -> Void

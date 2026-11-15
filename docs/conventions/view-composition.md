@@ -65,4 +65,5 @@ Only used when no existing type represents that content. A view that displays or
 
 **Delegate**
 A struct nested in a view that defines the events it reports as `on...` closures. Provided by the parent to handle behavior without the view depending on it.
+Groups the events into one parameter, so adding an event keeps the shape of each call site. A view with a single event can take a plain `on...` closure instead.
 A standalone `<xyz>Delegate` protocol is an alternative when the parent handles the events in a type.

@@ -35,7 +35,6 @@ It shows the general concepts and the options between them. It does not cover ho
 
 - A flow passes the data source to its screen, or the screen resolves it itself, as `Flow` describes.
 - A view that edits one value takes a binding to that value instead of the model, as `BindingView` shows.
-- A view groups its events in a `Delegate`, or takes a plain `on...` closure for a single event, as `Component.Delegate` describes.
 - A part of a view stays a property instead of a separate view when it reads the view's bindings, state and delegate, as `Component` shows.
 
 ## Naming
