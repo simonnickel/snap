@@ -9,8 +9,6 @@ import SwiftUI
 /// - A model, such as an item, arrives as is. The component binds to its properties with `@Bindable` and hands each view the values it shows and a binding to the value it edits.
 /// - Values the caller owns arrive as bindings the component can change, such as whether it is collapsed. Being collapsed is owned by the caller, so it survives the component being recreated and the caller can control it.
 /// - `Delegate` reports events that need the caller, such as moving or deleting the item, through `on...` closures.
-///
-/// `State` holds UI state no caller needs to control, such as a confirmation in progress. It is lost when the component's identity changes.
 struct Component: View {
 
     let data: Data
@@ -90,9 +88,9 @@ struct Component: View {
 
     // MARK: - State
 
-    /// `State` holds UI state the component owns.
+    /// `State` holds UI state no caller needs to control, such as a confirmation in progress. It is lost when the component's identity changes.
     ///
-    /// Only for state no caller needs to control. State that has to outlive the component or be controlled from outside belongs to the caller, as ``Screen`` shows.
+    /// State that has to outlive the component or be controlled from outside belongs to the caller, as ``Screen`` shows.
     struct State {
 
         var isConfirmingDelete: Bool = false
