@@ -28,6 +28,7 @@ import Observation
         let destination = index + offset
         guard items.indices.contains(destination) else { return }
 
-        items.swapAt(index, destination)
+        let item = items.remove(at: index)
+        items.insert(item, at: destination)
     }
 }
