@@ -100,7 +100,7 @@ struct Screen: View {
 
     // MARK: - Data
 
-    /// `Data` holds content the caller provides. The screen only reads it.
+    /// `Data` holds content the caller provides.
     struct Data {
 
         let title: String
