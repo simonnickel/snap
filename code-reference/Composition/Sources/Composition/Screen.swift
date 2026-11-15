@@ -4,6 +4,8 @@ import SwiftUI
 ///
 /// It hands each component its model and a binding to the UI state it owns, and handles the events that need the data source, such as deleting an item.
 /// It owns the UI state that concerns several components or has to outlive them, such as which items are collapsed, so it can collapse all of them at once.
+///
+/// It owns the chrome that configures it, such as its title and toolbar, so the flow only decides which screen to show.
 struct Screen: View {
 
     let data: Data
