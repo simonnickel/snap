@@ -46,6 +46,7 @@ A view below the owner receives state in one of three ways:
 - A value with an `on...` closure, when the owner decides how to react.
 
 Values and closures take the place of a view model, so no view knows where its data lives.
+A presentational view receives values ready to show, such as a title or a flag, not the context they are derived from, so it stays reusable in another context.
 
 ## Initializers
 
