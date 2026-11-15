@@ -11,8 +11,8 @@ struct Screen: View {
     let dataSource: DataSource
 
     @State private var state = State()
-    
-    
+
+
     // MARK: - Body
 
     var body: some View {

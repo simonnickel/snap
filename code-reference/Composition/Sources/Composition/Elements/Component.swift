@@ -21,6 +21,9 @@ struct Component: View {
 
     @State private var state = State()
 
+
+    // MARK: - Body
+
     var body: some View {
         VStack(alignment: .leading) {
             content
@@ -30,10 +33,10 @@ struct Component: View {
         // Reads the value `BindingView` edits through its binding, so a change shows at both levels at once.
         .background(item.isEnabled ? Color.accentColor.opacity(0.15) : Color.secondary.opacity(0.15), in: .rect(cornerRadius: 12))
     }
-    
-    
-    // MARK: - Content
-    
+
+
+    // MARK: Content
+
     @ViewBuilder
     private var content: some View {
         header
