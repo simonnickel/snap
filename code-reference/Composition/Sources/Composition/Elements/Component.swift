@@ -6,9 +6,9 @@ import SwiftUI
 ///
 /// Its `init` takes one parameter group per role, each with one direction of data flow:
 /// - `Data` holds read-only content the caller provides.
-/// - A model, such as an item, arrives as is. The component binds to its properties with `@Bindable` and hands each view a binding to the value it edits.
+/// - A model, such as an item, arrives as is. The component binds to its properties with `@Bindable` and hands each view the values it shows and a binding to the value it edits.
 /// - Values the caller owns arrive as bindings the component can change, such as whether it is collapsed. Being collapsed is owned by the caller, so it survives the component being recreated and the caller can control it.
-/// - `Delegate` reports events that need the caller, such as a request to delete, through `on...` closures.
+/// - `Delegate` reports events that need the caller, such as moving or deleting the item, through `on...` closures.
 ///
 /// `State` holds UI state no caller needs to control, such as a confirmation in progress. It is lost when the component's identity changes.
 struct Component: View {
@@ -40,33 +40,33 @@ struct Component: View {
     private var content: some View {
         header
         if !isCollapsed {
-            details
+            BindingView(title: item.title, isOn: $item.isEnabled)
+            footer
         }
     }
 
     // The parts read the component's bindings, state and delegate, so they stay properties instead of separate views.
     private var header: some View {
+        Button {
+            isCollapsed.toggle()
+        } label: {
+            Label("\(item.title) \(item.id.uuidString.prefix(4))", systemImage: isCollapsed ? "chevron.right" : "chevron.down")
+        }
+    }
+
+    private var footer: some View {
         EventView(
-            title: item.title,
-            isCollapsed: isCollapsed,
-        ) {
-            withAnimation {
-                isCollapsed.toggle()
-            }
-        }
-    }
-
-    @ViewBuilder
-    private var details: some View {
-        Text("\(data.position) of \(data.count)")
-        BindingView(title: item.title, isOn: $item.isEnabled)
-        deleteButton
-    }
-
-    private var deleteButton: some View {
-        Button("Delete") {
-            state.isConfirmingDelete = true
-        }
+            title: "\(data.position) of \(data.count)",
+            canMoveUp: data.position > 1,
+            canMoveDown: data.position < data.count,
+            delegate: .init(
+                onMoveUp: delegate.onMoveUp,
+                onMoveDown: delegate.onMoveDown,
+                onDelete: {
+                    state.isConfirmingDelete = true
+                },
+            ),
+        )
         .confirmationDialog(
             "Delete \(item.title)?",
             isPresented: $state.isConfirmingDelete,
@@ -79,7 +79,7 @@ struct Component: View {
 
     // MARK: - Data
 
-    /// `Data` holds content the caller provides because the component cannot derive it, such as its position in a list. The component only reads it.
+    /// `Data` holds content the caller provides because the component cannot derive it, such as its position in a list. The component only reads it and turns it into the values its views show, so they stay unaware of the list.
     struct Data {
 
         let position: Int
@@ -104,9 +104,11 @@ struct Component: View {
 
     /// `Delegate` holds the events the component reports. The caller provides them and decides how to react.
     ///
-    /// Groups the events into one parameter, so adding an event keeps the call sites' shape. A view with a single event can take a plain `on...` closure instead, as ``EventView`` shows.
+    /// Groups the events into one parameter, so adding an event keeps the call sites' shape. A view with a single event can take a plain `on...` closure instead.
     struct Delegate {
 
+        let onMoveUp: () -> Void
+        let onMoveDown: () -> Void
         let onDelete: () -> Void
 
     }
@@ -124,6 +126,16 @@ extension Component {
         return view
     }
 }
+
+extension Component.Delegate {
+    static var preview: Self {
+        .init(
+            onMoveUp: {},
+            onMoveDown: {},
+            onDelete: {},
+        )
+    }
+}
 #endif
 
 #Preview {
@@ -132,28 +144,28 @@ extension Component {
             data: .init(position: 1, count: 4),
             item: .mock(),
             isCollapsed: .constant(false),
-            delegate: .init(onDelete: {}),
+            delegate: .preview,
         )
 
         Component(
             data: .init(position: 2, count: 4),
             item: .mock(isEnabled: true),
             isCollapsed: .constant(false),
-            delegate: .init(onDelete: {}),
+            delegate: .preview,
         )
 
         Component(
             data: .init(position: 3, count: 4),
             item: .mock(),
             isCollapsed: .constant(true),
-            delegate: .init(onDelete: {}),
+            delegate: .preview,
         )
 
         Component(
             data: .init(position: 4, count: 4),
             item: .mock(),
             isCollapsed: .constant(false),
-            delegate: .init(onDelete: {}),
+            delegate: .preview,
         )
         .previewState(.init(isConfirmingDelete: true))
     }

@@ -1,6 +1,6 @@
 import SwiftUI
 
-/// A screen connects a ``DataSource`` to its components and views and coordinates their interactions.
+/// A screen connects a ``DataSource`` to its components and coordinates their interactions.
 ///
 /// It hands each component its model and a binding to the UI state it owns, and handles the events that need the data source, such as deleting an item.
 /// It owns the UI state that concerns several components or has to outlive them, such as which items are collapsed, so it can collapse all of them at once.
@@ -56,6 +56,12 @@ struct Screen: View {
                 },
             ),
             delegate: .init(
+                onMoveUp: {
+                    dataSource.moveItem(id: item.id, by: -1)
+                },
+                onMoveDown: {
+                    dataSource.moveItem(id: item.id, by: 1)
+                },
                 onDelete: {
                     dataSource.removeItem(id: item.id)
                     // Keeps collapsedIDs free of the ids of removed items.
