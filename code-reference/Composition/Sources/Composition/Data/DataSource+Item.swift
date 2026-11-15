@@ -7,7 +7,7 @@ extension DataSource {
     ///
     /// It is an observable class, like a SwiftData `@Model`, so a view keeps a valid reference after it is removed. A binding into a collection points to an index and crashes when a removed row reads it.
     ///
-    /// Views bind to its properties with `@Bindable`, which only reaches `var` properties, so the choice between `let` and `var` decides what views may edit.
+    /// Components bind to its properties with `@Bindable`, which only reaches `var` properties, so the choice between `let` and `var` decides what views may edit.
     @Observable final class Item: Identifiable {
 
         let id: UUID
