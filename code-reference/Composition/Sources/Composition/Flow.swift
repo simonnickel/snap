@@ -4,7 +4,7 @@ import SwiftUI
 ///
 /// It owns the navigation state, such as the navigation path and the destinations its screens lead to.
 ///
-/// It passes the ``DataSource`` on to its screen. Alternatively, the screen resolves it itself, such as from a dependency container.
+/// It passes the ``DataSource`` on to its screen. Alternatively, the screen resolves it itself, such as from a dependency container in the environment.
 struct Flow: View {
 
     let dataSource: DataSource
