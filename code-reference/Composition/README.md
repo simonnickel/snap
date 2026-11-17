@@ -42,6 +42,7 @@ It shows the general concepts and the options between them. It does not cover ho
 
 - **Sheets:** A sheet is a screen, so it follows the same rules as any other screen.
 - **Local state:** A screen that edits a draft, such as a form in a sheet, keeps the draft as its own state until it saves it to the data source.
+- **Environment:** Apart from resolving the data source, as `Flow` describes, the example passes all state explicitly. Context for a whole subtree, such as `dismiss` or styling, comes from the environment.
 - **Loading state:** Switching between loading, loaded and failed content is not covered by the example.
 - **Navigation:** The flow owns the navigation state. How a screen requests navigation and how destinations are presented is covered by [snap-navigation](https://github.com/simonnickel/snap-navigation).
 
