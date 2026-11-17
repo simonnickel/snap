@@ -28,7 +28,7 @@ It shows the general concepts and the options between them. It does not cover ho
 
 ## Nested types
 
-- `Data` holds content the caller provides, as `Screen` and `Component` show.
+- `Data` groups values the caller provides, as `Screen` and `Component` show.
 - `State` holds UI state the view owns, as `Screen` and `Component` show.
 - `Delegate` groups the events a view reports, as `Component` and `EventView` show.
 

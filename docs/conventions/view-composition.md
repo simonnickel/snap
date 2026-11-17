@@ -73,8 +73,8 @@ The environment or a dependency container gives implicit access instead. Use it 
 A struct nested in a view that represents a snapshot of its changeable state. Shadowing SwiftUI's `State` is accepted, since `@State` still resolves to the property wrapper.
 
 **Data**
-A struct nested in a view that holds content the caller provides, since the view cannot derive it itself. Shadowing Foundation's `Data` is accepted, since a view rarely needs raw bytes.
-Only used when no existing type represents that content. A view that displays or binds a model as a whole takes the model directly.
+A struct nested in a view that groups values the caller provides, since the view cannot derive them itself. Shadowing Foundation's `Data` is accepted, since a view rarely needs raw bytes.
+Only used when no existing type represents those values. A view that displays or binds a model as a whole takes the model directly.
 
 **Delegate**
 A struct nested in a view that defines the events it reports as `on...` closures. Provided by the parent to handle behavior without the view depending on it.

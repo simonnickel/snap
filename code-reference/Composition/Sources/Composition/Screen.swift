@@ -100,7 +100,7 @@ struct Screen: View {
 
     // MARK: - Data
 
-    /// `Data` holds content the caller provides.
+    /// `Data` groups values the caller provides.
     struct Data {
 
         let title: String
