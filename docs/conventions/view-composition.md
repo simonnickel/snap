@@ -62,17 +62,18 @@ Each is a struct nested in the view it belongs to.
 - A view with a single event can take a plain `on...` closure instead.
 - A standalone `<xyz>Delegate` protocol is an alternative when the parent handles the events in a type.
 
-## State ownership
+## State
 
-Each piece of state lives with the layer that needs it the longest:
+### Ownership
 
-- Model data lives in a data source, the single source of truth. It is injected from outside the view hierarchy, such as from a dependency container, so no view owns it.
+Each piece of state lives as low as the views that need it and its lifetime allow:
+
+- Model data lives outside the view hierarchy, such as in a data source.
 - Navigation state lives in the flow.
-- UI state that concerns several components or views, or has to outlive them, lives in the screen.
-- UI state no one else needs lives in the component that shows it, such as a confirmation in progress.
-- Visual state that only affects how a presentational view looks, such as a hover highlight, lives in that view.
+- Visual state that only affects how a presentational view looks lives in that view.
+- State that can be derived from other state is computed, not stored.
 
-## Passing state down
+### Passing down
 
 A view below the owner receives state explicitly in one of three ways:
 
