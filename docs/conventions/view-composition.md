@@ -9,7 +9,7 @@ A view's type suffix names its layer or usage.
 ### Layers
 
 Layers are ordered: flow, screen, component, presentational view.
-A view creates only views of a lower layer. Components and presentational views can also create views of their own layer.
+A view creates only views of a lower layer, except for components and presentational views, which can also nest.
 
 **<xyz>Flow**
 A structurally independent section of the app.
