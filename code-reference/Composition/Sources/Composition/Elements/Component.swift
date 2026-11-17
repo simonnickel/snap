@@ -2,13 +2,7 @@ import SwiftUI
 
 /// A component is a reusable view that connects presentational views to business logic.
 ///
-/// It knows the model it shows and handles interactions, such as confirming a delete before reporting it. A presentational view knows neither, as ``BindingView`` and ``EventView`` show.
-///
-/// Its `init` takes one parameter group per role, each with one direction of data flow:
-/// - `Data`: values the caller provides.
-/// - The model, bound with `@Bindable`.
-/// - Bindings to state the caller owns, such as whether it is collapsed, so it survives the component being recreated and the caller can control it.
-/// - `Delegate`: the events it reports.
+/// It knows the model it shows and handles interactions, such as confirming a delete before reporting it.
 struct Component: View {
 
     let data: Data

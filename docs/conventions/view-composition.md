@@ -62,8 +62,7 @@ The environment or a dependency container gives implicit access instead. Use it 
 
 ## Initializers
 
-- Order `init` parameters by role: displayed values (plain values, `Data` or a model), bindings, then events (`on...` closures or a `Delegate`).
-  - Each role has one direction of data flow, so the call site shows what flows into the view before what flows back out.
+- Order `init` parameters by role: displayed values (plain values, `Data` or a model), bindings, then events (`on...` closures or a `Delegate`), so the call site reads from what flows in to what flows back out.
   - A `@ViewBuilder` content parameter comes last, so it can be a trailing closure.
   - A synthesized `init` follows the declaration order, so the properties are declared in the same order.
 
