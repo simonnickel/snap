@@ -66,7 +66,7 @@ A presentational view receives values ready to show, not the context they are de
 A struct nested in a view that represents a snapshot of its changeable state. Shadowing SwiftUI's `State` is accepted, since `@State` still resolves to the property wrapper.
 
 **Data**
-A struct nested in a view that represents the content it displays. Used instead of Model or ViewModel. Shadowing Foundation's `Data` is accepted, since a view rarely needs raw bytes.
+A struct nested in a view that holds content the caller provides, since the view cannot derive it itself. Shadowing Foundation's `Data` is accepted, since a view rarely needs raw bytes.
 Only used when no existing type represents that content. A view that displays or binds a model as a whole takes the model directly.
 
 **Delegate**
