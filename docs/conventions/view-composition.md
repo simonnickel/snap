@@ -80,6 +80,5 @@ Each piece of state lives as low as the views that need it and its lifetime allo
 
 ## Initializers
 
-- Order `init` parameters by role: displayed values (plain values, `Data` or a model), bindings, then events (`on...` closures or a `Delegate`), so the call site reads from what flows in to what flows back out.
-  - A `@ViewBuilder` content parameter comes last, so it can be a trailing closure.
+- Order `init` parameters by role: displayed values (plain values, `Data` or a model), dependencies (such as a data source), bindings, then events (`on...` closures or a `Delegate`), so the call site reads from what flows in to what flows back out.
   - A synthesized `init` follows the declaration order, so the properties are declared in the same order.
