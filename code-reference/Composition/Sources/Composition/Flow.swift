@@ -14,9 +14,7 @@ struct Flow: View {
     var body: some View {
         NavigationStack(path: $path) {
             Screen(
-                data: .init(
-                    title: "Title",
-                ),
+                title: "Title",
                 dataSource: dataSource,
             )
             .navigationDestination(for: DataSource.Item.ID.self) { _ in

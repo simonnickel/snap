@@ -28,7 +28,7 @@ It shows the general concepts and the options between them. It does not cover ho
 
 ## Nested types
 
-- `Data` groups values the caller provides, as `Screen` and `Component` show.
+- `Data` groups values the caller provides, as `Component` shows.
 - `State` holds UI state the view owns, as `Screen` and `Component` show.
 - `Delegate` groups the events a view reports, as `Component` and `EventView` show.
 
@@ -36,6 +36,7 @@ It shows the general concepts and the options between them. It does not cover ho
 
 - A flow passes the data source to its screen, or the screen resolves it itself, as `Flow` describes.
 - A view that edits one value takes a binding to that value instead of the model, as `BindingView` shows.
+- A view with a single value takes a plain parameter instead of `Data`, as `Screen` shows.
 - A part of a view stays a property instead of a separate view when it reads the view's bindings, state and delegate, as `Component` shows.
 
 ## Not shown

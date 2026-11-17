@@ -49,6 +49,7 @@ Each is a struct nested in the view it belongs to.
 **Data**
 - Groups values the caller provides that the view cannot derive itself.
 - Used when no existing type, such as a model, represents those values.
+- A view with a single value can take a plain parameter instead.
 - Shadowing Foundation's `Data` is accepted, since a view rarely needs raw bytes.
 
 **State**

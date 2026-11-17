@@ -8,7 +8,7 @@ import SwiftUI
 /// It owns the chrome specific to it, such as its title and toolbar items.
 struct Screen: View {
 
-    let data: Data
+    let title: String
 
     let dataSource: DataSource
 
@@ -21,7 +21,7 @@ struct Screen: View {
         ScrollView {
             content
         }
-        .navigationTitle(data.title)
+        .navigationTitle(title)
         .toolbar {
             toolbar
         }
@@ -98,15 +98,6 @@ struct Screen: View {
     }
 
 
-    // MARK: - Data
-
-    struct Data {
-
-        let title: String
-
-    }
-
-
     // MARK: - State
 
     struct State {
@@ -135,9 +126,7 @@ extension Screen {
 
     NavigationStack {
         Screen(
-            data: .init(
-                title: "Title",
-            ),
+            title: "Title",
             dataSource: dataSource,
         )
         .previewState(.init(collapsedIDs: Set(dataSource.items.suffix(1).map(\.id))))
