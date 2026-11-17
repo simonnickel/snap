@@ -12,32 +12,35 @@ Layers are ordered: flow, screen, component, presentational view.
 A view creates only views of a lower layer, except for components and presentational views, which can also nest.
 
 **<xyz>Flow**
-A structurally independent section of the app.
-Shows a series of screens, such as in a `NavigationStack`.
-Owns the chrome that applies to the whole flow, such as a button that dismisses it.
+- A structurally independent section of the app.
+- Handles the navigation between its screens.
+- Owns the chrome that applies to the whole flow.
 
 **<xyz>Screen**
-An arrangement of views filling the screen, displayed within a flow.
-Owns the overall layout, manages data flow to its components and views and coordinates interactions between them.
-Owns the chrome specific to the screen, such as its title and toolbar items.
+- Fills the screen and owns its layout.
+- Connects its components and views to business logic and coordinates their interactions.
+- Owns the chrome specific to the screen.
 
 **<xyz>Component**
-A reusable view that presents or interacts with business logic, such as calling services or handling actions.
+- Connects its views to business logic and coordinates their interactions.
 
 **<xyz>View**
-A presentational view: reusable, focused on styling and layout, with no business logic.
-In prose, "presentational view" refers to this layer and "view" to any SwiftUI `View`.
+- A presentational view that handles styling and layout, without business logic.
 
 ### Usage
 
-A usage suffix names how a view is used. The view is a component or a presentational view, depending on whether it connects to business logic.
+A component or presentational view can be named by its usage instead of its layer, such as `ItemCell` instead of `ItemView`.
 
 **<xyz>Row, Cell**
-A view intended for use in a list or grid.
+- A view intended for use in a list or grid.
+
+**<xyz>Header, Footer**
+- A view intended for use above or below a section or screen.
 
 **<xyz>Container**
-A view wrapping content it receives through a `@ViewBuilder` parameter, without knowing the content.
-As a presentational view, it adds layout and styling. As a component, it adds generic behavior, such as routing data to its content.
+- Wraps content it receives through a `@ViewBuilder` parameter, without knowing the content.
+- As a presentational view, adds styling and layout.
+- As a component, adds generic behavior, such as routing data to its content.
 
 ## State ownership
 
