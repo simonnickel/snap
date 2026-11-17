@@ -4,7 +4,7 @@ An example of composing SwiftUI views into layers that each own their state. It 
 
 It shows the general concepts and the options between them. It does not cover how to build a specific feature.
 
-## Layers
+## Types
 
 - `Flow` owns the navigation and shows its screen in a navigation stack.
 - `Screen` connects the data source to its components and owns the UI state they share.
