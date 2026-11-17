@@ -1,6 +1,6 @@
 # View Composition
 
-How a SwiftUI view hierarchy is composed: its view types, which state each layer owns and how state travels between them.
+How a SwiftUI view hierarchy is composed: its view types, where state lives and how it travels between them.
 
 ## View types
 
@@ -18,7 +18,7 @@ A view creates only views of a lower layer, except for components and presentati
 
 **<xyz>Screen**
 - Fills the screen and owns its layout.
-- Connects its components and views to business logic and coordinates their interactions.
+- Connects its views to business logic and coordinates their interactions.
 - Owns the chrome specific to the screen.
 
 **<xyz>Component**
@@ -47,7 +47,7 @@ A component or presentational view can be named by its usage instead of its laye
 Each is a struct nested in the view it belongs to.
 
 **Data**
-- Groups values the caller provides that the view cannot derive itself.
+- Groups values the parent provides that the view cannot derive itself.
 - Used when no existing type, such as a model, represents those values.
 - A view with a single value can take a plain parameter instead.
 - Shadowing Foundation's `Data` is accepted, since a view rarely needs raw bytes.

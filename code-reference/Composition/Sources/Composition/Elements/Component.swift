@@ -71,7 +71,7 @@ struct Component: View {
 
     // MARK: - Data
 
-    /// `Data` groups values the caller provides because the component cannot derive them, such as its position in a list. The component turns them into what its views show, so they stay unaware of the list.
+    /// `Data` groups values the parent provides because the component cannot derive them, such as its position in a list. The component turns them into what its views show, so they stay unaware of the list.
     struct Data {
 
         let position: Int
@@ -82,9 +82,9 @@ struct Component: View {
 
     // MARK: - State
 
-    /// `State` holds UI state no caller needs to control, such as a confirmation in progress. It is lost when the component's identity changes.
+    /// `State` holds UI state no parent needs to control, such as a confirmation in progress. It is lost when the component's identity changes.
     ///
-    /// State that has to outlive the component or be controlled from outside belongs to the caller, as ``Screen`` shows.
+    /// State that has to outlive the component or be controlled from outside belongs to the parent, as ``Screen`` shows.
     struct State {
 
         var isConfirmingDelete: Bool = false
@@ -94,7 +94,7 @@ struct Component: View {
 
     // MARK: - Delegate
 
-    /// `Delegate` holds the events the component reports. The caller decides how to react.
+    /// `Delegate` holds the events the component reports. The parent decides how to react.
     struct Delegate {
 
         let onMoveUp: () -> Void
