@@ -75,17 +75,8 @@ Each piece of state lives as low as the views that need it and its lifetime allo
 
 ### Passing down
 
-A view below the owner receives state explicitly:
-
-- The model, when the view shows or edits it as a whole.
-- A value, when the view only shows it.
-- A binding, when the change is a direct edit the owner accepts as is.
-- An `on...` closure, when the owner decides how to react.
-
-Values and closures take the place of a view model, so no view knows where its data lives.
-A presentational view receives values ready to show, not the context they are derived from, so it stays reusable.
-
-The environment or a dependency container gives implicit access instead. Use it for what applies to a whole subtree, such as a data source, `dismiss` or styling.
+- A presentational view receives only the values it shows, not the model or context they are derived from, so it stays reusable.
+- A change flows back through a binding when the owner accepts it as is, otherwise through an `on...` closure.
 
 ## Initializers
 
