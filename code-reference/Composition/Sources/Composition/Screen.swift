@@ -5,7 +5,7 @@ import SwiftUI
 /// It hands each component its model and handles the events that need the data source.
 /// It owns the UI state that concerns several components or has to outlive them, such as which items are collapsed, so it can collapse all of them at once.
 ///
-/// It owns the chrome that configures it, such as its title and toolbar.
+/// It owns the chrome specific to it, such as its title and toolbar items.
 struct Screen: View {
 
     let data: Data
@@ -100,7 +100,6 @@ struct Screen: View {
 
     // MARK: - Data
 
-    /// `Data` groups values the caller provides.
     struct Data {
 
         let title: String
@@ -110,7 +109,6 @@ struct Screen: View {
 
     // MARK: - State
 
-    /// `State` holds UI state the screen owns.
     struct State {
 
         var collapsedIDs: Set<DataSource.Item.ID> = []
