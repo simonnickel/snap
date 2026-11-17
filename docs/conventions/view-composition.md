@@ -32,6 +32,11 @@ A view intended for use in a list or grid.
 A view wrapping content it receives through a `@ViewBuilder` parameter, without knowing the content.
 As a presentational view, it adds layout and styling. As a component, it adds generic behavior, such as routing data to its content.
 
+## Containment
+
+A view creates only views of a lower layer, in the order flow, screen, component, presentational view.
+Components and presentational views can also create views of their own layer.
+
 ## State ownership
 
 Each piece of state lives with the layer that needs it the longest:
