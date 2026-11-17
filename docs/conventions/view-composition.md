@@ -1,6 +1,6 @@
 # View Composition
 
-How a SwiftUI view hierarchy is composed: its layers, which state each layer owns and how state travels between them. A view's type suffix names its layer.
+How a SwiftUI view hierarchy is composed: its layers, which state each layer owns and how state travels between them. A view's type suffix names its layer or shape.
 
 ## Layers
 
@@ -21,11 +21,16 @@ A reusable view that presents or interacts with business logic, such as calling 
 A presentational view: reusable, focused on styling and layout, with no business logic.
 In prose, "presentational view" refers to this layer and "view" to any SwiftUI `View`.
 
+## Shapes
+
+A shape names how a view is used. It is a component or a presentational view, depending on whether it connects to business logic.
+
 **<xyz>Row, Cell**
-A view intended for use in a list or grid. Can be a component or presentational view depending on whether it connects to business logic.
+A view intended for use in a list or grid.
 
 **<xyz>Container**
-A view wrapping other content via a ViewBuilder parameter.
+A view wrapping content it receives through a `@ViewBuilder` parameter, without knowing the content.
+As a presentational view, it adds layout and styling. As a component, it adds generic behavior, such as routing data to its content.
 
 ## State ownership
 

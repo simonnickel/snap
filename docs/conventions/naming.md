@@ -26,4 +26,4 @@ Read-only source of information to be consumed.
 
 ## View types
 
-A view's type suffix names its layer, and nested types follow a fixed set of names, both described in `view-composition.md`.
+A view's type suffix names its layer or shape, and nested types follow a fixed set of names, both described in `view-composition.md`.
