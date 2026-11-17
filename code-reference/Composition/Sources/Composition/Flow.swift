@@ -1,6 +1,6 @@
 import SwiftUI
 
-/// A flow is a structurally independent section of the app that shows its screens in a navigation stack.
+/// A flow is a structurally independent section of the app that handles the navigation between its screens.
 ///
 /// It owns the navigation state, such as the navigation path and the destinations its screens lead to.
 ///

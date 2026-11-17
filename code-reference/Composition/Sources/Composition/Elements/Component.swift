@@ -1,8 +1,6 @@
 import SwiftUI
 
-/// A component is a reusable view that connects presentational views to business logic.
-///
-/// It knows the model it shows and handles interactions, such as confirming a delete before reporting it.
+/// A component connects its views to business logic and coordinates their interactions, such as confirming a delete before reporting it.
 struct Component: View {
 
     let data: Data
