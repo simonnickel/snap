@@ -66,8 +66,6 @@ struct Screen: View {
                 },
                 onDelete: {
                     dataSource.removeItem(id: item.id)
-                    // Otherwise "Expand All" stays enabled for a removed item.
-                    state.collapsedIDs.remove(item.id)
                 },
             ),
         )
@@ -91,7 +89,7 @@ struct Screen: View {
                 Button("Expand All", systemImage: "rectangle.expand.vertical") {
                     state.collapsedIDs = []
                 }
-                .disabled(state.collapsedIDs.isEmpty)
+                .disabled(!dataSource.items.contains { state.collapsedIDs.contains($0.id) })
             }
             .labelStyle(.iconOnly)
         }
