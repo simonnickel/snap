@@ -27,7 +27,7 @@ A view creates only views of a lower layer, except for components and presentati
 **<xyz>View**
 - A presentational view that handles styling and layout, without business logic.
 
-### Usage
+### Usage suffixes
 
 A component or presentational view can be named by its usage instead of its layer, such as `ItemCell` instead of `ItemView`.
 
@@ -41,6 +41,25 @@ A component or presentational view can be named by its usage instead of its laye
 - Wraps content it receives through a `@ViewBuilder` parameter, without knowing the content.
 - As a presentational view, adds styling and layout.
 - As a component, adds generic behavior, such as routing data to its content.
+
+### Nested types
+
+Each is a struct nested in the view it belongs to.
+
+**Data**
+- Groups values the caller provides that the view cannot derive itself.
+- Used when no existing type, such as a model, represents those values.
+- Shadowing Foundation's `Data` is accepted, since a view rarely needs raw bytes.
+
+**State**
+- Holds the UI state the view owns.
+- Shadowing SwiftUI's `State` is accepted, since `@State` still resolves to the property wrapper.
+
+**Delegate**
+- Defines the events the view reports as `on...` closures, provided by the parent.
+- Groups the events into one parameter, so adding an event keeps the shape of each call site.
+- A view with a single event can take a plain `on...` closure instead.
+- A standalone `<xyz>Delegate` protocol is an alternative when the parent handles the events in a type.
 
 ## State ownership
 
@@ -70,17 +89,3 @@ The environment or a dependency container gives implicit access instead. Use it 
 - Order `init` parameters by role: displayed values (plain values, `Data` or a model), bindings, then events (`on...` closures or a `Delegate`), so the call site reads from what flows in to what flows back out.
   - A `@ViewBuilder` content parameter comes last, so it can be a trailing closure.
   - A synthesized `init` follows the declaration order, so the properties are declared in the same order.
-
-## Nested types
-
-**State**
-A struct nested in a view that represents a snapshot of its changeable state. Shadowing SwiftUI's `State` is accepted, since `@State` still resolves to the property wrapper.
-
-**Data**
-A struct nested in a view that groups values the caller provides, since the view cannot derive them itself. Shadowing Foundation's `Data` is accepted, since a view rarely needs raw bytes.
-Only used when no existing type represents those values. A view that displays or binds a model as a whole takes the model directly.
-
-**Delegate**
-A struct nested in a view that defines the events it reports as `on...` closures. Provided by the parent to handle behavior without the view depending on it.
-Groups the events into one parameter, so adding an event keeps the shape of each call site. A view with a single event can take a plain `on...` closure instead.
-A standalone `<xyz>Delegate` protocol is an alternative when the parent handles the events in a type.
