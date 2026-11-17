@@ -44,7 +44,7 @@ Each piece of state lives with the layer that needs it the longest:
 
 ## Passing state down
 
-A view below the owner receives state in one of three ways:
+A view below the owner receives state explicitly in one of three ways:
 
 - The model, when the view binds to its properties with `@Bindable`.
 - A binding, when the change is a direct edit the owner accepts as is.
@@ -52,6 +52,8 @@ A view below the owner receives state in one of three ways:
 
 Values and closures take the place of a view model, so no view knows where its data lives.
 A presentational view receives values ready to show, not the context they are derived from, so it stays reusable.
+
+The environment or a dependency container gives implicit access instead. Use it for what applies to a whole subtree, such as a data source, `dismiss` or styling.
 
 ## Initializers
 
