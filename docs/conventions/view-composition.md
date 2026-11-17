@@ -7,12 +7,12 @@ How a SwiftUI view hierarchy is composed: its layers, which state each layer own
 **<xyz>Flow**
 A structurally independent section of the app.
 Shows a series of screens, such as in a `NavigationStack`.
-Owns navigation chrome, such as a button that dismisses the flow.
+Owns the chrome that applies to the whole flow, such as a button that dismisses it.
 
 **<xyz>Screen**
 An arrangement of views filling the screen, displayed within a flow.
 Owns the overall layout, manages data flow to its components and views and coordinates interactions between them.
-Owns the chrome that configures the screen, such as title, toolbar and background.
+Owns the chrome specific to the screen, such as its title and toolbar items.
 
 **<xyz>Component**
 A reusable view that presents or interacts with business logic, such as calling services or handling actions.
